@@ -1,0 +1,37 @@
+package com.whbt.hrms.service;
+
+import com.baomidou.mybatisplus.mapper.Wrapper;
+import com.baomidou.mybatisplus.service.IService;
+import com.whbt.hrms.utils.PageUtils;
+import com.whbt.hrms.entity.YuangonggongziEntity;
+import java.util.List;
+import java.util.Map;
+import com.whbt.hrms.entity.vo.YuangonggongziVO;
+import org.apache.ibatis.annotations.Param;
+import com.whbt.hrms.entity.view.YuangonggongziView;
+
+
+/**
+ * 员工工资
+ *
+ * @author 
+ * @email
+ * @date 2024-01-15 17:13:54
+ */
+public interface YuangonggongziService extends IService<YuangonggongziEntity> {
+
+    PageUtils queryPage(Map<String, Object> params);
+    
+   	List<YuangonggongziVO> selectListVO(Wrapper<YuangonggongziEntity> wrapper);
+   	
+   	YuangonggongziVO selectVO(@Param("ew") Wrapper<YuangonggongziEntity> wrapper);
+   	
+   	List<YuangonggongziView> selectListView(Wrapper<YuangonggongziEntity> wrapper);
+   	
+   	YuangonggongziView selectView(@Param("ew") Wrapper<YuangonggongziEntity> wrapper);
+   	
+   	PageUtils queryPage(Map<String, Object> params,Wrapper<YuangonggongziEntity> wrapper);
+   	
+
+}
+

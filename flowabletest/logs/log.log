@@ -1,0 +1,278 @@
+2024-01-21 12:35:00,704  INFO [background-preinit] org.hibernate.validator.internal.util.Version.<clinit>:21 - HV000001: Hibernate Validator 6.2.0.Final
+2024-01-21 12:35:00,707  INFO [main] cn.gzsendi.FlowableApplicationStarter.logStarting:55 - Starting FlowableApplicationStarter using Java 1.8.0_311 on qiuzhu with PID 12184 (D:\springboot\flowabletest\target\classes started by 12752 in D:\springboot\flowabletest)
+2024-01-21 12:35:00,708 DEBUG [main] cn.gzsendi.FlowableApplicationStarter.logStarting:56 - Running with Spring Boot v2.6.2, Spring v5.3.14
+2024-01-21 12:35:00,708  INFO [main] cn.gzsendi.FlowableApplicationStarter.logStartupProfileInfo:635 - No active profile set, falling back to default profiles: default
+2024-01-21 12:35:01,195  WARN [main] org.mybatis.spring.mapper.ClassPathMapperScanner.warn:44 - No MyBatis mapper was found in '[cn.gzsendi]' package. Please check your configuration.
+2024-01-21 12:35:01,378  INFO [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize:108 - Tomcat initialized with port(s): 8080 (http)
+2024-01-21 12:35:01,382  INFO [main] org.apache.coyote.http11.Http11NioProtocol.log:173 - Initializing ProtocolHandler ["http-nio-8080"]
+2024-01-21 12:35:01,382  INFO [main] org.apache.catalina.core.StandardService.log:173 - Starting service [Tomcat]
+2024-01-21 12:35:01,382  INFO [main] org.apache.catalina.core.StandardEngine.log:173 - Starting Servlet engine: [Apache Tomcat/9.0.56]
+2024-01-21 12:35:01,430  INFO [main] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log:173 - Initializing Spring embedded WebApplicationContext
+2024-01-21 12:35:01,430  INFO [main] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext:290 - Root WebApplicationContext: initialization completed in 697 ms
+2024-01-21 12:35:01,771  INFO [main] org.flowable.spring.boot.cmmn.CmmnEngineAutoConfiguration.discoverDeploymentResources:104 - No deployment resources were found for autodeployment
+2024-01-21 12:35:01,806  INFO [main] org.flowable.spring.boot.dmn.DmnEngineAutoConfiguration.discoverDeploymentResources:104 - No deployment resources were found for autodeployment
+2024-01-21 12:35:01,822  INFO [main] org.flowable.spring.boot.form.FormEngineAutoConfiguration.discoverDeploymentResources:104 - No deployment resources were found for autodeployment
+2024-01-21 12:35:01,836  INFO [main] org.flowable.spring.boot.eventregistry.EventRegistryAutoConfiguration.discoverDeploymentResources:104 - No deployment resources were found for autodeployment
+2024-01-21 12:35:01,847  INFO [main] org.flowable.spring.boot.app.AppEngineAutoConfiguration.discoverDeploymentResources:104 - No deployment resources were found for autodeployment
+2024-01-21 12:35:01,851  INFO [main] org.flowable.app.spring.SpringAppEngineConfiguration.initConfigurators:1073 - Found 7 Engine Configurators in total:
+2024-01-21 12:35:01,851  INFO [main] org.flowable.app.spring.SpringAppEngineConfiguration.initConfigurators:1075 - class org.flowable.engine.spring.configurator.SpringProcessEngineConfigurator (priority:50000)
+2024-01-21 12:35:01,851  INFO [main] org.flowable.app.spring.SpringAppEngineConfiguration.initConfigurators:1075 - class org.flowable.eventregistry.spring.configurator.SpringEventRegistryConfigurator (priority:100000)
+2024-01-21 12:35:01,851  INFO [main] org.flowable.app.spring.SpringAppEngineConfiguration.initConfigurators:1075 - class org.flowable.idm.spring.configurator.SpringIdmEngineConfigurator (priority:150000)
+2024-01-21 12:35:01,852  INFO [main] org.flowable.app.spring.SpringAppEngineConfiguration.initConfigurators:1075 - class org.flowable.dmn.spring.configurator.SpringDmnEngineConfigurator (priority:200000)
+2024-01-21 12:35:01,852  INFO [main] org.flowable.app.spring.SpringAppEngineConfiguration.initConfigurators:1075 - class org.flowable.form.spring.configurator.SpringFormEngineConfigurator (priority:300000)
+2024-01-21 12:35:01,852  INFO [main] org.flowable.app.spring.SpringAppEngineConfiguration.initConfigurators:1075 - class org.flowable.content.spring.configurator.SpringContentEngineConfigurator (priority:400000)
+2024-01-21 12:35:01,852  INFO [main] org.flowable.app.spring.SpringAppEngineConfiguration.initConfigurators:1075 - class org.flowable.cmmn.spring.configurator.SpringCmmnEngineConfigurator (priority:500000)
+2024-01-21 12:35:01,852  INFO [main] org.flowable.app.spring.SpringAppEngineConfiguration.configuratorsBeforeInit:1101 - Executing beforeInit() of class org.flowable.engine.spring.configurator.SpringProcessEngineConfigurator (priority:50000)
+2024-01-21 12:35:01,866  INFO [main] org.flowable.app.spring.SpringAppEngineConfiguration.configuratorsBeforeInit:1101 - Executing beforeInit() of class org.flowable.eventregistry.spring.configurator.SpringEventRegistryConfigurator (priority:100000)
+2024-01-21 12:35:01,868  INFO [main] org.flowable.app.spring.SpringAppEngineConfiguration.configuratorsBeforeInit:1101 - Executing beforeInit() of class org.flowable.idm.spring.configurator.SpringIdmEngineConfigurator (priority:150000)
+2024-01-21 12:35:01,870  INFO [main] org.flowable.app.spring.SpringAppEngineConfiguration.configuratorsBeforeInit:1101 - Executing beforeInit() of class org.flowable.dmn.spring.configurator.SpringDmnEngineConfigurator (priority:200000)
+2024-01-21 12:35:01,873  INFO [main] org.flowable.app.spring.SpringAppEngineConfiguration.configuratorsBeforeInit:1101 - Executing beforeInit() of class org.flowable.form.spring.configurator.SpringFormEngineConfigurator (priority:300000)
+2024-01-21 12:35:01,874  INFO [main] org.flowable.app.spring.SpringAppEngineConfiguration.configuratorsBeforeInit:1101 - Executing beforeInit() of class org.flowable.content.spring.configurator.SpringContentEngineConfigurator (priority:400000)
+2024-01-21 12:35:01,876  INFO [main] org.flowable.app.spring.SpringAppEngineConfiguration.configuratorsBeforeInit:1101 - Executing beforeInit() of class org.flowable.cmmn.spring.configurator.SpringCmmnEngineConfigurator (priority:500000)
+2024-01-21 12:35:01,902  INFO [main] com.alibaba.druid.pool.DruidDataSource.init:930 - {dataSource-1} inited
+2024-01-21 12:35:02,483  INFO [main] org.flowable.app.spring.SpringAppEngineConfiguration.configuratorsAfterInit:1108 - Executing configure() of class org.flowable.engine.spring.configurator.SpringProcessEngineConfigurator (priority:50000)
+2024-01-21 12:35:02,589  INFO [main] org.flowable.engine.impl.ProcessEngineImpl.<init>:89 - ProcessEngine default created
+2024-01-21 12:35:02,605  INFO [main] org.flowable.engine.impl.cmd.ValidateV5EntitiesCmd.execute:43 - Total of v5 deployments found: 0
+2024-01-21 12:35:02,608  INFO [main] org.flowable.app.spring.SpringAppEngineConfiguration.configuratorsAfterInit:1108 - Executing configure() of class org.flowable.eventregistry.spring.configurator.SpringEventRegistryConfigurator (priority:100000)
+2024-01-21 12:35:02,771  INFO [main] liquibase.lockservice.log:26 - Successfully acquired change log lock
+2024-01-21 12:35:03,110  INFO [main] liquibase.changelog.log:26 - Reading from flowabletest.FLW_EV_DATABASECHANGELOG
+2024-01-21 12:35:03,131  INFO [main] liquibase.lockservice.log:26 - Successfully released change log lock
+2024-01-21 12:35:03,131  INFO [main] org.flowable.eventregistry.impl.EventRegistryEngineImpl.<init>:53 - EventRegistryEngine default created
+2024-01-21 12:35:03,132  INFO [main] org.flowable.app.spring.SpringAppEngineConfiguration.configuratorsAfterInit:1108 - Executing configure() of class org.flowable.idm.spring.configurator.SpringIdmEngineConfigurator (priority:150000)
+2024-01-21 12:35:03,138  INFO [main] org.flowable.idm.engine.impl.IdmEngineImpl.<init>:52 - IdmEngine default created
+2024-01-21 12:35:03,139  INFO [main] org.flowable.app.spring.SpringAppEngineConfiguration.configuratorsAfterInit:1108 - Executing configure() of class org.flowable.dmn.spring.configurator.SpringDmnEngineConfigurator (priority:200000)
+2024-01-21 12:35:03,154  INFO [main] liquibase.lockservice.log:26 - Successfully acquired change log lock
+2024-01-21 12:35:03,353  INFO [main] liquibase.changelog.log:26 - Reading from flowabletest.ACT_DMN_DATABASECHANGELOG
+2024-01-21 12:35:03,359  INFO [main] liquibase.lockservice.log:26 - Successfully released change log lock
+2024-01-21 12:35:03,359  INFO [main] org.flowable.dmn.engine.impl.DmnEngineImpl.<init>:55 - DmnEngine default created
+2024-01-21 12:35:03,360  INFO [main] org.flowable.app.spring.SpringAppEngineConfiguration.configuratorsAfterInit:1108 - Executing configure() of class org.flowable.form.spring.configurator.SpringFormEngineConfigurator (priority:300000)
+2024-01-21 12:35:03,369  INFO [main] liquibase.lockservice.log:26 - Successfully acquired change log lock
+2024-01-21 12:35:03,503  INFO [main] liquibase.changelog.log:26 - Reading from flowabletest.ACT_FO_DATABASECHANGELOG
+2024-01-21 12:35:03,506  INFO [main] liquibase.lockservice.log:26 - Successfully released change log lock
+2024-01-21 12:35:03,507  INFO [main] org.flowable.form.engine.impl.FormEngineImpl.<init>:52 - FormEngine default created
+2024-01-21 12:35:03,507  INFO [main] org.flowable.app.spring.SpringAppEngineConfiguration.configuratorsAfterInit:1108 - Executing configure() of class org.flowable.content.spring.configurator.SpringContentEngineConfigurator (priority:400000)
+2024-01-21 12:35:03,509  INFO [main] org.flowable.content.spring.SpringContentEngineConfiguration.initContentStorage:196 - Content file system root : C:\Users\12752\content
+2024-01-21 12:35:03,637  INFO [main] liquibase.lockservice.log:26 - Successfully acquired change log lock
+2024-01-21 12:35:03,777  INFO [main] liquibase.changelog.log:26 - Reading from flowabletest.ACT_CO_DATABASECHANGELOG
+2024-01-21 12:35:03,780  INFO [main] liquibase.lockservice.log:26 - Successfully released change log lock
+2024-01-21 12:35:03,780  INFO [main] org.flowable.content.engine.impl.ContentEngineImpl.<init>:48 - ContentEngine default created
+2024-01-21 12:35:03,782  INFO [main] org.flowable.app.spring.SpringAppEngineConfiguration.configuratorsAfterInit:1108 - Executing configure() of class org.flowable.cmmn.spring.configurator.SpringCmmnEngineConfigurator (priority:500000)
+2024-01-21 12:35:03,823  INFO [main] liquibase.lockservice.log:26 - Successfully acquired change log lock
+2024-01-21 12:35:03,963  INFO [main] liquibase.changelog.log:26 - Reading from flowabletest.ACT_CMMN_DATABASECHANGELOG
+2024-01-21 12:35:03,973  INFO [main] liquibase.lockservice.log:26 - Successfully released change log lock
+2024-01-21 12:35:03,974  INFO [main] org.flowable.cmmn.engine.impl.CmmnEngineImpl.<init>:72 - CmmnEngine default created
+2024-01-21 12:35:03,981  INFO [main] liquibase.lockservice.log:26 - Successfully acquired change log lock
+2024-01-21 12:35:04,113  INFO [main] liquibase.changelog.log:26 - Reading from flowabletest.ACT_APP_DATABASECHANGELOG
+2024-01-21 12:35:04,116  INFO [main] liquibase.lockservice.log:26 - Successfully released change log lock
+2024-01-21 12:35:04,116  INFO [main] org.flowable.app.engine.impl.AppEngineImpl.<init>:48 - AppEngine default created
+2024-01-21 12:35:04,128  INFO [main] org.flowable.ui.modeler.conf.ModelerDatabaseConfiguration.initDatabaseType:176 - database product name: 'MySQL'
+2024-01-21 12:35:04,128  INFO [main] org.flowable.ui.modeler.conf.ModelerDatabaseConfiguration.initDatabaseType:181 - using database type: mysql
+2024-01-21 12:35:04,609  INFO [main] org.flowable.ui.common.security.CustomPersistentRememberMeServices.<init>:79 - Cookie max-age set to 2678400 seconds
+2024-01-21 12:35:04,609  INFO [main] org.flowable.ui.common.security.CustomPersistentRememberMeServices.<init>:89 - Cookie refresh age set to 86400 seconds
+2024-01-21 12:35:04,688  INFO [main] org.springframework.security.web.DefaultSecurityFilterChain.<init>:51 - Will secure Ant [pattern='/api/editor/**'] with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4cd8db31, org.springframework.security.web.context.SecurityContextPersistenceFilter@7210f559, org.springframework.security.web.header.HeaderWriterFilter@2bc59ab7, org.springframework.security.web.authentication.logout.LogoutFilter@470135da, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@154f8280, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7be62956, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2ebf524, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@201a8ea7, org.springframework.security.web.session.SessionManagementFilter@265287ec, org.springframework.security.web.access.ExceptionTranslationFilter@4b9fa2f, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@31183ee2]
+2024-01-21 12:35:04,690  INFO [main] org.springframework.security.web.DefaultSecurityFilterChain.<init>:51 - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@35d88a54, org.springframework.security.web.context.SecurityContextPersistenceFilter@56402642, org.springframework.security.web.header.HeaderWriterFilter@1a4cbcc6, org.springframework.security.web.authentication.logout.LogoutFilter@5358c8fa, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@620572db, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1d5048d1, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6c1bebca, org.springframework.security.web.session.SessionManagementFilter@7cecab19, org.springframework.security.web.access.ExceptionTranslationFilter@460e5ffe, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@2986427e]
+2024-01-21 12:35:04,694  INFO [main] org.springframework.security.web.DefaultSecurityFilterChain.<init>:51 - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6fc7e828, org.springframework.security.web.context.SecurityContextPersistenceFilter@1b5af65b, org.springframework.security.web.header.HeaderWriterFilter@69d58731, org.springframework.security.web.authentication.logout.LogoutFilter@38c55a8a, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@26f480c6, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2e0163cb, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6b289535, org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter@1d7f7962, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@26a9c6df, org.springframework.security.web.session.SessionManagementFilter@3275a47f, org.springframework.security.web.access.ExceptionTranslationFilter@49925d21, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@56a09a5c]
+2024-01-21 12:35:04,698  INFO [main] org.flowable.ui.modeler.conf.ModelerDatabaseConfiguration.modelerLiquibase:141 - Configuring Liquibase
+2024-01-21 12:35:04,703  INFO [main] liquibase.lockservice.log:26 - Successfully acquired change log lock
+2024-01-21 12:35:04,836  INFO [main] liquibase.changelog.log:26 - Reading from flowabletest.ACT_DE_DATABASECHANGELOG
+2024-01-21 12:35:04,839  INFO [main] liquibase.lockservice.log:26 - Successfully released change log lock
+2024-01-21 12:35:04,946  INFO [main] org.flowable.spring.configurator.DefaultAutoDeploymentStrategy.deployResources:92 - Deploying resources [file [D:\springboot\flowabletest\target\classes\processes\ExpenseProcess.bpmn20.xml]] for engine org.flowable.engine.impl.ProcessEngineImpl@111cbcda deployment name hint SpringBootAutoDeployment
+2024-01-21 12:35:04,951  INFO [main] org.apache.coyote.http11.Http11NioProtocol.log:173 - Starting ProtocolHandler ["http-nio-8080"]
+2024-01-21 12:35:04,961  INFO [main] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log:173 - Initializing Spring DispatcherServlet 'Flowable Modeler App Servlet'
+2024-01-21 12:35:04,962  INFO [main] org.springframework.web.servlet.DispatcherServlet.initServletBean:525 - Initializing Servlet 'Flowable Modeler App Servlet'
+2024-01-21 12:35:05,070  INFO [main] org.springframework.web.servlet.DispatcherServlet.initServletBean:547 - Completed initialization in 108 ms
+2024-01-21 12:35:05,070  INFO [main] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log:173 - Initializing Spring DispatcherServlet 'Flowable Modeler App API Servlet'
+2024-01-21 12:35:05,070  INFO [main] org.springframework.web.servlet.DispatcherServlet.initServletBean:525 - Initializing Servlet 'Flowable Modeler App API Servlet'
+2024-01-21 12:35:05,099  INFO [main] org.springframework.web.servlet.DispatcherServlet.initServletBean:547 - Completed initialization in 29 ms
+2024-01-21 12:35:05,100  INFO [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start:220 - Tomcat started on port(s): 8080 (http) with context path ''
+2024-01-21 12:35:05,112  INFO [main] cn.gzsendi.FlowableApplicationStarter.logStarted:61 - Started FlowableApplicationStarter in 4.628 seconds (JVM running for 5.25)
+2024-01-21 12:37:55,522  INFO [http-nio-8080-exec-1] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log:173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-01-21 12:37:55,522  INFO [http-nio-8080-exec-1] org.springframework.web.servlet.DispatcherServlet.initServletBean:525 - Initializing Servlet 'dispatcherServlet'
+2024-01-21 12:37:55,523  INFO [http-nio-8080-exec-1] org.springframework.web.servlet.DispatcherServlet.initServletBean:547 - Completed initialization in 1 ms
+2024-01-21 12:40:57,557  WARN [SpringApplicationShutdownHook] org.springframework.beans.factory.support.DisposableBeanAdapter.destroy:247 - Invocation of close method failed on bean with name 'modelerLiquibase': liquibase.exception.DatabaseException: java.sql.SQLException: connection holder is null
+2024-01-21 12:40:57,581  INFO [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource.close:1825 - {dataSource-1} closed
+2024-01-21 12:42:35,745  INFO [background-preinit] org.hibernate.validator.internal.util.Version.<clinit>:21 - HV000001: Hibernate Validator 6.2.0.Final
+2024-01-21 12:42:35,748  INFO [main] cn.gzsendi.FlowableApplicationStarter.logStarting:55 - Starting FlowableApplicationStarter using Java 1.8.0_311 on qiuzhu with PID 11460 (D:\springboot\flowabletest\target\classes started by 12752 in D:\springboot\flowabletest)
+2024-01-21 12:42:35,748 DEBUG [main] cn.gzsendi.FlowableApplicationStarter.logStarting:56 - Running with Spring Boot v2.6.2, Spring v5.3.14
+2024-01-21 12:42:35,748  INFO [main] cn.gzsendi.FlowableApplicationStarter.logStartupProfileInfo:635 - No active profile set, falling back to default profiles: default
+2024-01-21 12:42:36,197  WARN [main] org.mybatis.spring.mapper.ClassPathMapperScanner.warn:44 - No MyBatis mapper was found in '[cn.gzsendi]' package. Please check your configuration.
+2024-01-21 12:42:36,384  INFO [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize:108 - Tomcat initialized with port(s): 8080 (http)
+2024-01-21 12:42:36,387  INFO [main] org.apache.coyote.http11.Http11NioProtocol.log:173 - Initializing ProtocolHandler ["http-nio-8080"]
+2024-01-21 12:42:36,387  INFO [main] org.apache.catalina.core.StandardService.log:173 - Starting service [Tomcat]
+2024-01-21 12:42:36,389  INFO [main] org.apache.catalina.core.StandardEngine.log:173 - Starting Servlet engine: [Apache Tomcat/9.0.56]
+2024-01-21 12:42:36,436  INFO [main] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log:173 - Initializing Spring embedded WebApplicationContext
+2024-01-21 12:42:36,436  INFO [main] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext:290 - Root WebApplicationContext: initialization completed in 670 ms
+2024-01-21 12:42:36,783  INFO [main] org.flowable.spring.boot.cmmn.CmmnEngineAutoConfiguration.discoverDeploymentResources:104 - No deployment resources were found for autodeployment
+2024-01-21 12:42:36,814  INFO [main] org.flowable.spring.boot.dmn.DmnEngineAutoConfiguration.discoverDeploymentResources:104 - No deployment resources were found for autodeployment
+2024-01-21 12:42:36,828  INFO [main] org.flowable.spring.boot.form.FormEngineAutoConfiguration.discoverDeploymentResources:104 - No deployment resources were found for autodeployment
+2024-01-21 12:42:36,840  INFO [main] org.flowable.spring.boot.eventregistry.EventRegistryAutoConfiguration.discoverDeploymentResources:104 - No deployment resources were found for autodeployment
+2024-01-21 12:42:36,848  INFO [main] org.flowable.spring.boot.app.AppEngineAutoConfiguration.discoverDeploymentResources:104 - No deployment resources were found for autodeployment
+2024-01-21 12:42:36,853  INFO [main] org.flowable.app.spring.SpringAppEngineConfiguration.initConfigurators:1073 - Found 7 Engine Configurators in total:
+2024-01-21 12:42:36,854  INFO [main] org.flowable.app.spring.SpringAppEngineConfiguration.initConfigurators:1075 - class org.flowable.engine.spring.configurator.SpringProcessEngineConfigurator (priority:50000)
+2024-01-21 12:42:36,854  INFO [main] org.flowable.app.spring.SpringAppEngineConfiguration.initConfigurators:1075 - class org.flowable.eventregistry.spring.configurator.SpringEventRegistryConfigurator (priority:100000)
+2024-01-21 12:42:36,854  INFO [main] org.flowable.app.spring.SpringAppEngineConfiguration.initConfigurators:1075 - class org.flowable.idm.spring.configurator.SpringIdmEngineConfigurator (priority:150000)
+2024-01-21 12:42:36,854  INFO [main] org.flowable.app.spring.SpringAppEngineConfiguration.initConfigurators:1075 - class org.flowable.dmn.spring.configurator.SpringDmnEngineConfigurator (priority:200000)
+2024-01-21 12:42:36,854  INFO [main] org.flowable.app.spring.SpringAppEngineConfiguration.initConfigurators:1075 - class org.flowable.form.spring.configurator.SpringFormEngineConfigurator (priority:300000)
+2024-01-21 12:42:36,854  INFO [main] org.flowable.app.spring.SpringAppEngineConfiguration.initConfigurators:1075 - class org.flowable.content.spring.configurator.SpringContentEngineConfigurator (priority:400000)
+2024-01-21 12:42:36,854  INFO [main] org.flowable.app.spring.SpringAppEngineConfiguration.initConfigurators:1075 - class org.flowable.cmmn.spring.configurator.SpringCmmnEngineConfigurator (priority:500000)
+2024-01-21 12:42:36,854  INFO [main] org.flowable.app.spring.SpringAppEngineConfiguration.configuratorsBeforeInit:1101 - Executing beforeInit() of class org.flowable.engine.spring.configurator.SpringProcessEngineConfigurator (priority:50000)
+2024-01-21 12:42:36,868  INFO [main] org.flowable.app.spring.SpringAppEngineConfiguration.configuratorsBeforeInit:1101 - Executing beforeInit() of class org.flowable.eventregistry.spring.configurator.SpringEventRegistryConfigurator (priority:100000)
+2024-01-21 12:42:36,870  INFO [main] org.flowable.app.spring.SpringAppEngineConfiguration.configuratorsBeforeInit:1101 - Executing beforeInit() of class org.flowable.idm.spring.configurator.SpringIdmEngineConfigurator (priority:150000)
+2024-01-21 12:42:36,871  INFO [main] org.flowable.app.spring.SpringAppEngineConfiguration.configuratorsBeforeInit:1101 - Executing beforeInit() of class org.flowable.dmn.spring.configurator.SpringDmnEngineConfigurator (priority:200000)
+2024-01-21 12:42:36,874  INFO [main] org.flowable.app.spring.SpringAppEngineConfiguration.configuratorsBeforeInit:1101 - Executing beforeInit() of class org.flowable.form.spring.configurator.SpringFormEngineConfigurator (priority:300000)
+2024-01-21 12:42:36,876  INFO [main] org.flowable.app.spring.SpringAppEngineConfiguration.configuratorsBeforeInit:1101 - Executing beforeInit() of class org.flowable.content.spring.configurator.SpringContentEngineConfigurator (priority:400000)
+2024-01-21 12:42:36,877  INFO [main] org.flowable.app.spring.SpringAppEngineConfiguration.configuratorsBeforeInit:1101 - Executing beforeInit() of class org.flowable.cmmn.spring.configurator.SpringCmmnEngineConfigurator (priority:500000)
+2024-01-21 12:42:36,902  INFO [main] com.alibaba.druid.pool.DruidDataSource.init:930 - {dataSource-1} inited
+2024-01-21 12:42:37,475  INFO [main] org.flowable.app.spring.SpringAppEngineConfiguration.configuratorsAfterInit:1108 - Executing configure() of class org.flowable.engine.spring.configurator.SpringProcessEngineConfigurator (priority:50000)
+2024-01-21 12:42:37,576  INFO [main] org.flowable.engine.impl.ProcessEngineImpl.<init>:89 - ProcessEngine default created
+2024-01-21 12:42:37,591  INFO [main] org.flowable.engine.impl.cmd.ValidateV5EntitiesCmd.execute:43 - Total of v5 deployments found: 0
+2024-01-21 12:42:37,594  INFO [main] org.flowable.app.spring.SpringAppEngineConfiguration.configuratorsAfterInit:1108 - Executing configure() of class org.flowable.eventregistry.spring.configurator.SpringEventRegistryConfigurator (priority:100000)
+2024-01-21 12:42:37,764  INFO [main] liquibase.lockservice.log:26 - Successfully acquired change log lock
+2024-01-21 12:42:38,130  INFO [main] liquibase.changelog.log:26 - Reading from flowabletest.FLW_EV_DATABASECHANGELOG
+2024-01-21 12:42:38,151  INFO [main] liquibase.lockservice.log:26 - Successfully released change log lock
+2024-01-21 12:42:38,151  INFO [main] org.flowable.eventregistry.impl.EventRegistryEngineImpl.<init>:53 - EventRegistryEngine default created
+2024-01-21 12:42:38,152  INFO [main] org.flowable.app.spring.SpringAppEngineConfiguration.configuratorsAfterInit:1108 - Executing configure() of class org.flowable.idm.spring.configurator.SpringIdmEngineConfigurator (priority:150000)
+2024-01-21 12:42:38,158  INFO [main] org.flowable.idm.engine.impl.IdmEngineImpl.<init>:52 - IdmEngine default created
+2024-01-21 12:42:38,158  INFO [main] org.flowable.app.spring.SpringAppEngineConfiguration.configuratorsAfterInit:1108 - Executing configure() of class org.flowable.dmn.spring.configurator.SpringDmnEngineConfigurator (priority:200000)
+2024-01-21 12:42:38,170  INFO [main] liquibase.lockservice.log:26 - Successfully acquired change log lock
+2024-01-21 12:42:38,333  INFO [main] liquibase.changelog.log:26 - Reading from flowabletest.ACT_DMN_DATABASECHANGELOG
+2024-01-21 12:42:38,344  INFO [main] liquibase.lockservice.log:26 - Successfully released change log lock
+2024-01-21 12:42:38,344  INFO [main] org.flowable.dmn.engine.impl.DmnEngineImpl.<init>:55 - DmnEngine default created
+2024-01-21 12:42:38,345  INFO [main] org.flowable.app.spring.SpringAppEngineConfiguration.configuratorsAfterInit:1108 - Executing configure() of class org.flowable.form.spring.configurator.SpringFormEngineConfigurator (priority:300000)
+2024-01-21 12:42:38,355  INFO [main] liquibase.lockservice.log:26 - Successfully acquired change log lock
+2024-01-21 12:42:38,496  INFO [main] liquibase.changelog.log:26 - Reading from flowabletest.ACT_FO_DATABASECHANGELOG
+2024-01-21 12:42:38,499  INFO [main] liquibase.lockservice.log:26 - Successfully released change log lock
+2024-01-21 12:42:38,500  INFO [main] org.flowable.form.engine.impl.FormEngineImpl.<init>:52 - FormEngine default created
+2024-01-21 12:42:38,500  INFO [main] org.flowable.app.spring.SpringAppEngineConfiguration.configuratorsAfterInit:1108 - Executing configure() of class org.flowable.content.spring.configurator.SpringContentEngineConfigurator (priority:400000)
+2024-01-21 12:42:38,501  INFO [main] org.flowable.content.spring.SpringContentEngineConfiguration.initContentStorage:196 - Content file system root : C:\Users\12752\content
+2024-01-21 12:42:38,628  INFO [main] liquibase.lockservice.log:26 - Successfully acquired change log lock
+2024-01-21 12:42:38,761  INFO [main] liquibase.changelog.log:26 - Reading from flowabletest.ACT_CO_DATABASECHANGELOG
+2024-01-21 12:42:38,765  INFO [main] liquibase.lockservice.log:26 - Successfully released change log lock
+2024-01-21 12:42:38,766  INFO [main] org.flowable.content.engine.impl.ContentEngineImpl.<init>:48 - ContentEngine default created
+2024-01-21 12:42:38,766  INFO [main] org.flowable.app.spring.SpringAppEngineConfiguration.configuratorsAfterInit:1108 - Executing configure() of class org.flowable.cmmn.spring.configurator.SpringCmmnEngineConfigurator (priority:500000)
+2024-01-21 12:42:38,805  INFO [main] liquibase.lockservice.log:26 - Successfully acquired change log lock
+2024-01-21 12:42:38,947  INFO [main] liquibase.changelog.log:26 - Reading from flowabletest.ACT_CMMN_DATABASECHANGELOG
+2024-01-21 12:42:38,957  INFO [main] liquibase.lockservice.log:26 - Successfully released change log lock
+2024-01-21 12:42:38,958  INFO [main] org.flowable.cmmn.engine.impl.CmmnEngineImpl.<init>:72 - CmmnEngine default created
+2024-01-21 12:42:38,965  INFO [main] liquibase.lockservice.log:26 - Successfully acquired change log lock
+2024-01-21 12:42:39,096  INFO [main] liquibase.changelog.log:26 - Reading from flowabletest.ACT_APP_DATABASECHANGELOG
+2024-01-21 12:42:39,099  INFO [main] liquibase.lockservice.log:26 - Successfully released change log lock
+2024-01-21 12:42:39,100  INFO [main] org.flowable.app.engine.impl.AppEngineImpl.<init>:48 - AppEngine default created
+2024-01-21 12:42:39,112  INFO [main] org.flowable.ui.modeler.conf.ModelerDatabaseConfiguration.initDatabaseType:176 - database product name: 'MySQL'
+2024-01-21 12:42:39,112  INFO [main] org.flowable.ui.modeler.conf.ModelerDatabaseConfiguration.initDatabaseType:181 - using database type: mysql
+2024-01-21 12:42:39,638  INFO [main] org.flowable.ui.common.security.CustomPersistentRememberMeServices.<init>:79 - Cookie max-age set to 2678400 seconds
+2024-01-21 12:42:39,638  INFO [main] org.flowable.ui.common.security.CustomPersistentRememberMeServices.<init>:89 - Cookie refresh age set to 86400 seconds
+2024-01-21 12:42:39,709  INFO [main] org.springframework.security.web.DefaultSecurityFilterChain.<init>:51 - Will secure Ant [pattern='/api/editor/**'] with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@201a8ea7, org.springframework.security.web.context.SecurityContextPersistenceFilter@49b9ba6a, org.springframework.security.web.header.HeaderWriterFilter@410f53b2, org.springframework.security.web.authentication.logout.LogoutFilter@7323dce7, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@24f90aff, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@30e143ff, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@41bdaa81, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@ecf028c, org.springframework.security.web.session.SessionManagementFilter@7507d96c, org.springframework.security.web.access.ExceptionTranslationFilter@6d80e411, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@63f3366a]
+2024-01-21 12:42:39,711  INFO [main] org.springframework.security.web.DefaultSecurityFilterChain.<init>:51 - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6c1bebca, org.springframework.security.web.context.SecurityContextPersistenceFilter@620572db, org.springframework.security.web.header.HeaderWriterFilter@7cecab19, org.springframework.security.web.authentication.logout.LogoutFilter@1a02ebe0, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1d5048d1, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@47d9c01, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3d4818e8, org.springframework.security.web.session.SessionManagementFilter@56402642, org.springframework.security.web.access.ExceptionTranslationFilter@1a4cbcc6, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@35d88a54]
+2024-01-21 12:42:39,714  INFO [main] org.springframework.security.web.DefaultSecurityFilterChain.<init>:51 - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@26a9c6df, org.springframework.security.web.context.SecurityContextPersistenceFilter@2e0163cb, org.springframework.security.web.header.HeaderWriterFilter@3275a47f, org.springframework.security.web.authentication.logout.LogoutFilter@1d7f7962, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@2567c091, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6b289535, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@74619273, org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter@32d1d6c5, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2ce24a1a, org.springframework.security.web.session.SessionManagementFilter@1b5af65b, org.springframework.security.web.access.ExceptionTranslationFilter@11170228, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@775edae0]
+2024-01-21 12:42:39,718  INFO [main] org.flowable.ui.modeler.conf.ModelerDatabaseConfiguration.modelerLiquibase:141 - Configuring Liquibase
+2024-01-21 12:42:39,724  INFO [main] liquibase.lockservice.log:26 - Successfully acquired change log lock
+2024-01-21 12:42:39,859  INFO [main] liquibase.changelog.log:26 - Reading from flowabletest.ACT_DE_DATABASECHANGELOG
+2024-01-21 12:42:39,864  INFO [main] liquibase.lockservice.log:26 - Successfully released change log lock
+2024-01-21 12:42:39,981  INFO [main] org.flowable.spring.configurator.DefaultAutoDeploymentStrategy.deployResources:92 - Deploying resources [file [D:\springboot\flowabletest\target\classes\processes\ExpenseProcess.bpmn20.xml]] for engine org.flowable.engine.impl.ProcessEngineImpl@437c1a87 deployment name hint SpringBootAutoDeployment
+2024-01-21 12:42:39,986  INFO [main] org.apache.coyote.http11.Http11NioProtocol.log:173 - Starting ProtocolHandler ["http-nio-8080"]
+2024-01-21 12:42:39,996  INFO [main] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log:173 - Initializing Spring DispatcherServlet 'Flowable Modeler App Servlet'
+2024-01-21 12:42:39,996  INFO [main] org.springframework.web.servlet.DispatcherServlet.initServletBean:525 - Initializing Servlet 'Flowable Modeler App Servlet'
+2024-01-21 12:42:40,093  INFO [main] org.springframework.web.servlet.DispatcherServlet.initServletBean:547 - Completed initialization in 97 ms
+2024-01-21 12:42:40,094  INFO [main] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log:173 - Initializing Spring DispatcherServlet 'Flowable Modeler App API Servlet'
+2024-01-21 12:42:40,094  INFO [main] org.springframework.web.servlet.DispatcherServlet.initServletBean:525 - Initializing Servlet 'Flowable Modeler App API Servlet'
+2024-01-21 12:42:40,125  INFO [main] org.springframework.web.servlet.DispatcherServlet.initServletBean:547 - Completed initialization in 31 ms
+2024-01-21 12:42:40,126  INFO [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start:220 - Tomcat started on port(s): 8080 (http) with context path ''
+2024-01-21 12:42:40,136  INFO [main] cn.gzsendi.FlowableApplicationStarter.logStarted:61 - Started FlowableApplicationStarter in 4.571 seconds (JVM running for 5.086)
+2024-01-21 12:43:08,090  INFO [http-nio-8080-exec-1] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log:173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-01-21 12:43:08,090  INFO [http-nio-8080-exec-1] org.springframework.web.servlet.DispatcherServlet.initServletBean:525 - Initializing Servlet 'dispatcherServlet'
+2024-01-21 12:43:08,091  INFO [http-nio-8080-exec-1] org.springframework.web.servlet.DispatcherServlet.initServletBean:547 - Completed initialization in 1 ms
+2024-01-21 12:59:16,854  WARN [SpringApplicationShutdownHook] org.springframework.beans.factory.support.DisposableBeanAdapter.destroy:247 - Invocation of close method failed on bean with name 'modelerLiquibase': liquibase.exception.DatabaseException: java.sql.SQLException: connection holder is null
+2024-01-21 12:59:16,862  INFO [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource.close:1825 - {dataSource-1} closed
+2024-01-21 12:59:26,462  INFO [main] cn.gzsendi.FlowableApplicationStarter.logStarting:55 - Starting FlowableApplicationStarter using Java 1.8.0_311 on qiuzhu with PID 10352 (D:\springboot\flowabletest\target\classes started by 12752 in D:\springboot\flowabletest)
+2024-01-21 12:59:26,461  INFO [background-preinit] org.hibernate.validator.internal.util.Version.<clinit>:21 - HV000001: Hibernate Validator 6.2.0.Final
+2024-01-21 12:59:26,462 DEBUG [main] cn.gzsendi.FlowableApplicationStarter.logStarting:56 - Running with Spring Boot v2.6.2, Spring v5.3.14
+2024-01-21 12:59:26,462  INFO [main] cn.gzsendi.FlowableApplicationStarter.logStartupProfileInfo:635 - No active profile set, falling back to default profiles: default
+2024-01-21 12:59:27,099  INFO [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize:108 - Tomcat initialized with port(s): 8080 (http)
+2024-01-21 12:59:27,103  INFO [main] org.apache.coyote.http11.Http11NioProtocol.log:173 - Initializing ProtocolHandler ["http-nio-8080"]
+2024-01-21 12:59:27,104  INFO [main] org.apache.catalina.core.StandardService.log:173 - Starting service [Tomcat]
+2024-01-21 12:59:27,104  INFO [main] org.apache.catalina.core.StandardEngine.log:173 - Starting Servlet engine: [Apache Tomcat/9.0.56]
+2024-01-21 12:59:27,199  INFO [main] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/flowabletest].log:173 - Initializing Spring embedded WebApplicationContext
+2024-01-21 12:59:27,199  INFO [main] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext:290 - Root WebApplicationContext: initialization completed in 719 ms
+2024-01-21 12:59:27,484  INFO [main] org.flowable.spring.boot.cmmn.CmmnEngineAutoConfiguration.discoverDeploymentResources:104 - No deployment resources were found for autodeployment
+2024-01-21 12:59:27,513  INFO [main] org.flowable.spring.boot.dmn.DmnEngineAutoConfiguration.discoverDeploymentResources:104 - No deployment resources were found for autodeployment
+2024-01-21 12:59:27,526  INFO [main] org.flowable.spring.boot.form.FormEngineAutoConfiguration.discoverDeploymentResources:104 - No deployment resources were found for autodeployment
+2024-01-21 12:59:27,538  INFO [main] org.flowable.spring.boot.eventregistry.EventRegistryAutoConfiguration.discoverDeploymentResources:104 - No deployment resources were found for autodeployment
+2024-01-21 12:59:27,547  INFO [main] org.flowable.spring.boot.app.AppEngineAutoConfiguration.discoverDeploymentResources:104 - No deployment resources were found for autodeployment
+2024-01-21 12:59:27,552  INFO [main] org.flowable.app.spring.SpringAppEngineConfiguration.initConfigurators:1073 - Found 7 Engine Configurators in total:
+2024-01-21 12:59:27,552  INFO [main] org.flowable.app.spring.SpringAppEngineConfiguration.initConfigurators:1075 - class org.flowable.engine.spring.configurator.SpringProcessEngineConfigurator (priority:50000)
+2024-01-21 12:59:27,552  INFO [main] org.flowable.app.spring.SpringAppEngineConfiguration.initConfigurators:1075 - class org.flowable.eventregistry.spring.configurator.SpringEventRegistryConfigurator (priority:100000)
+2024-01-21 12:59:27,552  INFO [main] org.flowable.app.spring.SpringAppEngineConfiguration.initConfigurators:1075 - class org.flowable.idm.spring.configurator.SpringIdmEngineConfigurator (priority:150000)
+2024-01-21 12:59:27,552  INFO [main] org.flowable.app.spring.SpringAppEngineConfiguration.initConfigurators:1075 - class org.flowable.dmn.spring.configurator.SpringDmnEngineConfigurator (priority:200000)
+2024-01-21 12:59:27,552  INFO [main] org.flowable.app.spring.SpringAppEngineConfiguration.initConfigurators:1075 - class org.flowable.form.spring.configurator.SpringFormEngineConfigurator (priority:300000)
+2024-01-21 12:59:27,552  INFO [main] org.flowable.app.spring.SpringAppEngineConfiguration.initConfigurators:1075 - class org.flowable.content.spring.configurator.SpringContentEngineConfigurator (priority:400000)
+2024-01-21 12:59:27,552  INFO [main] org.flowable.app.spring.SpringAppEngineConfiguration.initConfigurators:1075 - class org.flowable.cmmn.spring.configurator.SpringCmmnEngineConfigurator (priority:500000)
+2024-01-21 12:59:27,552  INFO [main] org.flowable.app.spring.SpringAppEngineConfiguration.configuratorsBeforeInit:1101 - Executing beforeInit() of class org.flowable.engine.spring.configurator.SpringProcessEngineConfigurator (priority:50000)
+2024-01-21 12:59:27,565  INFO [main] org.flowable.app.spring.SpringAppEngineConfiguration.configuratorsBeforeInit:1101 - Executing beforeInit() of class org.flowable.eventregistry.spring.configurator.SpringEventRegistryConfigurator (priority:100000)
+2024-01-21 12:59:27,567  INFO [main] org.flowable.app.spring.SpringAppEngineConfiguration.configuratorsBeforeInit:1101 - Executing beforeInit() of class org.flowable.idm.spring.configurator.SpringIdmEngineConfigurator (priority:150000)
+2024-01-21 12:59:27,569  INFO [main] org.flowable.app.spring.SpringAppEngineConfiguration.configuratorsBeforeInit:1101 - Executing beforeInit() of class org.flowable.dmn.spring.configurator.SpringDmnEngineConfigurator (priority:200000)
+2024-01-21 12:59:27,570  INFO [main] org.flowable.app.spring.SpringAppEngineConfiguration.configuratorsBeforeInit:1101 - Executing beforeInit() of class org.flowable.form.spring.configurator.SpringFormEngineConfigurator (priority:300000)
+2024-01-21 12:59:27,573  INFO [main] org.flowable.app.spring.SpringAppEngineConfiguration.configuratorsBeforeInit:1101 - Executing beforeInit() of class org.flowable.content.spring.configurator.SpringContentEngineConfigurator (priority:400000)
+2024-01-21 12:59:27,574  INFO [main] org.flowable.app.spring.SpringAppEngineConfiguration.configuratorsBeforeInit:1101 - Executing beforeInit() of class org.flowable.cmmn.spring.configurator.SpringCmmnEngineConfigurator (priority:500000)
+2024-01-21 12:59:27,672  INFO [main] com.alibaba.druid.pool.DruidDataSource.init:930 - {dataSource-1} inited
+2024-01-21 12:59:28,176  INFO [main] org.flowable.app.spring.SpringAppEngineConfiguration.configuratorsAfterInit:1108 - Executing configure() of class org.flowable.engine.spring.configurator.SpringProcessEngineConfigurator (priority:50000)
+2024-01-21 12:59:28,291  INFO [main] org.flowable.engine.impl.ProcessEngineImpl.<init>:89 - ProcessEngine default created
+2024-01-21 12:59:28,309  INFO [main] org.flowable.engine.impl.cmd.ValidateV5EntitiesCmd.execute:43 - Total of v5 deployments found: 0
+2024-01-21 12:59:28,313  INFO [main] org.flowable.app.spring.SpringAppEngineConfiguration.configuratorsAfterInit:1108 - Executing configure() of class org.flowable.eventregistry.spring.configurator.SpringEventRegistryConfigurator (priority:100000)
+2024-01-21 12:59:28,929  INFO [main] liquibase.changelog.log:26 - Reading from flowabletest.FLW_EV_DATABASECHANGELOG
+2024-01-21 12:59:29,091  INFO [main] org.flowable.eventregistry.impl.EventRegistryEngineImpl.<init>:53 - EventRegistryEngine default created
+2024-01-21 12:59:29,091  INFO [main] org.flowable.app.spring.SpringAppEngineConfiguration.configuratorsAfterInit:1108 - Executing configure() of class org.flowable.idm.spring.configurator.SpringIdmEngineConfigurator (priority:150000)
+2024-01-21 12:59:29,098  INFO [main] org.flowable.idm.engine.impl.IdmEngineImpl.<init>:52 - IdmEngine default created
+2024-01-21 12:59:29,098  INFO [main] org.flowable.app.spring.SpringAppEngineConfiguration.configuratorsAfterInit:1108 - Executing configure() of class org.flowable.dmn.spring.configurator.SpringDmnEngineConfigurator (priority:200000)
+2024-01-21 12:59:29,234  INFO [main] liquibase.changelog.log:26 - Reading from flowabletest.ACT_DMN_DATABASECHANGELOG
+2024-01-21 12:59:29,240  INFO [main] org.flowable.dmn.engine.impl.DmnEngineImpl.<init>:55 - DmnEngine default created
+2024-01-21 12:59:29,241  INFO [main] org.flowable.app.spring.SpringAppEngineConfiguration.configuratorsAfterInit:1108 - Executing configure() of class org.flowable.form.spring.configurator.SpringFormEngineConfigurator (priority:300000)
+2024-01-21 12:59:29,368  INFO [main] liquibase.changelog.log:26 - Reading from flowabletest.ACT_FO_DATABASECHANGELOG
+2024-01-21 12:59:29,371  INFO [main] org.flowable.form.engine.impl.FormEngineImpl.<init>:52 - FormEngine default created
+2024-01-21 12:59:29,371  INFO [main] org.flowable.app.spring.SpringAppEngineConfiguration.configuratorsAfterInit:1108 - Executing configure() of class org.flowable.content.spring.configurator.SpringContentEngineConfigurator (priority:400000)
+2024-01-21 12:59:29,373  INFO [main] org.flowable.content.spring.SpringContentEngineConfiguration.initContentStorage:196 - Content file system root : C:\Users\12752\content
+2024-01-21 12:59:29,618  INFO [main] liquibase.changelog.log:26 - Reading from flowabletest.ACT_CO_DATABASECHANGELOG
+2024-01-21 12:59:29,620  INFO [main] org.flowable.content.engine.impl.ContentEngineImpl.<init>:48 - ContentEngine default created
+2024-01-21 12:59:29,622  INFO [main] org.flowable.app.spring.SpringAppEngineConfiguration.configuratorsAfterInit:1108 - Executing configure() of class org.flowable.cmmn.spring.configurator.SpringCmmnEngineConfigurator (priority:500000)
+2024-01-21 12:59:29,776  INFO [main] liquibase.changelog.log:26 - Reading from flowabletest.ACT_CMMN_DATABASECHANGELOG
+2024-01-21 12:59:29,787  INFO [main] org.flowable.cmmn.engine.impl.CmmnEngineImpl.<init>:72 - CmmnEngine default created
+2024-01-21 12:59:29,915  INFO [main] liquibase.changelog.log:26 - Reading from flowabletest.ACT_APP_DATABASECHANGELOG
+2024-01-21 12:59:29,917  INFO [main] org.flowable.app.engine.impl.AppEngineImpl.<init>:48 - AppEngine default created
+2024-01-21 12:59:29,982  INFO [main] org.flowable.ui.modeler.conf.ModelerDatabaseConfiguration.initDatabaseType:176 - database product name: 'MySQL'
+2024-01-21 12:59:29,982  INFO [main] org.flowable.ui.modeler.conf.ModelerDatabaseConfiguration.initDatabaseType:181 - using database type: mysql
+2024-01-21 12:59:30,251  INFO [main] org.flowable.ui.common.security.CustomPersistentRememberMeServices.<init>:79 - Cookie max-age set to 2678400 seconds
+2024-01-21 12:59:30,251  INFO [main] org.flowable.ui.common.security.CustomPersistentRememberMeServices.<init>:89 - Cookie refresh age set to 86400 seconds
+2024-01-21 12:59:30,322  INFO [main] org.springframework.security.web.DefaultSecurityFilterChain.<init>:51 - Will secure Ant [pattern='/api/editor/**'] with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@41ec4271, org.springframework.security.web.context.SecurityContextPersistenceFilter@32caae19, org.springframework.security.web.header.HeaderWriterFilter@6b86826a, org.springframework.security.web.authentication.logout.LogoutFilter@3be46d9c, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@26679788, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2bc59ab7, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7be62956, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@70aa58e1, org.springframework.security.web.session.SessionManagementFilter@4b9fa2f, org.springframework.security.web.access.ExceptionTranslationFilter@4c8abec7, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3684d2c0]
+2024-01-21 12:59:30,324  INFO [main] org.springframework.security.web.DefaultSecurityFilterChain.<init>:51 - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1a02ebe0, org.springframework.security.web.context.SecurityContextPersistenceFilter@6c36051c, org.springframework.security.web.header.HeaderWriterFilter@6ef4297d, org.springframework.security.web.authentication.logout.LogoutFilter@1a4cbcc6, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@45d46254, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@a240452, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@58b3eb1, org.springframework.security.web.session.SessionManagementFilter@4c000cc4, org.springframework.security.web.access.ExceptionTranslationFilter@2b80497f, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@5358c8fa]
+2024-01-21 12:59:30,327  INFO [main] org.springframework.security.web.DefaultSecurityFilterChain.<init>:51 - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@775edae0, org.springframework.security.web.context.SecurityContextPersistenceFilter@4d4c4b14, org.springframework.security.web.header.HeaderWriterFilter@7c048b30, org.springframework.security.web.authentication.logout.LogoutFilter@69d58731, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@4a41caed, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@49925d21, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@11170228, org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter@3275a47f, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@26f480c6, org.springframework.security.web.session.SessionManagementFilter@309cf657, org.springframework.security.web.access.ExceptionTranslationFilter@59a2bed1, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@70805849]
+2024-01-21 12:59:30,332  INFO [main] org.flowable.ui.modeler.conf.ModelerDatabaseConfiguration.modelerLiquibase:141 - Configuring Liquibase
+2024-01-21 12:59:30,350  INFO [main] liquibase.lockservice.log:26 - Successfully acquired change log lock
+2024-01-21 12:59:30,504  INFO [main] liquibase.changelog.log:26 - Reading from flowabletest.ACT_DE_DATABASECHANGELOG
+2024-01-21 12:59:30,519  INFO [main] liquibase.lockservice.log:26 - Successfully released change log lock
+2024-01-21 12:59:30,628  INFO [main] org.flowable.spring.configurator.DefaultAutoDeploymentStrategy.deployResources:92 - Deploying resources [file [D:\springboot\flowabletest\target\classes\processes\ExpenseProcess.bpmn20.xml]] for engine org.flowable.engine.impl.ProcessEngineImpl@52d9f36b deployment name hint SpringBootAutoDeployment
+2024-01-21 12:59:30,838  INFO [main] org.apache.coyote.http11.Http11NioProtocol.log:173 - Starting ProtocolHandler ["http-nio-8080"]
+2024-01-21 12:59:30,850  INFO [main] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/flowabletest].log:173 - Initializing Spring DispatcherServlet 'Flowable Modeler App Servlet'
+2024-01-21 12:59:30,850  INFO [main] org.springframework.web.servlet.DispatcherServlet.initServletBean:525 - Initializing Servlet 'Flowable Modeler App Servlet'
+2024-01-21 12:59:31,028  INFO [main] org.springframework.web.servlet.DispatcherServlet.initServletBean:547 - Completed initialization in 178 ms
+2024-01-21 12:59:31,028  INFO [main] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/flowabletest].log:173 - Initializing Spring DispatcherServlet 'Flowable Modeler App API Servlet'
+2024-01-21 12:59:31,028  INFO [main] org.springframework.web.servlet.DispatcherServlet.initServletBean:525 - Initializing Servlet 'Flowable Modeler App API Servlet'
+2024-01-21 12:59:31,062  INFO [main] org.springframework.web.servlet.DispatcherServlet.initServletBean:547 - Completed initialization in 33 ms
+2024-01-21 12:59:31,063  INFO [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start:220 - Tomcat started on port(s): 8080 (http) with context path '/flowabletest'
+2024-01-21 12:59:31,074  INFO [main] cn.gzsendi.FlowableApplicationStarter.logStarted:61 - Started FlowableApplicationStarter in 4.784 seconds (JVM running for 5.32)
+2024-01-21 13:00:40,574  INFO [http-nio-8080-exec-1] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/flowabletest].log:173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-01-21 13:00:40,574  INFO [http-nio-8080-exec-1] org.springframework.web.servlet.DispatcherServlet.initServletBean:525 - Initializing Servlet 'dispatcherServlet'
+2024-01-21 13:00:40,584  INFO [http-nio-8080-exec-1] org.springframework.web.servlet.DispatcherServlet.initServletBean:547 - Completed initialization in 10 ms
+2024-01-21 13:01:07,182 DEBUG [http-nio-8080-exec-8] cn.gzsendi.flowable.mapper.WorkFlowDefMapper.list.debug:137 - ==>  Preparing: select id, order_type, order_name, order_id_prex, remark, create_time, update_time from work_flow_def
+2024-01-21 13:01:07,182 DEBUG [http-nio-8080-exec-8] cn.gzsendi.flowable.mapper.WorkFlowDefMapper.list.debug:137 - ==> Parameters: 
+2024-01-21 13:01:07,193 DEBUG [http-nio-8080-exec-8] cn.gzsendi.flowable.mapper.WorkFlowDefMapper.list.debug:137 - <==      Total: 2
+2024-01-21 13:01:07,201 DEBUG [http-nio-8080-exec-7] cn.gzsendi.flowable.mapper.WorkOrderMapper.listMyApply.debug:137 - ==>  Preparing: select t1.* from work_order t1 where t1.`applicant` = ? order by t1.application_time desc
+2024-01-21 13:01:07,201 DEBUG [http-nio-8080-exec-7] cn.gzsendi.flowable.mapper.WorkOrderMapper.listMyApply.debug:137 - ==> Parameters: lix(String)
+2024-01-21 13:01:07,203 DEBUG [http-nio-8080-exec-7] cn.gzsendi.flowable.mapper.WorkOrderMapper.listMyApply.debug:137 - <==      Total: 4
+2024-01-21 13:01:07,203 DEBUG [http-nio-8080-exec-10] cn.gzsendi.flowable.mapper.WorkOrderMapper.listMyDeal.debug:137 - ==>  Preparing: select t1.* from work_order t1 where t1.`handler` = ? order by t1.application_time desc
+2024-01-21 13:01:07,204 DEBUG [http-nio-8080-exec-10] cn.gzsendi.flowable.mapper.WorkOrderMapper.listMyDeal.debug:137 - ==> Parameters: lix(String)
+2024-01-21 13:01:07,204 DEBUG [http-nio-8080-exec-4] cn.gzsendi.flowable.mapper.WorkOrderMapper.listMyExamAndApprove.debug:137 - ==>  Preparing: select wo.* from work_order wo LEFT JOIN `act_hi_procinst` p ON p.`BUSINESS_KEY_` = wo.`order_id` LEFT JOIN `act_hi_comment` c ON c.`PROC_INST_ID_` = p.`PROC_INST_ID_` where c.`USER_ID_` = ? and wo.handler != ? GROUP BY wo.order_id, wo.order_type, wo.applicant, wo.application_time, wo.order_status, wo.reason, wo.handler order by wo.application_time desc
+2024-01-21 13:01:07,205 DEBUG [http-nio-8080-exec-10] cn.gzsendi.flowable.mapper.WorkOrderMapper.listMyDeal.debug:137 - <==      Total: 0
+2024-01-21 13:01:07,205 DEBUG [http-nio-8080-exec-4] cn.gzsendi.flowable.mapper.WorkOrderMapper.listMyExamAndApprove.debug:137 - ==> Parameters: lix(String), lix(String)
+2024-01-21 13:01:07,208 DEBUG [http-nio-8080-exec-4] cn.gzsendi.flowable.mapper.WorkOrderMapper.listMyExamAndApprove.debug:137 - <==      Total: 4
+2024-01-21 13:07:03,412  WARN [SpringApplicationShutdownHook] org.springframework.beans.factory.support.DisposableBeanAdapter.destroy:247 - Invocation of close method failed on bean with name 'modelerLiquibase': liquibase.exception.DatabaseException: java.sql.SQLException: connection holder is null
+2024-01-21 13:07:03,420  INFO [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource.close:1825 - {dataSource-1} closed
