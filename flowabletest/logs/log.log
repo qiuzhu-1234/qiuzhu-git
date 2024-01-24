@@ -5053,3 +5053,880 @@ Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown da
 2024-01-22 21:25:41,967 DEBUG [http-nio-8080-exec-6] cn.gzsendi.flowable.mapper.WorkOrderMapper.listMyExamAndApprove.debug:137 - <==      Total: 4
 2024-01-22 21:26:13,767  WARN [SpringApplicationShutdownHook] org.springframework.beans.factory.support.DisposableBeanAdapter.destroy:247 - Invocation of close method failed on bean with name 'modelerLiquibase': liquibase.exception.DatabaseException: java.sql.SQLException: connection holder is null
 2024-01-22 21:26:13,775  INFO [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource.close:1825 - {dataSource-1} closed
+2024-01-24 00:19:14,540  INFO [main] cn.gzsendi.FlowableApplicationStarter.logStarting:55 - Starting FlowableApplicationStarter using Java 1.8.0_311 on qiuzhu with PID 6452 (D:\springboot\flowabletest\target\classes started by 12752 in D:\springboot\flowabletest)
+2024-01-24 00:19:14,540  INFO [background-preinit] org.hibernate.validator.internal.util.Version.<clinit>:21 - HV000001: Hibernate Validator 6.2.0.Final
+2024-01-24 00:19:14,541 DEBUG [main] cn.gzsendi.FlowableApplicationStarter.logStarting:56 - Running with Spring Boot v2.6.2, Spring v5.3.14
+2024-01-24 00:19:14,541  INFO [main] cn.gzsendi.FlowableApplicationStarter.logStartupProfileInfo:635 - No active profile set, falling back to default profiles: default
+2024-01-24 00:19:15,206  INFO [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize:108 - Tomcat initialized with port(s): 8080 (http)
+2024-01-24 00:19:15,211  INFO [main] org.apache.coyote.http11.Http11NioProtocol.log:173 - Initializing ProtocolHandler ["http-nio-8080"]
+2024-01-24 00:19:15,211  INFO [main] org.apache.catalina.core.StandardService.log:173 - Starting service [Tomcat]
+2024-01-24 00:19:15,211  INFO [main] org.apache.catalina.core.StandardEngine.log:173 - Starting Servlet engine: [Apache Tomcat/9.0.56]
+2024-01-24 00:19:15,320  INFO [main] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/bpm].log:173 - Initializing Spring embedded WebApplicationContext
+2024-01-24 00:19:15,320  INFO [main] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext:290 - Root WebApplicationContext: initialization completed in 759 ms
+2024-01-24 00:19:15,616  INFO [main] org.flowable.spring.boot.cmmn.CmmnEngineAutoConfiguration.discoverDeploymentResources:104 - No deployment resources were found for autodeployment
+2024-01-24 00:19:15,645  INFO [main] org.flowable.spring.boot.dmn.DmnEngineAutoConfiguration.discoverDeploymentResources:104 - No deployment resources were found for autodeployment
+2024-01-24 00:19:15,659  INFO [main] org.flowable.spring.boot.form.FormEngineAutoConfiguration.discoverDeploymentResources:104 - No deployment resources were found for autodeployment
+2024-01-24 00:19:15,671  INFO [main] org.flowable.spring.boot.eventregistry.EventRegistryAutoConfiguration.discoverDeploymentResources:104 - No deployment resources were found for autodeployment
+2024-01-24 00:19:15,680  INFO [main] org.flowable.spring.boot.app.AppEngineAutoConfiguration.discoverDeploymentResources:104 - No deployment resources were found for autodeployment
+2024-01-24 00:19:15,684  INFO [main] org.flowable.app.spring.SpringAppEngineConfiguration.initConfigurators:1073 - Found 7 Engine Configurators in total:
+2024-01-24 00:19:15,684  INFO [main] org.flowable.app.spring.SpringAppEngineConfiguration.initConfigurators:1075 - class org.flowable.engine.spring.configurator.SpringProcessEngineConfigurator (priority:50000)
+2024-01-24 00:19:15,684  INFO [main] org.flowable.app.spring.SpringAppEngineConfiguration.initConfigurators:1075 - class org.flowable.eventregistry.spring.configurator.SpringEventRegistryConfigurator (priority:100000)
+2024-01-24 00:19:15,684  INFO [main] org.flowable.app.spring.SpringAppEngineConfiguration.initConfigurators:1075 - class org.flowable.idm.spring.configurator.SpringIdmEngineConfigurator (priority:150000)
+2024-01-24 00:19:15,684  INFO [main] org.flowable.app.spring.SpringAppEngineConfiguration.initConfigurators:1075 - class org.flowable.dmn.spring.configurator.SpringDmnEngineConfigurator (priority:200000)
+2024-01-24 00:19:15,685  INFO [main] org.flowable.app.spring.SpringAppEngineConfiguration.initConfigurators:1075 - class org.flowable.form.spring.configurator.SpringFormEngineConfigurator (priority:300000)
+2024-01-24 00:19:15,685  INFO [main] org.flowable.app.spring.SpringAppEngineConfiguration.initConfigurators:1075 - class org.flowable.content.spring.configurator.SpringContentEngineConfigurator (priority:400000)
+2024-01-24 00:19:15,685  INFO [main] org.flowable.app.spring.SpringAppEngineConfiguration.initConfigurators:1075 - class org.flowable.cmmn.spring.configurator.SpringCmmnEngineConfigurator (priority:500000)
+2024-01-24 00:19:15,685  INFO [main] org.flowable.app.spring.SpringAppEngineConfiguration.configuratorsBeforeInit:1101 - Executing beforeInit() of class org.flowable.engine.spring.configurator.SpringProcessEngineConfigurator (priority:50000)
+2024-01-24 00:19:15,699  INFO [main] org.flowable.app.spring.SpringAppEngineConfiguration.configuratorsBeforeInit:1101 - Executing beforeInit() of class org.flowable.eventregistry.spring.configurator.SpringEventRegistryConfigurator (priority:100000)
+2024-01-24 00:19:15,701  INFO [main] org.flowable.app.spring.SpringAppEngineConfiguration.configuratorsBeforeInit:1101 - Executing beforeInit() of class org.flowable.idm.spring.configurator.SpringIdmEngineConfigurator (priority:150000)
+2024-01-24 00:19:15,702  INFO [main] org.flowable.app.spring.SpringAppEngineConfiguration.configuratorsBeforeInit:1101 - Executing beforeInit() of class org.flowable.dmn.spring.configurator.SpringDmnEngineConfigurator (priority:200000)
+2024-01-24 00:19:15,705  INFO [main] org.flowable.app.spring.SpringAppEngineConfiguration.configuratorsBeforeInit:1101 - Executing beforeInit() of class org.flowable.form.spring.configurator.SpringFormEngineConfigurator (priority:300000)
+2024-01-24 00:19:15,706  INFO [main] org.flowable.app.spring.SpringAppEngineConfiguration.configuratorsBeforeInit:1101 - Executing beforeInit() of class org.flowable.content.spring.configurator.SpringContentEngineConfigurator (priority:400000)
+2024-01-24 00:19:15,707  INFO [main] org.flowable.app.spring.SpringAppEngineConfiguration.configuratorsBeforeInit:1101 - Executing beforeInit() of class org.flowable.cmmn.spring.configurator.SpringCmmnEngineConfigurator (priority:500000)
+2024-01-24 00:19:15,806  INFO [main] com.alibaba.druid.pool.DruidDataSource.init:930 - {dataSource-1} inited
+2024-01-24 00:19:16,301  INFO [main] org.flowable.app.spring.SpringAppEngineConfiguration.configuratorsAfterInit:1108 - Executing configure() of class org.flowable.engine.spring.configurator.SpringProcessEngineConfigurator (priority:50000)
+2024-01-24 00:19:16,427  INFO [main] org.flowable.engine.impl.ProcessEngineImpl.<init>:89 - ProcessEngine default created
+2024-01-24 00:19:16,444  INFO [main] org.flowable.engine.impl.cmd.ValidateV5EntitiesCmd.execute:43 - Total of v5 deployments found: 0
+2024-01-24 00:19:16,447  INFO [main] org.flowable.app.spring.SpringAppEngineConfiguration.configuratorsAfterInit:1108 - Executing configure() of class org.flowable.eventregistry.spring.configurator.SpringEventRegistryConfigurator (priority:100000)
+2024-01-24 00:19:17,077  INFO [main] liquibase.changelog.log:26 - Reading from bpm.FLW_EV_DATABASECHANGELOG
+2024-01-24 00:19:17,229  INFO [main] org.flowable.eventregistry.impl.EventRegistryEngineImpl.<init>:53 - EventRegistryEngine default created
+2024-01-24 00:19:17,229  INFO [main] org.flowable.app.spring.SpringAppEngineConfiguration.configuratorsAfterInit:1108 - Executing configure() of class org.flowable.idm.spring.configurator.SpringIdmEngineConfigurator (priority:150000)
+2024-01-24 00:19:17,236  INFO [main] org.flowable.idm.engine.impl.IdmEngineImpl.<init>:52 - IdmEngine default created
+2024-01-24 00:19:17,236  INFO [main] org.flowable.app.spring.SpringAppEngineConfiguration.configuratorsAfterInit:1108 - Executing configure() of class org.flowable.dmn.spring.configurator.SpringDmnEngineConfigurator (priority:200000)
+2024-01-24 00:19:17,372  INFO [main] liquibase.changelog.log:26 - Reading from bpm.ACT_DMN_DATABASECHANGELOG
+2024-01-24 00:19:17,378  INFO [main] org.flowable.dmn.engine.impl.DmnEngineImpl.<init>:55 - DmnEngine default created
+2024-01-24 00:19:17,379  INFO [main] org.flowable.app.spring.SpringAppEngineConfiguration.configuratorsAfterInit:1108 - Executing configure() of class org.flowable.form.spring.configurator.SpringFormEngineConfigurator (priority:300000)
+2024-01-24 00:19:17,499  INFO [main] liquibase.changelog.log:26 - Reading from bpm.ACT_FO_DATABASECHANGELOG
+2024-01-24 00:19:17,503  INFO [main] org.flowable.form.engine.impl.FormEngineImpl.<init>:52 - FormEngine default created
+2024-01-24 00:19:17,504  INFO [main] org.flowable.app.spring.SpringAppEngineConfiguration.configuratorsAfterInit:1108 - Executing configure() of class org.flowable.content.spring.configurator.SpringContentEngineConfigurator (priority:400000)
+2024-01-24 00:19:17,504  INFO [main] org.flowable.content.spring.SpringContentEngineConfiguration.initContentStorage:196 - Content file system root : C:\Users\12752\content
+2024-01-24 00:19:17,735  INFO [main] liquibase.changelog.log:26 - Reading from bpm.ACT_CO_DATABASECHANGELOG
+2024-01-24 00:19:17,738  INFO [main] org.flowable.content.engine.impl.ContentEngineImpl.<init>:48 - ContentEngine default created
+2024-01-24 00:19:17,739  INFO [main] org.flowable.app.spring.SpringAppEngineConfiguration.configuratorsAfterInit:1108 - Executing configure() of class org.flowable.cmmn.spring.configurator.SpringCmmnEngineConfigurator (priority:500000)
+2024-01-24 00:19:17,886  INFO [main] liquibase.changelog.log:26 - Reading from bpm.ACT_CMMN_DATABASECHANGELOG
+2024-01-24 00:19:17,897  INFO [main] org.flowable.cmmn.engine.impl.CmmnEngineImpl.<init>:72 - CmmnEngine default created
+2024-01-24 00:19:18,016  INFO [main] liquibase.changelog.log:26 - Reading from bpm.ACT_APP_DATABASECHANGELOG
+2024-01-24 00:19:18,018  INFO [main] org.flowable.app.engine.impl.AppEngineImpl.<init>:48 - AppEngine default created
+2024-01-24 00:19:18,088  INFO [main] org.flowable.ui.modeler.conf.ModelerDatabaseConfiguration.initDatabaseType:176 - database product name: 'MySQL'
+2024-01-24 00:19:18,088  INFO [main] org.flowable.ui.modeler.conf.ModelerDatabaseConfiguration.initDatabaseType:181 - using database type: mysql
+2024-01-24 00:19:18,343  INFO [main] org.flowable.ui.common.security.CustomPersistentRememberMeServices.<init>:79 - Cookie max-age set to 2678400 seconds
+2024-01-24 00:19:18,343  INFO [main] org.flowable.ui.common.security.CustomPersistentRememberMeServices.<init>:89 - Cookie refresh age set to 86400 seconds
+2024-01-24 00:19:18,416  INFO [main] org.springframework.security.web.DefaultSecurityFilterChain.<init>:51 - Will secure Ant [pattern='/api/editor/**'] with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@27a0e6ce, org.springframework.security.web.context.SecurityContextPersistenceFilter@289a4b90, org.springframework.security.web.header.HeaderWriterFilter@41bdaa81, org.springframework.security.web.authentication.logout.LogoutFilter@9f48198, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@736788b, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4746fb8c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@53d87b2d, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2b80497f, org.springframework.security.web.session.SessionManagementFilter@59c08cf1, org.springframework.security.web.access.ExceptionTranslationFilter@41404aa2, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@25ea068e]
+2024-01-24 00:19:18,419  INFO [main] org.springframework.security.web.DefaultSecurityFilterChain.<init>:51 - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@49f2646, org.springframework.security.web.context.SecurityContextPersistenceFilter@3d4818e8, org.springframework.security.web.header.HeaderWriterFilter@35d88a54, org.springframework.security.web.authentication.logout.LogoutFilter@1939a394, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@26c6288d, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@57bd9c2b, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4b00d59, org.springframework.security.web.session.SessionManagementFilter@6c1bebca, org.springframework.security.web.access.ExceptionTranslationFilter@2986427e, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@59a2bed1]
+2024-01-24 00:19:18,422  INFO [main] org.springframework.security.web.DefaultSecurityFilterChain.<init>:51 - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@72237be8, org.springframework.security.web.context.SecurityContextPersistenceFilter@614cd187, org.springframework.security.web.header.HeaderWriterFilter@115ef673, org.springframework.security.web.authentication.logout.LogoutFilter@70805849, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@417446d9, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6802d023, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@e895e3e, org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter@e7d0db2, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5c5f12e, org.springframework.security.web.session.SessionManagementFilter@8ce3f27, org.springframework.security.web.access.ExceptionTranslationFilter@58583a2d, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@20914835]
+2024-01-24 00:19:18,428  INFO [main] org.flowable.ui.modeler.conf.ModelerDatabaseConfiguration.modelerLiquibase:141 - Configuring Liquibase
+2024-01-24 00:19:18,446  INFO [main] liquibase.lockservice.log:26 - Successfully acquired change log lock
+2024-01-24 00:19:18,594  INFO [main] liquibase.changelog.log:26 - Reading from bpm.ACT_DE_DATABASECHANGELOG
+2024-01-24 00:19:18,606  INFO [main] liquibase.lockservice.log:26 - Successfully released change log lock
+2024-01-24 00:19:18,713  INFO [main] org.flowable.spring.configurator.DefaultAutoDeploymentStrategy.deployResources:92 - Deploying resources [file [D:\springboot\flowabletest\target\classes\processes\ExpenseProcess.bpmn20.xml]] for engine org.flowable.engine.impl.ProcessEngineImpl@3f2ae973 deployment name hint SpringBootAutoDeployment
+2024-01-24 00:19:18,719  INFO [main] org.apache.coyote.http11.Http11NioProtocol.log:173 - Starting ProtocolHandler ["http-nio-8080"]
+2024-01-24 00:19:18,797  INFO [main] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/bpm].log:173 - Initializing Spring DispatcherServlet 'Flowable Modeler App Servlet'
+2024-01-24 00:19:18,797  INFO [main] org.springframework.web.servlet.DispatcherServlet.initServletBean:525 - Initializing Servlet 'Flowable Modeler App Servlet'
+2024-01-24 00:19:18,882  INFO [main] org.springframework.web.servlet.DispatcherServlet.initServletBean:547 - Completed initialization in 85 ms
+2024-01-24 00:19:18,882  INFO [main] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/bpm].log:173 - Initializing Spring DispatcherServlet 'Flowable Modeler App API Servlet'
+2024-01-24 00:19:18,882  INFO [main] org.springframework.web.servlet.DispatcherServlet.initServletBean:525 - Initializing Servlet 'Flowable Modeler App API Servlet'
+2024-01-24 00:19:18,909  INFO [main] org.springframework.web.servlet.DispatcherServlet.initServletBean:547 - Completed initialization in 24 ms
+2024-01-24 00:19:18,909  INFO [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start:220 - Tomcat started on port(s): 8080 (http) with context path '/bpm'
+2024-01-24 00:19:18,932  INFO [main] cn.gzsendi.FlowableApplicationStarter.logStarted:61 - Started FlowableApplicationStarter in 4.596 seconds (JVM running for 5.093)
+2024-01-24 00:21:23,427  INFO [http-nio-8080-exec-1] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/bpm].log:173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-01-24 00:21:23,427  INFO [http-nio-8080-exec-1] org.springframework.web.servlet.DispatcherServlet.initServletBean:525 - Initializing Servlet 'dispatcherServlet'
+2024-01-24 00:21:23,437  INFO [http-nio-8080-exec-1] org.springframework.web.servlet.DispatcherServlet.initServletBean:547 - Completed initialization in 10 ms
+2024-01-24 08:27:04,024  INFO [main] cn.gzsendi.FlowableApplicationStarter.logStarting:55 - Starting FlowableApplicationStarter using Java 1.8.0_311 on qiuzhu with PID 17996 (D:\springboot\flowabletest\target\classes started by 12752 in D:\springboot\flowabletest)
+2024-01-24 08:27:04,024  INFO [background-preinit] org.hibernate.validator.internal.util.Version.<clinit>:21 - HV000001: Hibernate Validator 6.2.0.Final
+2024-01-24 08:27:04,024 DEBUG [main] cn.gzsendi.FlowableApplicationStarter.logStarting:56 - Running with Spring Boot v2.6.2, Spring v5.3.14
+2024-01-24 08:27:04,024  INFO [main] cn.gzsendi.FlowableApplicationStarter.logStartupProfileInfo:635 - No active profile set, falling back to default profiles: default
+2024-01-24 08:27:04,840  INFO [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize:108 - Tomcat initialized with port(s): 8080 (http)
+2024-01-24 08:27:04,844  INFO [main] org.apache.coyote.http11.Http11NioProtocol.log:173 - Initializing ProtocolHandler ["http-nio-8080"]
+2024-01-24 08:27:04,844  INFO [main] org.apache.catalina.core.StandardService.log:173 - Starting service [Tomcat]
+2024-01-24 08:27:04,844  INFO [main] org.apache.catalina.core.StandardEngine.log:173 - Starting Servlet engine: [Apache Tomcat/9.0.56]
+2024-01-24 08:27:04,952  INFO [main] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/bpm].log:173 - Initializing Spring embedded WebApplicationContext
+2024-01-24 08:27:04,956  INFO [main] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext:290 - Root WebApplicationContext: initialization completed in 909 ms
+2024-01-24 08:27:05,287  INFO [main] org.flowable.spring.boot.cmmn.CmmnEngineAutoConfiguration.discoverDeploymentResources:104 - No deployment resources were found for autodeployment
+2024-01-24 08:27:05,323  INFO [main] org.flowable.spring.boot.dmn.DmnEngineAutoConfiguration.discoverDeploymentResources:104 - No deployment resources were found for autodeployment
+2024-01-24 08:27:05,339  INFO [main] org.flowable.spring.boot.form.FormEngineAutoConfiguration.discoverDeploymentResources:104 - No deployment resources were found for autodeployment
+2024-01-24 08:27:05,356  INFO [main] org.flowable.spring.boot.eventregistry.EventRegistryAutoConfiguration.discoverDeploymentResources:104 - No deployment resources were found for autodeployment
+2024-01-24 08:27:05,367  INFO [main] org.flowable.spring.boot.app.AppEngineAutoConfiguration.discoverDeploymentResources:104 - No deployment resources were found for autodeployment
+2024-01-24 08:27:05,372  INFO [main] org.flowable.app.spring.SpringAppEngineConfiguration.initConfigurators:1073 - Found 7 Engine Configurators in total:
+2024-01-24 08:27:05,372  INFO [main] org.flowable.app.spring.SpringAppEngineConfiguration.initConfigurators:1075 - class org.flowable.engine.spring.configurator.SpringProcessEngineConfigurator (priority:50000)
+2024-01-24 08:27:05,372  INFO [main] org.flowable.app.spring.SpringAppEngineConfiguration.initConfigurators:1075 - class org.flowable.eventregistry.spring.configurator.SpringEventRegistryConfigurator (priority:100000)
+2024-01-24 08:27:05,372  INFO [main] org.flowable.app.spring.SpringAppEngineConfiguration.initConfigurators:1075 - class org.flowable.idm.spring.configurator.SpringIdmEngineConfigurator (priority:150000)
+2024-01-24 08:27:05,372  INFO [main] org.flowable.app.spring.SpringAppEngineConfiguration.initConfigurators:1075 - class org.flowable.dmn.spring.configurator.SpringDmnEngineConfigurator (priority:200000)
+2024-01-24 08:27:05,372  INFO [main] org.flowable.app.spring.SpringAppEngineConfiguration.initConfigurators:1075 - class org.flowable.form.spring.configurator.SpringFormEngineConfigurator (priority:300000)
+2024-01-24 08:27:05,372  INFO [main] org.flowable.app.spring.SpringAppEngineConfiguration.initConfigurators:1075 - class org.flowable.content.spring.configurator.SpringContentEngineConfigurator (priority:400000)
+2024-01-24 08:27:05,372  INFO [main] org.flowable.app.spring.SpringAppEngineConfiguration.initConfigurators:1075 - class org.flowable.cmmn.spring.configurator.SpringCmmnEngineConfigurator (priority:500000)
+2024-01-24 08:27:05,372  INFO [main] org.flowable.app.spring.SpringAppEngineConfiguration.configuratorsBeforeInit:1101 - Executing beforeInit() of class org.flowable.engine.spring.configurator.SpringProcessEngineConfigurator (priority:50000)
+2024-01-24 08:27:05,389  INFO [main] org.flowable.app.spring.SpringAppEngineConfiguration.configuratorsBeforeInit:1101 - Executing beforeInit() of class org.flowable.eventregistry.spring.configurator.SpringEventRegistryConfigurator (priority:100000)
+2024-01-24 08:27:05,389  INFO [main] org.flowable.app.spring.SpringAppEngineConfiguration.configuratorsBeforeInit:1101 - Executing beforeInit() of class org.flowable.idm.spring.configurator.SpringIdmEngineConfigurator (priority:150000)
+2024-01-24 08:27:05,393  INFO [main] org.flowable.app.spring.SpringAppEngineConfiguration.configuratorsBeforeInit:1101 - Executing beforeInit() of class org.flowable.dmn.spring.configurator.SpringDmnEngineConfigurator (priority:200000)
+2024-01-24 08:27:05,393  INFO [main] org.flowable.app.spring.SpringAppEngineConfiguration.configuratorsBeforeInit:1101 - Executing beforeInit() of class org.flowable.form.spring.configurator.SpringFormEngineConfigurator (priority:300000)
+2024-01-24 08:27:05,397  INFO [main] org.flowable.app.spring.SpringAppEngineConfiguration.configuratorsBeforeInit:1101 - Executing beforeInit() of class org.flowable.content.spring.configurator.SpringContentEngineConfigurator (priority:400000)
+2024-01-24 08:27:05,397  INFO [main] org.flowable.app.spring.SpringAppEngineConfiguration.configuratorsBeforeInit:1101 - Executing beforeInit() of class org.flowable.cmmn.spring.configurator.SpringCmmnEngineConfigurator (priority:500000)
+2024-01-24 08:27:05,517  INFO [main] com.alibaba.druid.pool.DruidDataSource.init:930 - {dataSource-1} inited
+2024-01-24 08:27:06,045  INFO [main] org.flowable.app.spring.SpringAppEngineConfiguration.configuratorsAfterInit:1108 - Executing configure() of class org.flowable.engine.spring.configurator.SpringProcessEngineConfigurator (priority:50000)
+2024-01-24 08:27:06,187  INFO [main] org.flowable.engine.impl.ProcessEngineImpl.<init>:89 - ProcessEngine default created
+2024-01-24 08:27:06,202  INFO [main] org.flowable.engine.impl.cmd.ValidateV5EntitiesCmd.execute:43 - Total of v5 deployments found: 0
+2024-01-24 08:27:06,207  INFO [main] org.flowable.app.spring.SpringAppEngineConfiguration.configuratorsAfterInit:1108 - Executing configure() of class org.flowable.eventregistry.spring.configurator.SpringEventRegistryConfigurator (priority:100000)
+2024-01-24 08:27:06,880  INFO [main] liquibase.changelog.log:26 - Reading from bpm.FLW_EV_DATABASECHANGELOG
+2024-01-24 08:27:07,047  INFO [main] org.flowable.eventregistry.impl.EventRegistryEngineImpl.<init>:53 - EventRegistryEngine default created
+2024-01-24 08:27:07,048  INFO [main] org.flowable.app.spring.SpringAppEngineConfiguration.configuratorsAfterInit:1108 - Executing configure() of class org.flowable.idm.spring.configurator.SpringIdmEngineConfigurator (priority:150000)
+2024-01-24 08:27:07,056  INFO [main] org.flowable.idm.engine.impl.IdmEngineImpl.<init>:52 - IdmEngine default created
+2024-01-24 08:27:07,056  INFO [main] org.flowable.app.spring.SpringAppEngineConfiguration.configuratorsAfterInit:1108 - Executing configure() of class org.flowable.dmn.spring.configurator.SpringDmnEngineConfigurator (priority:200000)
+2024-01-24 08:27:07,192  INFO [main] liquibase.changelog.log:26 - Reading from bpm.ACT_DMN_DATABASECHANGELOG
+2024-01-24 08:27:07,198  INFO [main] org.flowable.dmn.engine.impl.DmnEngineImpl.<init>:55 - DmnEngine default created
+2024-01-24 08:27:07,198  INFO [main] org.flowable.app.spring.SpringAppEngineConfiguration.configuratorsAfterInit:1108 - Executing configure() of class org.flowable.form.spring.configurator.SpringFormEngineConfigurator (priority:300000)
+2024-01-24 08:27:07,323  INFO [main] liquibase.changelog.log:26 - Reading from bpm.ACT_FO_DATABASECHANGELOG
+2024-01-24 08:27:07,327  INFO [main] org.flowable.form.engine.impl.FormEngineImpl.<init>:52 - FormEngine default created
+2024-01-24 08:27:07,329  INFO [main] org.flowable.app.spring.SpringAppEngineConfiguration.configuratorsAfterInit:1108 - Executing configure() of class org.flowable.content.spring.configurator.SpringContentEngineConfigurator (priority:400000)
+2024-01-24 08:27:07,330  INFO [main] org.flowable.content.spring.SpringContentEngineConfiguration.initContentStorage:196 - Content file system root : C:\Users\12752\content
+2024-01-24 08:27:07,592  INFO [main] liquibase.changelog.log:26 - Reading from bpm.ACT_CO_DATABASECHANGELOG
+2024-01-24 08:27:07,595  INFO [main] org.flowable.content.engine.impl.ContentEngineImpl.<init>:48 - ContentEngine default created
+2024-01-24 08:27:07,596  INFO [main] org.flowable.app.spring.SpringAppEngineConfiguration.configuratorsAfterInit:1108 - Executing configure() of class org.flowable.cmmn.spring.configurator.SpringCmmnEngineConfigurator (priority:500000)
+2024-01-24 08:27:07,757  INFO [main] liquibase.changelog.log:26 - Reading from bpm.ACT_CMMN_DATABASECHANGELOG
+2024-01-24 08:27:07,767  INFO [main] org.flowable.cmmn.engine.impl.CmmnEngineImpl.<init>:72 - CmmnEngine default created
+2024-01-24 08:27:07,893  INFO [main] liquibase.changelog.log:26 - Reading from bpm.ACT_APP_DATABASECHANGELOG
+2024-01-24 08:27:07,895  INFO [main] org.flowable.app.engine.impl.AppEngineImpl.<init>:48 - AppEngine default created
+2024-01-24 08:27:07,965  INFO [main] org.flowable.ui.modeler.conf.ModelerDatabaseConfiguration.initDatabaseType:176 - database product name: 'MySQL'
+2024-01-24 08:27:07,965  INFO [main] org.flowable.ui.modeler.conf.ModelerDatabaseConfiguration.initDatabaseType:181 - using database type: mysql
+2024-01-24 08:27:08,285  INFO [main] org.flowable.ui.common.security.CustomPersistentRememberMeServices.<init>:79 - Cookie max-age set to 2678400 seconds
+2024-01-24 08:27:08,285  INFO [main] org.flowable.ui.common.security.CustomPersistentRememberMeServices.<init>:89 - Cookie refresh age set to 86400 seconds
+2024-01-24 08:27:08,384  INFO [main] org.springframework.security.web.DefaultSecurityFilterChain.<init>:51 - Will secure Ant [pattern='/api/editor/**'] with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@25ea068e, org.springframework.security.web.context.SecurityContextPersistenceFilter@7507d96c, org.springframework.security.web.header.HeaderWriterFilter@60e67c06, org.springframework.security.web.authentication.logout.LogoutFilter@53d87b2d, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@70aa58e1, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@49b9ba6a, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@31e22365, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4cd8db31, org.springframework.security.web.session.SessionManagementFilter@410f53b2, org.springframework.security.web.access.ExceptionTranslationFilter@3c2dda7c, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@c2e33]
+2024-01-24 08:27:08,389  INFO [main] org.springframework.security.web.DefaultSecurityFilterChain.<init>:51 - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2986427e, org.springframework.security.web.context.SecurityContextPersistenceFilter@7cecab19, org.springframework.security.web.header.HeaderWriterFilter@460e5ffe, org.springframework.security.web.authentication.logout.LogoutFilter@47d9c01, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@56402642, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@620572db, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@35d88a54, org.springframework.security.web.session.SessionManagementFilter@1a4cbcc6, org.springframework.security.web.access.ExceptionTranslationFilter@a240452, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@752494dd]
+2024-01-24 08:27:08,393  INFO [main] org.springframework.security.web.DefaultSecurityFilterChain.<init>:51 - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@74bfdd66, org.springframework.security.web.context.SecurityContextPersistenceFilter@3275a47f, org.springframework.security.web.header.HeaderWriterFilter@46ee7013, org.springframework.security.web.authentication.logout.LogoutFilter@74619273, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@775edae0, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1b5af65b, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2e0163cb, org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter@38c55a8a, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6fc7e828, org.springframework.security.web.session.SessionManagementFilter@69d58731, org.springframework.security.web.access.ExceptionTranslationFilter@4d4c4b14, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@12723c5d]
+2024-01-24 08:27:08,399  INFO [main] org.flowable.ui.modeler.conf.ModelerDatabaseConfiguration.modelerLiquibase:141 - Configuring Liquibase
+2024-01-24 08:27:08,421  INFO [main] liquibase.lockservice.log:26 - Successfully acquired change log lock
+2024-01-24 08:27:08,579  INFO [main] liquibase.changelog.log:26 - Reading from bpm.ACT_DE_DATABASECHANGELOG
+2024-01-24 08:27:08,592  INFO [main] liquibase.lockservice.log:26 - Successfully released change log lock
+2024-01-24 08:27:08,708  INFO [main] org.flowable.spring.configurator.DefaultAutoDeploymentStrategy.deployResources:92 - Deploying resources [file [D:\springboot\flowabletest\target\classes\processes\ExpenseProcess.bpmn20.xml]] for engine org.flowable.engine.impl.ProcessEngineImpl@1ab28416 deployment name hint SpringBootAutoDeployment
+2024-01-24 08:27:08,717  INFO [main] org.apache.coyote.http11.Http11NioProtocol.log:173 - Starting ProtocolHandler ["http-nio-8080"]
+2024-01-24 08:27:08,734  INFO [main] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/bpm].log:173 - Initializing Spring DispatcherServlet 'Flowable Modeler App Servlet'
+2024-01-24 08:27:08,734  INFO [main] org.springframework.web.servlet.DispatcherServlet.initServletBean:525 - Initializing Servlet 'Flowable Modeler App Servlet'
+2024-01-24 08:27:08,913  INFO [main] org.springframework.web.servlet.DispatcherServlet.initServletBean:547 - Completed initialization in 179 ms
+2024-01-24 08:27:08,913  INFO [main] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/bpm].log:173 - Initializing Spring DispatcherServlet 'Flowable Modeler App API Servlet'
+2024-01-24 08:27:08,913  INFO [main] org.springframework.web.servlet.DispatcherServlet.initServletBean:525 - Initializing Servlet 'Flowable Modeler App API Servlet'
+2024-01-24 08:27:08,937  INFO [main] org.springframework.web.servlet.DispatcherServlet.initServletBean:547 - Completed initialization in 24 ms
+2024-01-24 08:27:08,937  INFO [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start:220 - Tomcat started on port(s): 8080 (http) with context path '/bpm'
+2024-01-24 08:27:08,964  INFO [main] cn.gzsendi.FlowableApplicationStarter.logStarted:61 - Started FlowableApplicationStarter in 5.165 seconds (JVM running for 5.755)
+2024-01-24 08:38:28,501  INFO [http-nio-8080-exec-7] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/bpm].log:173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-01-24 08:38:28,502  INFO [http-nio-8080-exec-7] org.springframework.web.servlet.DispatcherServlet.initServletBean:525 - Initializing Servlet 'dispatcherServlet'
+2024-01-24 08:38:28,503  INFO [http-nio-8080-exec-7] org.springframework.web.servlet.DispatcherServlet.initServletBean:547 - Completed initialization in 1 ms
+2024-01-24 08:52:25,297 DEBUG [http-nio-8080-exec-1] cn.gzsendi.flowable.mapper.WorkFlowDefMapper.list.debug:137 - ==>  Preparing: select id, order_type, order_name, order_id_prex, remark, create_time, update_time from work_flow_def
+2024-01-24 08:52:25,301 DEBUG [http-nio-8080-exec-1] cn.gzsendi.flowable.mapper.WorkFlowDefMapper.list.debug:137 - ==> Parameters: 
+2024-01-24 08:52:25,308 DEBUG [http-nio-8080-exec-1] cn.gzsendi.flowable.mapper.WorkFlowDefMapper.list.debug:137 - <==      Total: 2
+2024-01-24 08:52:25,314 DEBUG [http-nio-8080-exec-4] cn.gzsendi.flowable.mapper.WorkOrderMapper.listMyApply.debug:137 - ==>  Preparing: select t1.* from work_order t1 where t1.`applicant` = ? order by t1.application_time desc
+2024-01-24 08:52:25,315 DEBUG [http-nio-8080-exec-4] cn.gzsendi.flowable.mapper.WorkOrderMapper.listMyApply.debug:137 - ==> Parameters: lix(String)
+2024-01-24 08:52:25,318 DEBUG [http-nio-8080-exec-4] cn.gzsendi.flowable.mapper.WorkOrderMapper.listMyApply.debug:137 - <==      Total: 4
+2024-01-24 08:52:25,318 DEBUG [http-nio-8080-exec-10] cn.gzsendi.flowable.mapper.WorkOrderMapper.listMyExamAndApprove.debug:137 - ==>  Preparing: select wo.* from work_order wo LEFT JOIN `act_hi_procinst` p ON p.`BUSINESS_KEY_` = wo.`order_id` LEFT JOIN `act_hi_comment` c ON c.`PROC_INST_ID_` = p.`PROC_INST_ID_` where c.`USER_ID_` = ? and wo.handler != ? GROUP BY wo.order_id, wo.order_type, wo.applicant, wo.application_time, wo.order_status, wo.reason, wo.handler order by wo.application_time desc
+2024-01-24 08:52:25,319 DEBUG [http-nio-8080-exec-3] cn.gzsendi.flowable.mapper.WorkOrderMapper.listMyDeal.debug:137 - ==>  Preparing: select t1.* from work_order t1 where t1.`handler` = ? order by t1.application_time desc
+2024-01-24 08:52:25,319 DEBUG [http-nio-8080-exec-3] cn.gzsendi.flowable.mapper.WorkOrderMapper.listMyDeal.debug:137 - ==> Parameters: lix(String)
+2024-01-24 08:52:25,320 DEBUG [http-nio-8080-exec-3] cn.gzsendi.flowable.mapper.WorkOrderMapper.listMyDeal.debug:137 - <==      Total: 0
+2024-01-24 08:52:25,321 DEBUG [http-nio-8080-exec-10] cn.gzsendi.flowable.mapper.WorkOrderMapper.listMyExamAndApprove.debug:137 - ==> Parameters: lix(String), lix(String)
+2024-01-24 08:52:25,325 DEBUG [http-nio-8080-exec-10] cn.gzsendi.flowable.mapper.WorkOrderMapper.listMyExamAndApprove.debug:137 - <==      Total: 4
+2024-01-24 09:19:57,883 DEBUG [http-nio-8080-exec-4] cn.gzsendi.flowable.mapper.WorkFlowDefMapper.list.debug:137 - ==>  Preparing: select id, order_type, order_name, order_id_prex, remark, create_time, update_time from work_flow_def
+2024-01-24 09:19:57,884 DEBUG [http-nio-8080-exec-4] cn.gzsendi.flowable.mapper.WorkFlowDefMapper.list.debug:137 - ==> Parameters: 
+2024-01-24 09:19:57,886 DEBUG [http-nio-8080-exec-3] cn.gzsendi.flowable.mapper.WorkOrderMapper.listMyDeal.debug:137 - ==>  Preparing: select t1.* from work_order t1 where t1.`handler` = ? order by t1.application_time desc
+2024-01-24 09:19:57,887 DEBUG [http-nio-8080-exec-4] cn.gzsendi.flowable.mapper.WorkFlowDefMapper.list.debug:137 - <==      Total: 2
+2024-01-24 09:19:57,887 DEBUG [http-nio-8080-exec-3] cn.gzsendi.flowable.mapper.WorkOrderMapper.listMyDeal.debug:137 - ==> Parameters: zhaoyl(String)
+2024-01-24 09:19:57,887 DEBUG [http-nio-8080-exec-10] cn.gzsendi.flowable.mapper.WorkOrderMapper.listMyApply.debug:137 - ==>  Preparing: select t1.* from work_order t1 where t1.`applicant` = ? order by t1.application_time desc
+2024-01-24 09:19:57,888 DEBUG [http-nio-8080-exec-10] cn.gzsendi.flowable.mapper.WorkOrderMapper.listMyApply.debug:137 - ==> Parameters: zhaoyl(String)
+2024-01-24 09:19:57,888 DEBUG [http-nio-8080-exec-3] cn.gzsendi.flowable.mapper.WorkOrderMapper.listMyDeal.debug:137 - <==      Total: 0
+2024-01-24 09:19:57,888 DEBUG [http-nio-8080-exec-10] cn.gzsendi.flowable.mapper.WorkOrderMapper.listMyApply.debug:137 - <==      Total: 0
+2024-01-24 09:19:57,888 DEBUG [http-nio-8080-exec-2] cn.gzsendi.flowable.mapper.WorkOrderMapper.listMyExamAndApprove.debug:137 - ==>  Preparing: select wo.* from work_order wo LEFT JOIN `act_hi_procinst` p ON p.`BUSINESS_KEY_` = wo.`order_id` LEFT JOIN `act_hi_comment` c ON c.`PROC_INST_ID_` = p.`PROC_INST_ID_` where c.`USER_ID_` = ? and wo.handler != ? GROUP BY wo.order_id, wo.order_type, wo.applicant, wo.application_time, wo.order_status, wo.reason, wo.handler order by wo.application_time desc
+2024-01-24 09:19:57,889 DEBUG [http-nio-8080-exec-2] cn.gzsendi.flowable.mapper.WorkOrderMapper.listMyExamAndApprove.debug:137 - ==> Parameters: zhaoyl(String), zhaoyl(String)
+2024-01-24 09:19:57,892 DEBUG [http-nio-8080-exec-2] cn.gzsendi.flowable.mapper.WorkOrderMapper.listMyExamAndApprove.debug:137 - <==      Total: 4
+2024-01-24 09:21:28,848  WARN [SpringApplicationShutdownHook] org.springframework.beans.factory.support.DisposableBeanAdapter.destroy:247 - Invocation of close method failed on bean with name 'modelerLiquibase': liquibase.exception.DatabaseException: java.sql.SQLException: connection holder is null
+2024-01-24 09:21:28,857  INFO [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource.close:1825 - {dataSource-1} closed
+2024-01-24 09:22:02,930  INFO [main] cn.gzsendi.FlowableApplicationStarter.logStarting:55 - Starting FlowableApplicationStarter using Java 1.8.0_311 on qiuzhu with PID 10164 (D:\springboot\flowabletest\target\classes started by 12752 in D:\springboot\flowabletest)
+2024-01-24 09:22:02,930  INFO [background-preinit] org.hibernate.validator.internal.util.Version.<clinit>:21 - HV000001: Hibernate Validator 6.2.0.Final
+2024-01-24 09:22:02,931 DEBUG [main] cn.gzsendi.FlowableApplicationStarter.logStarting:56 - Running with Spring Boot v2.6.2, Spring v5.3.14
+2024-01-24 09:22:02,931  INFO [main] cn.gzsendi.FlowableApplicationStarter.logStartupProfileInfo:635 - No active profile set, falling back to default profiles: default
+2024-01-24 09:22:03,621  INFO [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize:108 - Tomcat initialized with port(s): 8080 (http)
+2024-01-24 09:22:03,625  INFO [main] org.apache.coyote.http11.Http11NioProtocol.log:173 - Initializing ProtocolHandler ["http-nio-8080"]
+2024-01-24 09:22:03,626  INFO [main] org.apache.catalina.core.StandardService.log:173 - Starting service [Tomcat]
+2024-01-24 09:22:03,626  INFO [main] org.apache.catalina.core.StandardEngine.log:173 - Starting Servlet engine: [Apache Tomcat/9.0.56]
+2024-01-24 09:22:03,703  INFO [main] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/bpm].log:173 - Initializing Spring embedded WebApplicationContext
+2024-01-24 09:22:03,703  INFO [main] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext:290 - Root WebApplicationContext: initialization completed in 752 ms
+2024-01-24 09:22:04,038  INFO [main] org.flowable.spring.boot.cmmn.CmmnEngineAutoConfiguration.discoverDeploymentResources:104 - No deployment resources were found for autodeployment
+2024-01-24 09:22:04,072  INFO [main] org.flowable.spring.boot.dmn.DmnEngineAutoConfiguration.discoverDeploymentResources:104 - No deployment resources were found for autodeployment
+2024-01-24 09:22:04,089  INFO [main] org.flowable.spring.boot.form.FormEngineAutoConfiguration.discoverDeploymentResources:104 - No deployment resources were found for autodeployment
+2024-01-24 09:22:04,105  INFO [main] org.flowable.spring.boot.eventregistry.EventRegistryAutoConfiguration.discoverDeploymentResources:104 - No deployment resources were found for autodeployment
+2024-01-24 09:22:04,117  INFO [main] org.flowable.spring.boot.app.AppEngineAutoConfiguration.discoverDeploymentResources:104 - No deployment resources were found for autodeployment
+2024-01-24 09:22:04,123  INFO [main] org.flowable.app.spring.SpringAppEngineConfiguration.initConfigurators:1073 - Found 7 Engine Configurators in total:
+2024-01-24 09:22:04,123  INFO [main] org.flowable.app.spring.SpringAppEngineConfiguration.initConfigurators:1075 - class org.flowable.engine.spring.configurator.SpringProcessEngineConfigurator (priority:50000)
+2024-01-24 09:22:04,123  INFO [main] org.flowable.app.spring.SpringAppEngineConfiguration.initConfigurators:1075 - class org.flowable.eventregistry.spring.configurator.SpringEventRegistryConfigurator (priority:100000)
+2024-01-24 09:22:04,123  INFO [main] org.flowable.app.spring.SpringAppEngineConfiguration.initConfigurators:1075 - class org.flowable.idm.spring.configurator.SpringIdmEngineConfigurator (priority:150000)
+2024-01-24 09:22:04,123  INFO [main] org.flowable.app.spring.SpringAppEngineConfiguration.initConfigurators:1075 - class org.flowable.dmn.spring.configurator.SpringDmnEngineConfigurator (priority:200000)
+2024-01-24 09:22:04,123  INFO [main] org.flowable.app.spring.SpringAppEngineConfiguration.initConfigurators:1075 - class org.flowable.form.spring.configurator.SpringFormEngineConfigurator (priority:300000)
+2024-01-24 09:22:04,123  INFO [main] org.flowable.app.spring.SpringAppEngineConfiguration.initConfigurators:1075 - class org.flowable.content.spring.configurator.SpringContentEngineConfigurator (priority:400000)
+2024-01-24 09:22:04,123  INFO [main] org.flowable.app.spring.SpringAppEngineConfiguration.initConfigurators:1075 - class org.flowable.cmmn.spring.configurator.SpringCmmnEngineConfigurator (priority:500000)
+2024-01-24 09:22:04,123  INFO [main] org.flowable.app.spring.SpringAppEngineConfiguration.configuratorsBeforeInit:1101 - Executing beforeInit() of class org.flowable.engine.spring.configurator.SpringProcessEngineConfigurator (priority:50000)
+2024-01-24 09:22:04,138  INFO [main] org.flowable.app.spring.SpringAppEngineConfiguration.configuratorsBeforeInit:1101 - Executing beforeInit() of class org.flowable.eventregistry.spring.configurator.SpringEventRegistryConfigurator (priority:100000)
+2024-01-24 09:22:04,141  INFO [main] org.flowable.app.spring.SpringAppEngineConfiguration.configuratorsBeforeInit:1101 - Executing beforeInit() of class org.flowable.idm.spring.configurator.SpringIdmEngineConfigurator (priority:150000)
+2024-01-24 09:22:04,143  INFO [main] org.flowable.app.spring.SpringAppEngineConfiguration.configuratorsBeforeInit:1101 - Executing beforeInit() of class org.flowable.dmn.spring.configurator.SpringDmnEngineConfigurator (priority:200000)
+2024-01-24 09:22:04,145  INFO [main] org.flowable.app.spring.SpringAppEngineConfiguration.configuratorsBeforeInit:1101 - Executing beforeInit() of class org.flowable.form.spring.configurator.SpringFormEngineConfigurator (priority:300000)
+2024-01-24 09:22:04,146  INFO [main] org.flowable.app.spring.SpringAppEngineConfiguration.configuratorsBeforeInit:1101 - Executing beforeInit() of class org.flowable.content.spring.configurator.SpringContentEngineConfigurator (priority:400000)
+2024-01-24 09:22:04,148  INFO [main] org.flowable.app.spring.SpringAppEngineConfiguration.configuratorsBeforeInit:1101 - Executing beforeInit() of class org.flowable.cmmn.spring.configurator.SpringCmmnEngineConfigurator (priority:500000)
+2024-01-24 09:22:04,248  INFO [main] com.alibaba.druid.pool.DruidDataSource.init:930 - {dataSource-1} inited
+2024-01-24 09:22:04,742  INFO [main] org.flowable.app.spring.SpringAppEngineConfiguration.configuratorsAfterInit:1108 - Executing configure() of class org.flowable.engine.spring.configurator.SpringProcessEngineConfigurator (priority:50000)
+2024-01-24 09:22:04,860  INFO [main] org.flowable.engine.impl.ProcessEngineImpl.<init>:89 - ProcessEngine default created
+2024-01-24 09:22:04,879  INFO [main] org.flowable.engine.impl.cmd.ValidateV5EntitiesCmd.execute:43 - Total of v5 deployments found: 0
+2024-01-24 09:22:04,883  INFO [main] org.flowable.app.spring.SpringAppEngineConfiguration.configuratorsAfterInit:1108 - Executing configure() of class org.flowable.eventregistry.spring.configurator.SpringEventRegistryConfigurator (priority:100000)
+2024-01-24 09:22:05,502  INFO [main] liquibase.changelog.log:26 - Reading from bpm.FLW_EV_DATABASECHANGELOG
+2024-01-24 09:22:05,660  INFO [main] org.flowable.eventregistry.impl.EventRegistryEngineImpl.<init>:53 - EventRegistryEngine default created
+2024-01-24 09:22:05,661  INFO [main] org.flowable.app.spring.SpringAppEngineConfiguration.configuratorsAfterInit:1108 - Executing configure() of class org.flowable.idm.spring.configurator.SpringIdmEngineConfigurator (priority:150000)
+2024-01-24 09:22:05,668  INFO [main] org.flowable.idm.engine.impl.IdmEngineImpl.<init>:52 - IdmEngine default created
+2024-01-24 09:22:05,668  INFO [main] org.flowable.app.spring.SpringAppEngineConfiguration.configuratorsAfterInit:1108 - Executing configure() of class org.flowable.dmn.spring.configurator.SpringDmnEngineConfigurator (priority:200000)
+2024-01-24 09:22:05,805  INFO [main] liquibase.changelog.log:26 - Reading from bpm.ACT_DMN_DATABASECHANGELOG
+2024-01-24 09:22:05,812  INFO [main] org.flowable.dmn.engine.impl.DmnEngineImpl.<init>:55 - DmnEngine default created
+2024-01-24 09:22:05,813  INFO [main] org.flowable.app.spring.SpringAppEngineConfiguration.configuratorsAfterInit:1108 - Executing configure() of class org.flowable.form.spring.configurator.SpringFormEngineConfigurator (priority:300000)
+2024-01-24 09:22:05,941  INFO [main] liquibase.changelog.log:26 - Reading from bpm.ACT_FO_DATABASECHANGELOG
+2024-01-24 09:22:05,944  INFO [main] org.flowable.form.engine.impl.FormEngineImpl.<init>:52 - FormEngine default created
+2024-01-24 09:22:05,945  INFO [main] org.flowable.app.spring.SpringAppEngineConfiguration.configuratorsAfterInit:1108 - Executing configure() of class org.flowable.content.spring.configurator.SpringContentEngineConfigurator (priority:400000)
+2024-01-24 09:22:05,946  INFO [main] org.flowable.content.spring.SpringContentEngineConfiguration.initContentStorage:196 - Content file system root : C:\Users\12752\content
+2024-01-24 09:22:06,216  INFO [main] liquibase.changelog.log:26 - Reading from bpm.ACT_CO_DATABASECHANGELOG
+2024-01-24 09:22:06,218  INFO [main] org.flowable.content.engine.impl.ContentEngineImpl.<init>:48 - ContentEngine default created
+2024-01-24 09:22:06,218  INFO [main] org.flowable.app.spring.SpringAppEngineConfiguration.configuratorsAfterInit:1108 - Executing configure() of class org.flowable.cmmn.spring.configurator.SpringCmmnEngineConfigurator (priority:500000)
+2024-01-24 09:22:06,378  INFO [main] liquibase.changelog.log:26 - Reading from bpm.ACT_CMMN_DATABASECHANGELOG
+2024-01-24 09:22:06,388  INFO [main] org.flowable.cmmn.engine.impl.CmmnEngineImpl.<init>:72 - CmmnEngine default created
+2024-01-24 09:22:06,516  INFO [main] liquibase.changelog.log:26 - Reading from bpm.ACT_APP_DATABASECHANGELOG
+2024-01-24 09:22:06,518  INFO [main] org.flowable.app.engine.impl.AppEngineImpl.<init>:48 - AppEngine default created
+2024-01-24 09:22:06,584  INFO [main] org.flowable.ui.modeler.conf.ModelerDatabaseConfiguration.initDatabaseType:176 - database product name: 'MySQL'
+2024-01-24 09:22:06,584  INFO [main] org.flowable.ui.modeler.conf.ModelerDatabaseConfiguration.initDatabaseType:181 - using database type: mysql
+2024-01-24 09:22:06,873  INFO [main] org.flowable.ui.common.security.CustomPersistentRememberMeServices.<init>:79 - Cookie max-age set to 2678400 seconds
+2024-01-24 09:22:06,873  INFO [main] org.flowable.ui.common.security.CustomPersistentRememberMeServices.<init>:89 - Cookie refresh age set to 86400 seconds
+2024-01-24 09:22:06,943  INFO [main] org.springframework.security.web.DefaultSecurityFilterChain.<init>:51 - Will secure Ant [pattern='/api/editor/**'] with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6294e4a6, org.springframework.security.web.context.SecurityContextPersistenceFilter@59c08cf1, org.springframework.security.web.header.HeaderWriterFilter@31e22365, org.springframework.security.web.authentication.logout.LogoutFilter@58b5f7d2, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@2d3eecda, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@289a4b90, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@492fa72a, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@13662609, org.springframework.security.web.session.SessionManagementFilter@41bdaa81, org.springframework.security.web.access.ExceptionTranslationFilter@30e143ff, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@24f90aff]
+2024-01-24 09:22:06,946  INFO [main] org.springframework.security.web.DefaultSecurityFilterChain.<init>:51 - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@335972a5, org.springframework.security.web.context.SecurityContextPersistenceFilter@35d88a54, org.springframework.security.web.header.HeaderWriterFilter@752494dd, org.springframework.security.web.authentication.logout.LogoutFilter@57bd9c2b, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6c1bebca, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3d4818e8, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@59a2bed1, org.springframework.security.web.session.SessionManagementFilter@2986427e, org.springframework.security.web.access.ExceptionTranslationFilter@78743dd8, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@5e8bd498]
+2024-01-24 09:22:06,949  INFO [main] org.springframework.security.web.DefaultSecurityFilterChain.<init>:51 - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1dd76982, org.springframework.security.web.context.SecurityContextPersistenceFilter@115ef673, org.springframework.security.web.header.HeaderWriterFilter@3e8afc2d, org.springframework.security.web.authentication.logout.LogoutFilter@e895e3e, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@20914835, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@8ce3f27, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@614cd187, org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter@77476fcf, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7e76a66f, org.springframework.security.web.session.SessionManagementFilter@2d172c7, org.springframework.security.web.access.ExceptionTranslationFilter@32d1d6c5, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@76eadc5a]
+2024-01-24 09:22:06,953  INFO [main] org.flowable.ui.modeler.conf.ModelerDatabaseConfiguration.modelerLiquibase:141 - Configuring Liquibase
+2024-01-24 09:22:06,970  INFO [main] liquibase.lockservice.log:26 - Successfully acquired change log lock
+2024-01-24 09:22:07,124  INFO [main] liquibase.changelog.log:26 - Reading from bpm.ACT_DE_DATABASECHANGELOG
+2024-01-24 09:22:07,137  INFO [main] liquibase.lockservice.log:26 - Successfully released change log lock
+2024-01-24 09:22:07,247  INFO [main] org.flowable.spring.configurator.DefaultAutoDeploymentStrategy.deployResources:92 - Deploying resources [file [D:\springboot\flowabletest\target\classes\processes\ExpenseProcess.bpmn20.xml]] for engine org.flowable.engine.impl.ProcessEngineImpl@71469e01 deployment name hint SpringBootAutoDeployment
+2024-01-24 09:22:07,253  INFO [main] org.apache.coyote.http11.Http11NioProtocol.log:173 - Starting ProtocolHandler ["http-nio-8080"]
+2024-01-24 09:22:07,263  INFO [main] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/bpm].log:173 - Initializing Spring DispatcherServlet 'Flowable Modeler App Servlet'
+2024-01-24 09:22:07,263  INFO [main] org.springframework.web.servlet.DispatcherServlet.initServletBean:525 - Initializing Servlet 'Flowable Modeler App Servlet'
+2024-01-24 09:22:07,357  INFO [main] org.springframework.web.servlet.DispatcherServlet.initServletBean:547 - Completed initialization in 94 ms
+2024-01-24 09:22:07,357  INFO [main] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/bpm].log:173 - Initializing Spring DispatcherServlet 'Flowable Modeler App API Servlet'
+2024-01-24 09:22:07,357  INFO [main] org.springframework.web.servlet.DispatcherServlet.initServletBean:525 - Initializing Servlet 'Flowable Modeler App API Servlet'
+2024-01-24 09:22:07,387  INFO [main] org.springframework.web.servlet.DispatcherServlet.initServletBean:547 - Completed initialization in 30 ms
+2024-01-24 09:22:07,388  INFO [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start:220 - Tomcat started on port(s): 8080 (http) with context path '/bpm'
+2024-01-24 09:22:07,415  INFO [main] cn.gzsendi.FlowableApplicationStarter.logStarted:61 - Started FlowableApplicationStarter in 4.709 seconds (JVM running for 5.267)
+2024-01-24 09:28:08,715  INFO [http-nio-8080-exec-2] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/bpm].log:173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-01-24 09:28:08,716  INFO [http-nio-8080-exec-2] org.springframework.web.servlet.DispatcherServlet.initServletBean:525 - Initializing Servlet 'dispatcherServlet'
+2024-01-24 09:28:08,717  INFO [http-nio-8080-exec-2] org.springframework.web.servlet.DispatcherServlet.initServletBean:547 - Completed initialization in 1 ms
+2024-01-24 09:28:23,569 DEBUG [http-nio-8080-exec-9] cn.gzsendi.flowable.mapper.WorkFlowDefMapper.list.debug:137 - ==>  Preparing: select id, order_type, order_name, order_id_prex, remark, create_time, update_time from work_flow_def
+2024-01-24 09:28:23,572 DEBUG [http-nio-8080-exec-9] cn.gzsendi.flowable.mapper.WorkFlowDefMapper.list.debug:137 - ==> Parameters: 
+2024-01-24 09:28:23,580 DEBUG [http-nio-8080-exec-9] cn.gzsendi.flowable.mapper.WorkFlowDefMapper.list.debug:137 - <==      Total: 2
+2024-01-24 09:28:23,583 DEBUG [http-nio-8080-exec-4] cn.gzsendi.flowable.mapper.WorkOrderMapper.listMyExamAndApprove.debug:137 - ==>  Preparing: select wo.* from work_order wo LEFT JOIN `act_hi_procinst` p ON p.`BUSINESS_KEY_` = wo.`order_id` LEFT JOIN `act_hi_comment` c ON c.`PROC_INST_ID_` = p.`PROC_INST_ID_` where c.`USER_ID_` = ? and wo.handler != ? GROUP BY wo.order_id, wo.order_type, wo.applicant, wo.application_time, wo.order_status, wo.reason, wo.handler order by wo.application_time desc
+2024-01-24 09:28:23,585 DEBUG [http-nio-8080-exec-4] cn.gzsendi.flowable.mapper.WorkOrderMapper.listMyExamAndApprove.debug:137 - ==> Parameters: lix(String), lix(String)
+2024-01-24 09:28:23,586 DEBUG [http-nio-8080-exec-3] cn.gzsendi.flowable.mapper.WorkOrderMapper.listMyApply.debug:137 - ==>  Preparing: select t1.* from work_order t1 where t1.`applicant` = ? order by t1.application_time desc
+2024-01-24 09:28:23,586 DEBUG [http-nio-8080-exec-3] cn.gzsendi.flowable.mapper.WorkOrderMapper.listMyApply.debug:137 - ==> Parameters: lix(String)
+2024-01-24 09:28:23,588 DEBUG [http-nio-8080-exec-10] cn.gzsendi.flowable.mapper.WorkOrderMapper.listMyDeal.debug:137 - ==>  Preparing: select t1.* from work_order t1 where t1.`handler` = ? order by t1.application_time desc
+2024-01-24 09:28:23,588 DEBUG [http-nio-8080-exec-3] cn.gzsendi.flowable.mapper.WorkOrderMapper.listMyApply.debug:137 - <==      Total: 4
+2024-01-24 09:28:23,588 DEBUG [http-nio-8080-exec-10] cn.gzsendi.flowable.mapper.WorkOrderMapper.listMyDeal.debug:137 - ==> Parameters: lix(String)
+2024-01-24 09:28:23,588 DEBUG [http-nio-8080-exec-4] cn.gzsendi.flowable.mapper.WorkOrderMapper.listMyExamAndApprove.debug:137 - <==      Total: 4
+2024-01-24 09:28:23,591 DEBUG [http-nio-8080-exec-10] cn.gzsendi.flowable.mapper.WorkOrderMapper.listMyDeal.debug:137 - <==      Total: 0
+2024-01-24 09:28:27,297 DEBUG [http-nio-8080-exec-5] cn.gzsendi.flowable.mapper.WorkFlowDefMapper.list.debug:137 - ==>  Preparing: select id, order_type, order_name, order_id_prex, remark, create_time, update_time from work_flow_def
+2024-01-24 09:28:27,297 DEBUG [http-nio-8080-exec-7] cn.gzsendi.flowable.mapper.WorkOrderMapper.listMyDeal.debug:137 - ==>  Preparing: select t1.* from work_order t1 where t1.`handler` = ? order by t1.application_time desc
+2024-01-24 09:28:27,297 DEBUG [http-nio-8080-exec-1] cn.gzsendi.flowable.mapper.WorkOrderMapper.listMyApply.debug:137 - ==>  Preparing: select t1.* from work_order t1 where t1.`applicant` = ? order by t1.application_time desc
+2024-01-24 09:28:27,297 DEBUG [http-nio-8080-exec-5] cn.gzsendi.flowable.mapper.WorkFlowDefMapper.list.debug:137 - ==> Parameters: 
+2024-01-24 09:28:27,297 DEBUG [http-nio-8080-exec-1] cn.gzsendi.flowable.mapper.WorkOrderMapper.listMyApply.debug:137 - ==> Parameters: zhaoyl(String)
+2024-01-24 09:28:27,297 DEBUG [http-nio-8080-exec-7] cn.gzsendi.flowable.mapper.WorkOrderMapper.listMyDeal.debug:137 - ==> Parameters: zhaoyl(String)
+2024-01-24 09:28:27,298 DEBUG [http-nio-8080-exec-1] cn.gzsendi.flowable.mapper.WorkOrderMapper.listMyApply.debug:137 - <==      Total: 0
+2024-01-24 09:28:27,299 DEBUG [http-nio-8080-exec-7] cn.gzsendi.flowable.mapper.WorkOrderMapper.listMyDeal.debug:137 - <==      Total: 0
+2024-01-24 09:28:27,299 DEBUG [http-nio-8080-exec-5] cn.gzsendi.flowable.mapper.WorkFlowDefMapper.list.debug:137 - <==      Total: 2
+2024-01-24 09:28:27,300 DEBUG [http-nio-8080-exec-9] cn.gzsendi.flowable.mapper.WorkOrderMapper.listMyExamAndApprove.debug:137 - ==>  Preparing: select wo.* from work_order wo LEFT JOIN `act_hi_procinst` p ON p.`BUSINESS_KEY_` = wo.`order_id` LEFT JOIN `act_hi_comment` c ON c.`PROC_INST_ID_` = p.`PROC_INST_ID_` where c.`USER_ID_` = ? and wo.handler != ? GROUP BY wo.order_id, wo.order_type, wo.applicant, wo.application_time, wo.order_status, wo.reason, wo.handler order by wo.application_time desc
+2024-01-24 09:28:27,302 DEBUG [http-nio-8080-exec-9] cn.gzsendi.flowable.mapper.WorkOrderMapper.listMyExamAndApprove.debug:137 - ==> Parameters: zhaoyl(String), zhaoyl(String)
+2024-01-24 09:28:27,305 DEBUG [http-nio-8080-exec-9] cn.gzsendi.flowable.mapper.WorkOrderMapper.listMyExamAndApprove.debug:137 - <==      Total: 4
+2024-01-24 09:28:47,525 DEBUG [http-nio-8080-exec-6] cn.gzsendi.flowable.mapper.WorkFlowDefMapper.list.debug:137 - ==>  Preparing: select id, order_type, order_name, order_id_prex, remark, create_time, update_time from work_flow_def
+2024-01-24 09:28:47,525 DEBUG [http-nio-8080-exec-2] cn.gzsendi.flowable.mapper.WorkOrderMapper.listMyDeal.debug:137 - ==>  Preparing: select t1.* from work_order t1 where t1.`handler` = ? order by t1.application_time desc
+2024-01-24 09:28:47,525 DEBUG [http-nio-8080-exec-8] cn.gzsendi.flowable.mapper.WorkOrderMapper.listMyApply.debug:137 - ==>  Preparing: select t1.* from work_order t1 where t1.`applicant` = ? order by t1.application_time desc
+2024-01-24 09:28:47,525 DEBUG [http-nio-8080-exec-1] cn.gzsendi.flowable.mapper.WorkOrderMapper.listMyExamAndApprove.debug:137 - ==>  Preparing: select wo.* from work_order wo LEFT JOIN `act_hi_procinst` p ON p.`BUSINESS_KEY_` = wo.`order_id` LEFT JOIN `act_hi_comment` c ON c.`PROC_INST_ID_` = p.`PROC_INST_ID_` where c.`USER_ID_` = ? and wo.handler != ? GROUP BY wo.order_id, wo.order_type, wo.applicant, wo.application_time, wo.order_status, wo.reason, wo.handler order by wo.application_time desc
+2024-01-24 09:28:47,525 DEBUG [http-nio-8080-exec-6] cn.gzsendi.flowable.mapper.WorkFlowDefMapper.list.debug:137 - ==> Parameters: 
+2024-01-24 09:28:47,526 DEBUG [http-nio-8080-exec-2] cn.gzsendi.flowable.mapper.WorkOrderMapper.listMyDeal.debug:137 - ==> Parameters: lix(String)
+2024-01-24 09:28:47,526 DEBUG [http-nio-8080-exec-1] cn.gzsendi.flowable.mapper.WorkOrderMapper.listMyExamAndApprove.debug:137 - ==> Parameters: lix(String), lix(String)
+2024-01-24 09:28:47,526 DEBUG [http-nio-8080-exec-8] cn.gzsendi.flowable.mapper.WorkOrderMapper.listMyApply.debug:137 - ==> Parameters: lix(String)
+2024-01-24 09:28:47,526 DEBUG [http-nio-8080-exec-2] cn.gzsendi.flowable.mapper.WorkOrderMapper.listMyDeal.debug:137 - <==      Total: 0
+2024-01-24 09:28:47,526 DEBUG [http-nio-8080-exec-6] cn.gzsendi.flowable.mapper.WorkFlowDefMapper.list.debug:137 - <==      Total: 2
+2024-01-24 09:28:47,529 DEBUG [http-nio-8080-exec-1] cn.gzsendi.flowable.mapper.WorkOrderMapper.listMyExamAndApprove.debug:137 - <==      Total: 4
+2024-01-24 09:28:47,529 DEBUG [http-nio-8080-exec-8] cn.gzsendi.flowable.mapper.WorkOrderMapper.listMyApply.debug:137 - <==      Total: 4
+2024-01-24 09:28:49,736 DEBUG [http-nio-8080-exec-4] cn.gzsendi.flowable.mapper.WorkOrderMapper.listMyDeal.debug:137 - ==>  Preparing: select t1.* from work_order t1 where t1.`handler` = ? order by t1.application_time desc
+2024-01-24 09:28:49,736 DEBUG [http-nio-8080-exec-10] cn.gzsendi.flowable.mapper.WorkOrderMapper.listMyApply.debug:137 - ==>  Preparing: select t1.* from work_order t1 where t1.`applicant` = ? order by t1.application_time desc
+2024-01-24 09:28:49,736 DEBUG [http-nio-8080-exec-3] cn.gzsendi.flowable.mapper.WorkFlowDefMapper.list.debug:137 - ==>  Preparing: select id, order_type, order_name, order_id_prex, remark, create_time, update_time from work_flow_def
+2024-01-24 09:28:49,737 DEBUG [http-nio-8080-exec-4] cn.gzsendi.flowable.mapper.WorkOrderMapper.listMyDeal.debug:137 - ==> Parameters: zhaoyl(String)
+2024-01-24 09:28:49,737 DEBUG [http-nio-8080-exec-3] cn.gzsendi.flowable.mapper.WorkFlowDefMapper.list.debug:137 - ==> Parameters: 
+2024-01-24 09:28:49,737 DEBUG [http-nio-8080-exec-10] cn.gzsendi.flowable.mapper.WorkOrderMapper.listMyApply.debug:137 - ==> Parameters: zhaoyl(String)
+2024-01-24 09:28:49,737 DEBUG [http-nio-8080-exec-2] cn.gzsendi.flowable.mapper.WorkOrderMapper.listMyExamAndApprove.debug:137 - ==>  Preparing: select wo.* from work_order wo LEFT JOIN `act_hi_procinst` p ON p.`BUSINESS_KEY_` = wo.`order_id` LEFT JOIN `act_hi_comment` c ON c.`PROC_INST_ID_` = p.`PROC_INST_ID_` where c.`USER_ID_` = ? and wo.handler != ? GROUP BY wo.order_id, wo.order_type, wo.applicant, wo.application_time, wo.order_status, wo.reason, wo.handler order by wo.application_time desc
+2024-01-24 09:28:49,737 DEBUG [http-nio-8080-exec-10] cn.gzsendi.flowable.mapper.WorkOrderMapper.listMyApply.debug:137 - <==      Total: 0
+2024-01-24 09:28:49,737 DEBUG [http-nio-8080-exec-4] cn.gzsendi.flowable.mapper.WorkOrderMapper.listMyDeal.debug:137 - <==      Total: 0
+2024-01-24 09:28:49,738 DEBUG [http-nio-8080-exec-3] cn.gzsendi.flowable.mapper.WorkFlowDefMapper.list.debug:137 - <==      Total: 2
+2024-01-24 09:28:49,738 DEBUG [http-nio-8080-exec-2] cn.gzsendi.flowable.mapper.WorkOrderMapper.listMyExamAndApprove.debug:137 - ==> Parameters: zhaoyl(String), zhaoyl(String)
+2024-01-24 09:28:49,740 DEBUG [http-nio-8080-exec-2] cn.gzsendi.flowable.mapper.WorkOrderMapper.listMyExamAndApprove.debug:137 - <==      Total: 4
+2024-01-24 09:29:37,251 DEBUG [http-nio-8080-exec-10] cn.gzsendi.flowable.mapper.WorkOrderMapper.listMyDeal.debug:137 - ==>  Preparing: select t1.* from work_order t1 where t1.`handler` = ? order by t1.application_time desc
+2024-01-24 09:29:37,251 DEBUG [http-nio-8080-exec-4] cn.gzsendi.flowable.mapper.WorkFlowDefMapper.list.debug:137 - ==>  Preparing: select id, order_type, order_name, order_id_prex, remark, create_time, update_time from work_flow_def
+2024-01-24 09:29:37,251 DEBUG [http-nio-8080-exec-3] cn.gzsendi.flowable.mapper.WorkOrderMapper.listMyApply.debug:137 - ==>  Preparing: select t1.* from work_order t1 where t1.`applicant` = ? order by t1.application_time desc
+2024-01-24 09:29:37,251 DEBUG [http-nio-8080-exec-2] cn.gzsendi.flowable.mapper.WorkOrderMapper.listMyExamAndApprove.debug:137 - ==>  Preparing: select wo.* from work_order wo LEFT JOIN `act_hi_procinst` p ON p.`BUSINESS_KEY_` = wo.`order_id` LEFT JOIN `act_hi_comment` c ON c.`PROC_INST_ID_` = p.`PROC_INST_ID_` where c.`USER_ID_` = ? and wo.handler != ? GROUP BY wo.order_id, wo.order_type, wo.applicant, wo.application_time, wo.order_status, wo.reason, wo.handler order by wo.application_time desc
+2024-01-24 09:29:37,252 DEBUG [http-nio-8080-exec-2] cn.gzsendi.flowable.mapper.WorkOrderMapper.listMyExamAndApprove.debug:137 - ==> Parameters: lix(String), lix(String)
+2024-01-24 09:29:37,252 DEBUG [http-nio-8080-exec-3] cn.gzsendi.flowable.mapper.WorkOrderMapper.listMyApply.debug:137 - ==> Parameters: lix(String)
+2024-01-24 09:29:37,252 DEBUG [http-nio-8080-exec-10] cn.gzsendi.flowable.mapper.WorkOrderMapper.listMyDeal.debug:137 - ==> Parameters: lix(String)
+2024-01-24 09:29:37,252 DEBUG [http-nio-8080-exec-4] cn.gzsendi.flowable.mapper.WorkFlowDefMapper.list.debug:137 - ==> Parameters: 
+2024-01-24 09:29:37,254 DEBUG [http-nio-8080-exec-10] cn.gzsendi.flowable.mapper.WorkOrderMapper.listMyDeal.debug:137 - <==      Total: 0
+2024-01-24 09:29:37,254 DEBUG [http-nio-8080-exec-4] cn.gzsendi.flowable.mapper.WorkFlowDefMapper.list.debug:137 - <==      Total: 2
+2024-01-24 09:29:37,254 DEBUG [http-nio-8080-exec-2] cn.gzsendi.flowable.mapper.WorkOrderMapper.listMyExamAndApprove.debug:137 - <==      Total: 4
+2024-01-24 09:29:37,254 DEBUG [http-nio-8080-exec-3] cn.gzsendi.flowable.mapper.WorkOrderMapper.listMyApply.debug:137 - <==      Total: 4
+2024-01-24 09:31:03,434 DEBUG [http-nio-8080-exec-8] cn.gzsendi.flowable.mapper.WorkFlowDefMapper.list.debug:137 - ==>  Preparing: select id, order_type, order_name, order_id_prex, remark, create_time, update_time from work_flow_def
+2024-01-24 09:31:03,435 DEBUG [http-nio-8080-exec-8] cn.gzsendi.flowable.mapper.WorkFlowDefMapper.list.debug:137 - ==> Parameters: 
+2024-01-24 09:31:03,436 DEBUG [http-nio-8080-exec-6] cn.gzsendi.flowable.mapper.WorkOrderMapper.listMyDeal.debug:137 - ==>  Preparing: select t1.* from work_order t1 where t1.`handler` = ? order by t1.application_time desc
+2024-01-24 09:31:03,436 DEBUG [http-nio-8080-exec-1] cn.gzsendi.flowable.mapper.WorkOrderMapper.listMyExamAndApprove.debug:137 - ==>  Preparing: select wo.* from work_order wo LEFT JOIN `act_hi_procinst` p ON p.`BUSINESS_KEY_` = wo.`order_id` LEFT JOIN `act_hi_comment` c ON c.`PROC_INST_ID_` = p.`PROC_INST_ID_` where c.`USER_ID_` = ? and wo.handler != ? GROUP BY wo.order_id, wo.order_type, wo.applicant, wo.application_time, wo.order_status, wo.reason, wo.handler order by wo.application_time desc
+2024-01-24 09:31:03,436 DEBUG [http-nio-8080-exec-8] cn.gzsendi.flowable.mapper.WorkFlowDefMapper.list.debug:137 - <==      Total: 2
+2024-01-24 09:31:03,436 DEBUG [http-nio-8080-exec-7] cn.gzsendi.flowable.mapper.WorkOrderMapper.listMyApply.debug:137 - ==>  Preparing: select t1.* from work_order t1 where t1.`applicant` = ? order by t1.application_time desc
+2024-01-24 09:31:03,436 DEBUG [http-nio-8080-exec-6] cn.gzsendi.flowable.mapper.WorkOrderMapper.listMyDeal.debug:137 - ==> Parameters: lix(String)
+2024-01-24 09:31:03,436 DEBUG [http-nio-8080-exec-7] cn.gzsendi.flowable.mapper.WorkOrderMapper.listMyApply.debug:137 - ==> Parameters: lix(String)
+2024-01-24 09:31:03,436 DEBUG [http-nio-8080-exec-1] cn.gzsendi.flowable.mapper.WorkOrderMapper.listMyExamAndApprove.debug:137 - ==> Parameters: lix(String), lix(String)
+2024-01-24 09:31:03,437 DEBUG [http-nio-8080-exec-6] cn.gzsendi.flowable.mapper.WorkOrderMapper.listMyDeal.debug:137 - <==      Total: 0
+2024-01-24 09:31:03,437 DEBUG [http-nio-8080-exec-7] cn.gzsendi.flowable.mapper.WorkOrderMapper.listMyApply.debug:137 - <==      Total: 4
+2024-01-24 09:31:03,439 DEBUG [http-nio-8080-exec-1] cn.gzsendi.flowable.mapper.WorkOrderMapper.listMyExamAndApprove.debug:137 - <==      Total: 4
+2024-01-24 09:31:14,047 DEBUG [http-nio-8080-exec-10] cn.gzsendi.flowable.mapper.WorkFlowFormFieldMapper.list.debug:137 - ==>  Preparing: select id, `order_type`, `field_name`, `field_cname`, `field_type`, `default_value`, `other_info`, `field_order` from work_flow_form_field WHERE `order_type` = ? order by field_order asc
+2024-01-24 09:31:14,047 DEBUG [http-nio-8080-exec-10] cn.gzsendi.flowable.mapper.WorkFlowFormFieldMapper.list.debug:137 - ==> Parameters: 0(String)
+2024-01-24 09:31:14,050 DEBUG [http-nio-8080-exec-10] cn.gzsendi.flowable.mapper.WorkFlowFormFieldMapper.list.debug:137 - <==      Total: 2
+2024-01-24 09:31:14,050 DEBUG [http-nio-8080-exec-3] cn.gzsendi.flowable.mapper.WorkOrderAssigneeMapper.selectSelective.debug:137 - ==>  Preparing: select id,order_id, assignee_version, assignee, assignee_order, task_name, order_status, can_cancel_order, create_user, create_time, update_user, update_time, remark from wo_assignee WHERE order_id = ? order by order_id, assignee_version, assignee_order
+2024-01-24 09:31:14,050 DEBUG [http-nio-8080-exec-3] cn.gzsendi.flowable.mapper.WorkOrderAssigneeMapper.selectSelective.debug:137 - ==> Parameters: 0(String)
+2024-01-24 09:31:14,052 DEBUG [http-nio-8080-exec-3] cn.gzsendi.flowable.mapper.WorkOrderAssigneeMapper.selectSelective.debug:137 - <==      Total: 2
+2024-01-24 09:31:20,700 DEBUG [http-nio-8080-exec-7] cn.gzsendi.flowable.mapper.WorkFlowDefMapper.list.debug:137 - ==>  Preparing: select id, order_type, order_name, order_id_prex, remark, create_time, update_time from work_flow_def
+2024-01-24 09:31:20,700 DEBUG [http-nio-8080-exec-7] cn.gzsendi.flowable.mapper.WorkFlowDefMapper.list.debug:137 - ==> Parameters: 
+2024-01-24 09:31:20,701 DEBUG [http-nio-8080-exec-7] cn.gzsendi.flowable.mapper.WorkFlowDefMapper.list.debug:137 - <==      Total: 2
+2024-01-24 09:31:20,701 DEBUG [http-nio-8080-exec-5] cn.gzsendi.flowable.mapper.WorkOrderMapper.listMyApply.debug:137 - ==>  Preparing: select t1.* from work_order t1 where t1.`applicant` = ? order by t1.application_time desc
+2024-01-24 09:31:20,701 DEBUG [http-nio-8080-exec-1] cn.gzsendi.flowable.mapper.WorkOrderMapper.listMyDeal.debug:137 - ==>  Preparing: select t1.* from work_order t1 where t1.`handler` = ? order by t1.application_time desc
+2024-01-24 09:31:20,701 DEBUG [http-nio-8080-exec-9] cn.gzsendi.flowable.mapper.WorkOrderMapper.listMyExamAndApprove.debug:137 - ==>  Preparing: select wo.* from work_order wo LEFT JOIN `act_hi_procinst` p ON p.`BUSINESS_KEY_` = wo.`order_id` LEFT JOIN `act_hi_comment` c ON c.`PROC_INST_ID_` = p.`PROC_INST_ID_` where c.`USER_ID_` = ? and wo.handler != ? GROUP BY wo.order_id, wo.order_type, wo.applicant, wo.application_time, wo.order_status, wo.reason, wo.handler order by wo.application_time desc
+2024-01-24 09:31:20,701 DEBUG [http-nio-8080-exec-5] cn.gzsendi.flowable.mapper.WorkOrderMapper.listMyApply.debug:137 - ==> Parameters: lix(String)
+2024-01-24 09:31:20,701 DEBUG [http-nio-8080-exec-1] cn.gzsendi.flowable.mapper.WorkOrderMapper.listMyDeal.debug:137 - ==> Parameters: lix(String)
+2024-01-24 09:31:20,702 DEBUG [http-nio-8080-exec-9] cn.gzsendi.flowable.mapper.WorkOrderMapper.listMyExamAndApprove.debug:137 - ==> Parameters: lix(String), lix(String)
+2024-01-24 09:31:20,702 DEBUG [http-nio-8080-exec-1] cn.gzsendi.flowable.mapper.WorkOrderMapper.listMyDeal.debug:137 - <==      Total: 0
+2024-01-24 09:31:20,702 DEBUG [http-nio-8080-exec-5] cn.gzsendi.flowable.mapper.WorkOrderMapper.listMyApply.debug:137 - <==      Total: 4
+2024-01-24 09:31:20,703 DEBUG [http-nio-8080-exec-9] cn.gzsendi.flowable.mapper.WorkOrderMapper.listMyExamAndApprove.debug:137 - <==      Total: 4
+2024-01-24 09:33:46,593 DEBUG [http-nio-8080-exec-1] cn.gzsendi.flowable.mapper.WorkFlowDefMapper.insert.debug:137 - ==>  Preparing: insert into work_flow_def(order_type,order_name,order_id_prex,remark) values(?,?,?,?)
+2024-01-24 09:33:46,599 DEBUG [http-nio-8080-exec-1] cn.gzsendi.flowable.mapper.WorkFlowDefMapper.insert.debug:137 - ==> Parameters: 3(String), 加班申请(String), JBSQ(String), 加班审批流程(String)
+2024-01-24 09:33:46,601 DEBUG [http-nio-8080-exec-1] cn.gzsendi.flowable.mapper.WorkFlowDefMapper.insert.debug:137 - <==    Updates: 1
+2024-01-24 09:34:07,705 DEBUG [http-nio-8080-exec-10] cn.gzsendi.flowable.mapper.WorkFlowDefMapper.list.debug:137 - ==>  Preparing: select id, order_type, order_name, order_id_prex, remark, create_time, update_time from work_flow_def
+2024-01-24 09:34:07,706 DEBUG [http-nio-8080-exec-2] cn.gzsendi.flowable.mapper.WorkOrderMapper.listMyApply.debug:137 - ==>  Preparing: select t1.* from work_order t1 where t1.`applicant` = ? order by t1.application_time desc
+2024-01-24 09:34:07,706 DEBUG [http-nio-8080-exec-3] cn.gzsendi.flowable.mapper.WorkOrderMapper.listMyDeal.debug:137 - ==>  Preparing: select t1.* from work_order t1 where t1.`handler` = ? order by t1.application_time desc
+2024-01-24 09:34:07,706 DEBUG [http-nio-8080-exec-10] cn.gzsendi.flowable.mapper.WorkFlowDefMapper.list.debug:137 - ==> Parameters: 
+2024-01-24 09:34:07,706 DEBUG [http-nio-8080-exec-3] cn.gzsendi.flowable.mapper.WorkOrderMapper.listMyDeal.debug:137 - ==> Parameters: lix(String)
+2024-01-24 09:34:07,706 DEBUG [http-nio-8080-exec-8] cn.gzsendi.flowable.mapper.WorkOrderMapper.listMyExamAndApprove.debug:137 - ==>  Preparing: select wo.* from work_order wo LEFT JOIN `act_hi_procinst` p ON p.`BUSINESS_KEY_` = wo.`order_id` LEFT JOIN `act_hi_comment` c ON c.`PROC_INST_ID_` = p.`PROC_INST_ID_` where c.`USER_ID_` = ? and wo.handler != ? GROUP BY wo.order_id, wo.order_type, wo.applicant, wo.application_time, wo.order_status, wo.reason, wo.handler order by wo.application_time desc
+2024-01-24 09:34:07,706 DEBUG [http-nio-8080-exec-2] cn.gzsendi.flowable.mapper.WorkOrderMapper.listMyApply.debug:137 - ==> Parameters: lix(String)
+2024-01-24 09:34:07,706 DEBUG [http-nio-8080-exec-8] cn.gzsendi.flowable.mapper.WorkOrderMapper.listMyExamAndApprove.debug:137 - ==> Parameters: lix(String), lix(String)
+2024-01-24 09:34:07,706 DEBUG [http-nio-8080-exec-3] cn.gzsendi.flowable.mapper.WorkOrderMapper.listMyDeal.debug:137 - <==      Total: 0
+2024-01-24 09:34:07,707 DEBUG [http-nio-8080-exec-2] cn.gzsendi.flowable.mapper.WorkOrderMapper.listMyApply.debug:137 - <==      Total: 4
+2024-01-24 09:34:07,707 DEBUG [http-nio-8080-exec-8] cn.gzsendi.flowable.mapper.WorkOrderMapper.listMyExamAndApprove.debug:137 - <==      Total: 4
+2024-01-24 09:34:07,707 DEBUG [http-nio-8080-exec-10] cn.gzsendi.flowable.mapper.WorkFlowDefMapper.list.debug:137 - <==      Total: 3
+2024-01-24 09:34:27,725 DEBUG [http-nio-8080-exec-9] cn.gzsendi.flowable.mapper.WorkOrderAssigneeMapper.selectSelective.debug:137 - ==>  Preparing: select id,order_id, assignee_version, assignee, assignee_order, task_name, order_status, can_cancel_order, create_user, create_time, update_user, update_time, remark from wo_assignee WHERE order_id = ? order by order_id, assignee_version, assignee_order
+2024-01-24 09:34:27,725 DEBUG [http-nio-8080-exec-5] cn.gzsendi.flowable.mapper.WorkFlowFormFieldMapper.list.debug:137 - ==>  Preparing: select id, `order_type`, `field_name`, `field_cname`, `field_type`, `default_value`, `other_info`, `field_order` from work_flow_form_field WHERE `order_type` = ? order by field_order asc
+2024-01-24 09:34:27,725 DEBUG [http-nio-8080-exec-9] cn.gzsendi.flowable.mapper.WorkOrderAssigneeMapper.selectSelective.debug:137 - ==> Parameters: 3(String)
+2024-01-24 09:34:27,725 DEBUG [http-nio-8080-exec-5] cn.gzsendi.flowable.mapper.WorkFlowFormFieldMapper.list.debug:137 - ==> Parameters: 3(String)
+2024-01-24 09:34:27,726 DEBUG [http-nio-8080-exec-5] cn.gzsendi.flowable.mapper.WorkFlowFormFieldMapper.list.debug:137 - <==      Total: 0
+2024-01-24 09:34:27,726 DEBUG [http-nio-8080-exec-9] cn.gzsendi.flowable.mapper.WorkOrderAssigneeMapper.selectSelective.debug:137 - <==      Total: 0
+2024-01-24 09:35:17,867 DEBUG [http-nio-8080-exec-2] cn.gzsendi.flowable.mapper.WorkFlowFormFieldMapper.list.debug:137 - ==>  Preparing: select id, `order_type`, `field_name`, `field_cname`, `field_type`, `default_value`, `other_info`, `field_order` from work_flow_form_field WHERE `order_type` = ? order by field_order asc
+2024-01-24 09:35:17,867 DEBUG [http-nio-8080-exec-2] cn.gzsendi.flowable.mapper.WorkFlowFormFieldMapper.list.debug:137 - ==> Parameters: 3(String)
+2024-01-24 09:35:17,868 DEBUG [http-nio-8080-exec-2] cn.gzsendi.flowable.mapper.WorkFlowFormFieldMapper.list.debug:137 - <==      Total: 0
+2024-01-24 09:35:23,726 DEBUG [http-nio-8080-exec-8] cn.gzsendi.flowable.mapper.WorkFlowDefMapper.getByOrderType.debug:137 - ==>  Preparing: select * from work_flow_def where order_type = ?
+2024-01-24 09:35:23,727 DEBUG [http-nio-8080-exec-8] cn.gzsendi.flowable.mapper.WorkFlowDefMapper.getByOrderType.debug:137 - ==> Parameters: 3(String)
+2024-01-24 09:35:23,728 DEBUG [http-nio-8080-exec-8] cn.gzsendi.flowable.mapper.WorkFlowDefMapper.getByOrderType.debug:137 - <==      Total: 1
+2024-01-24 09:35:23,729 DEBUG [http-nio-8080-exec-8] cn.gzsendi.flowable.mapper.WorkFlowDefMapper.getByOrderType.debug:137 - ==>  Preparing: select * from work_flow_def where order_type = ?
+2024-01-24 09:35:23,729 DEBUG [http-nio-8080-exec-8] cn.gzsendi.flowable.mapper.WorkFlowDefMapper.getByOrderType.debug:137 - ==> Parameters: 3(String)
+2024-01-24 09:35:23,729 DEBUG [http-nio-8080-exec-8] cn.gzsendi.flowable.mapper.WorkFlowDefMapper.getByOrderType.debug:137 - <==      Total: 1
+2024-01-24 09:35:23,730 DEBUG [http-nio-8080-exec-8] cn.gzsendi.flowable.mapper.WorkOrderMapper.insert.debug:137 - ==>  Preparing: insert into work_order(`order_id`,`order_type`,`subject_id`,`subject_type`,`applicant`,`application_time`,`order_summary`,`order_status`,`reason`,`form_data`,`handler`,`remark`,`create_user`,`create_time`,`update_user`,`update_time`) values(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)
+2024-01-24 09:35:23,731 DEBUG [http-nio-8080-exec-8] cn.gzsendi.flowable.mapper.WorkOrderMapper.insert.debug:137 - ==> Parameters: JBSQ_1706060123728(String), 3(String), 1(Integer), 1(String), lix(String), 2024-01-24 09:35:23.73(Timestamp), {"title":"加班申请","createTime":"Wed Jan 24 09:35:23 CST 2024","userId":"lix"}(String), 1(String), (String), {}(String), (String), (String), lix(String), 2024-01-24 09:35:23.73(Timestamp), lix(String), 2024-01-24 09:35:23.73(Timestamp)
+2024-01-24 09:35:23,732 DEBUG [http-nio-8080-exec-8] cn.gzsendi.flowable.mapper.WorkOrderMapper.insert.debug:137 - <==    Updates: 1
+2024-01-24 09:35:23,734 DEBUG [http-nio-8080-exec-8] cn.gzsendi.flowable.mapper.WorkOrderAssigneeMapper.getFirstAssigneeByOrderId.debug:137 - ==>  Preparing: SELECT id,order_id, assignee_version, assignee, assignee_order, task_name, order_status, can_cancel_order, create_user, create_time, update_user, update_time, remark FROM wo_assignee WHERE order_id = ? ORDER BY order_id, assignee_version DESC, assignee_order LIMIT 1
+2024-01-24 09:35:23,734 DEBUG [http-nio-8080-exec-8] cn.gzsendi.flowable.mapper.WorkOrderAssigneeMapper.getFirstAssigneeByOrderId.debug:137 - ==> Parameters: JBSQ_1706060123728(String)
+2024-01-24 09:35:23,735 DEBUG [http-nio-8080-exec-8] cn.gzsendi.flowable.mapper.WorkOrderAssigneeMapper.getFirstAssigneeByOrderId.debug:137 - <==      Total: 0
+2024-01-24 09:35:23,736 DEBUG [http-nio-8080-exec-8] cn.gzsendi.flowable.mapper.WorkFlowDefMapper.getByOrderIdPrex.debug:137 - ==>  Preparing: select * from work_flow_def where order_id_prex = ?
+2024-01-24 09:35:23,736 DEBUG [http-nio-8080-exec-8] cn.gzsendi.flowable.mapper.WorkFlowDefMapper.getByOrderIdPrex.debug:137 - ==> Parameters: JBSQ(String)
+2024-01-24 09:35:23,737 DEBUG [http-nio-8080-exec-8] cn.gzsendi.flowable.mapper.WorkFlowDefMapper.getByOrderIdPrex.debug:137 - <==      Total: 1
+2024-01-24 09:35:23,737 DEBUG [http-nio-8080-exec-8] cn.gzsendi.flowable.mapper.WorkOrderAssigneeMapper.getFirstAssigneeByOrderId.debug:137 - ==>  Preparing: SELECT id,order_id, assignee_version, assignee, assignee_order, task_name, order_status, can_cancel_order, create_user, create_time, update_user, update_time, remark FROM wo_assignee WHERE order_id = ? ORDER BY order_id, assignee_version DESC, assignee_order LIMIT 1
+2024-01-24 09:35:23,737 DEBUG [http-nio-8080-exec-8] cn.gzsendi.flowable.mapper.WorkOrderAssigneeMapper.getFirstAssigneeByOrderId.debug:137 - ==> Parameters: 3(String)
+2024-01-24 09:35:23,737 DEBUG [http-nio-8080-exec-8] cn.gzsendi.flowable.mapper.WorkOrderAssigneeMapper.getFirstAssigneeByOrderId.debug:137 - <==      Total: 0
+2024-01-24 09:35:23,747 ERROR [http-nio-8080-exec-8] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/bpm].[dispatcherServlet].log:175 - Servlet.service() for servlet [dispatcherServlet] in context with path [/bpm] threw exception [Request processing failed; nested exception is cn.gzsendi.framework.exception.GzsendiException: 找不到流程任务节点代理人列表的配置，请联系开发人员排查] with root cause
+cn.gzsendi.framework.exception.GzsendiException: 找不到流程任务节点代理人列表的配置，请联系开发人员排查
+	at cn.gzsendi.flowable.service.impl.CommonFlowServiceImpl.putAssigneeInfoToVariables(CommonFlowServiceImpl.java:510)
+	at cn.gzsendi.flowable.service.impl.CommonFlowServiceImpl.startCommonFlow(CommonFlowServiceImpl.java:123)
+	at cn.gzsendi.flowable.service.impl.CommonFlowServiceImpl$$FastClassBySpringCGLIB$$b8a1016a.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:783)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:753)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:388)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:753)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:698)
+	at cn.gzsendi.flowable.service.impl.CommonFlowServiceImpl$$EnhancerBySpringCGLIB$$2e385c81.startCommonFlow(<generated>)
+	at cn.gzsendi.flowable.service.impl.WorkOrderServiceImpl.addWorkOrder(WorkOrderServiceImpl.java:74)
+	at cn.gzsendi.flowable.service.impl.WorkOrderServiceImpl$$FastClassBySpringCGLIB$$d9d6b34a.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:783)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:753)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:388)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:753)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:698)
+	at cn.gzsendi.flowable.service.impl.WorkOrderServiceImpl$$EnhancerBySpringCGLIB$$2c879e21.addWorkOrder(<generated>)
+	at cn.gzsendi.flowable.controller.WorkOrderController.addWorkOrder(WorkOrderController.java:104)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:327)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:115)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:81)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:122)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:126)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:81)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:109)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:149)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:103)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:89)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:110)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:80)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:55)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:211)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:183)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:354)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:267)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:895)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1732)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2024-01-24 09:35:58,906  WARN [http-nio-8080-exec-6] org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver.logException:208 - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
+2024-01-24 09:36:25,100 DEBUG [http-nio-8080-exec-7] cn.gzsendi.flowable.mapper.WorkFlowFormFieldMapper.list.debug:137 - ==>  Preparing: select id, `order_type`, `field_name`, `field_cname`, `field_type`, `default_value`, `other_info`, `field_order` from work_flow_form_field WHERE `order_type` = ? order by field_order asc
+2024-01-24 09:36:25,100 DEBUG [http-nio-8080-exec-7] cn.gzsendi.flowable.mapper.WorkFlowFormFieldMapper.list.debug:137 - ==> Parameters: 3(String)
+2024-01-24 09:36:25,100 DEBUG [http-nio-8080-exec-7] cn.gzsendi.flowable.mapper.WorkFlowFormFieldMapper.list.debug:137 - <==      Total: 0
+2024-01-24 09:36:26,073 DEBUG [http-nio-8080-exec-1] cn.gzsendi.flowable.mapper.WorkFlowDefMapper.getByOrderType.debug:137 - ==>  Preparing: select * from work_flow_def where order_type = ?
+2024-01-24 09:36:26,074 DEBUG [http-nio-8080-exec-1] cn.gzsendi.flowable.mapper.WorkFlowDefMapper.getByOrderType.debug:137 - ==> Parameters: 3(String)
+2024-01-24 09:36:26,075 DEBUG [http-nio-8080-exec-1] cn.gzsendi.flowable.mapper.WorkFlowDefMapper.getByOrderType.debug:137 - <==      Total: 1
+2024-01-24 09:36:26,076 DEBUG [http-nio-8080-exec-1] cn.gzsendi.flowable.mapper.WorkFlowDefMapper.getByOrderType.debug:137 - ==>  Preparing: select * from work_flow_def where order_type = ?
+2024-01-24 09:36:26,076 DEBUG [http-nio-8080-exec-1] cn.gzsendi.flowable.mapper.WorkFlowDefMapper.getByOrderType.debug:137 - ==> Parameters: 3(String)
+2024-01-24 09:36:26,076 DEBUG [http-nio-8080-exec-1] cn.gzsendi.flowable.mapper.WorkFlowDefMapper.getByOrderType.debug:137 - <==      Total: 1
+2024-01-24 09:36:26,078 DEBUG [http-nio-8080-exec-1] cn.gzsendi.flowable.mapper.WorkOrderMapper.insert.debug:137 - ==>  Preparing: insert into work_order(`order_id`,`order_type`,`subject_id`,`subject_type`,`applicant`,`application_time`,`order_summary`,`order_status`,`reason`,`form_data`,`handler`,`remark`,`create_user`,`create_time`,`update_user`,`update_time`) values(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)
+2024-01-24 09:36:26,078 DEBUG [http-nio-8080-exec-1] cn.gzsendi.flowable.mapper.WorkOrderMapper.insert.debug:137 - ==> Parameters: JBSQ_1706060186075(String), 3(String), 1(Integer), 1(String), lix(String), 2024-01-24 09:36:26.078(Timestamp), {"title":"加班申请","createTime":"Wed Jan 24 09:36:26 CST 2024","userId":"lix"}(String), 1(String), (String), {}(String), (String), (String), lix(String), 2024-01-24 09:36:26.078(Timestamp), lix(String), 2024-01-24 09:36:26.078(Timestamp)
+2024-01-24 09:36:26,079 DEBUG [http-nio-8080-exec-1] cn.gzsendi.flowable.mapper.WorkOrderMapper.insert.debug:137 - <==    Updates: 1
+2024-01-24 09:36:26,080 DEBUG [http-nio-8080-exec-1] cn.gzsendi.flowable.mapper.WorkOrderAssigneeMapper.getFirstAssigneeByOrderId.debug:137 - ==>  Preparing: SELECT id,order_id, assignee_version, assignee, assignee_order, task_name, order_status, can_cancel_order, create_user, create_time, update_user, update_time, remark FROM wo_assignee WHERE order_id = ? ORDER BY order_id, assignee_version DESC, assignee_order LIMIT 1
+2024-01-24 09:36:26,080 DEBUG [http-nio-8080-exec-1] cn.gzsendi.flowable.mapper.WorkOrderAssigneeMapper.getFirstAssigneeByOrderId.debug:137 - ==> Parameters: JBSQ_1706060186075(String)
+2024-01-24 09:36:26,081 DEBUG [http-nio-8080-exec-1] cn.gzsendi.flowable.mapper.WorkOrderAssigneeMapper.getFirstAssigneeByOrderId.debug:137 - <==      Total: 0
+2024-01-24 09:36:26,081 DEBUG [http-nio-8080-exec-1] cn.gzsendi.flowable.mapper.WorkFlowDefMapper.getByOrderIdPrex.debug:137 - ==>  Preparing: select * from work_flow_def where order_id_prex = ?
+2024-01-24 09:36:26,081 DEBUG [http-nio-8080-exec-1] cn.gzsendi.flowable.mapper.WorkFlowDefMapper.getByOrderIdPrex.debug:137 - ==> Parameters: JBSQ(String)
+2024-01-24 09:36:26,082 DEBUG [http-nio-8080-exec-1] cn.gzsendi.flowable.mapper.WorkFlowDefMapper.getByOrderIdPrex.debug:137 - <==      Total: 1
+2024-01-24 09:36:26,082 DEBUG [http-nio-8080-exec-1] cn.gzsendi.flowable.mapper.WorkOrderAssigneeMapper.getFirstAssigneeByOrderId.debug:137 - ==>  Preparing: SELECT id,order_id, assignee_version, assignee, assignee_order, task_name, order_status, can_cancel_order, create_user, create_time, update_user, update_time, remark FROM wo_assignee WHERE order_id = ? ORDER BY order_id, assignee_version DESC, assignee_order LIMIT 1
+2024-01-24 09:36:26,083 DEBUG [http-nio-8080-exec-1] cn.gzsendi.flowable.mapper.WorkOrderAssigneeMapper.getFirstAssigneeByOrderId.debug:137 - ==> Parameters: 3(String)
+2024-01-24 09:36:26,084 DEBUG [http-nio-8080-exec-1] cn.gzsendi.flowable.mapper.WorkOrderAssigneeMapper.getFirstAssigneeByOrderId.debug:137 - <==      Total: 0
+2024-01-24 09:36:26,085 ERROR [http-nio-8080-exec-1] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/bpm].[dispatcherServlet].log:175 - Servlet.service() for servlet [dispatcherServlet] in context with path [/bpm] threw exception [Request processing failed; nested exception is cn.gzsendi.framework.exception.GzsendiException: 找不到流程任务节点代理人列表的配置，请联系开发人员排查] with root cause
+cn.gzsendi.framework.exception.GzsendiException: 找不到流程任务节点代理人列表的配置，请联系开发人员排查
+	at cn.gzsendi.flowable.service.impl.CommonFlowServiceImpl.putAssigneeInfoToVariables(CommonFlowServiceImpl.java:510)
+	at cn.gzsendi.flowable.service.impl.CommonFlowServiceImpl.startCommonFlow(CommonFlowServiceImpl.java:123)
+	at cn.gzsendi.flowable.service.impl.CommonFlowServiceImpl$$FastClassBySpringCGLIB$$b8a1016a.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:783)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:753)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:388)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:753)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:698)
+	at cn.gzsendi.flowable.service.impl.CommonFlowServiceImpl$$EnhancerBySpringCGLIB$$2e385c81.startCommonFlow(<generated>)
+	at cn.gzsendi.flowable.service.impl.WorkOrderServiceImpl.addWorkOrder(WorkOrderServiceImpl.java:74)
+	at cn.gzsendi.flowable.service.impl.WorkOrderServiceImpl$$FastClassBySpringCGLIB$$d9d6b34a.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:783)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:753)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:388)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:753)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:698)
+	at cn.gzsendi.flowable.service.impl.WorkOrderServiceImpl$$EnhancerBySpringCGLIB$$2c879e21.addWorkOrder(<generated>)
+	at cn.gzsendi.flowable.controller.WorkOrderController.addWorkOrder(WorkOrderController.java:104)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:327)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:115)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:81)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:122)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:126)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:81)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:109)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:149)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:103)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:89)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:110)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:80)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:55)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:211)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:183)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:354)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:267)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:895)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1732)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2024-01-24 09:37:01,619 DEBUG [http-nio-8080-exec-2] cn.gzsendi.flowable.mapper.WorkFlowDefMapper.list.debug:137 - ==>  Preparing: select id, order_type, order_name, order_id_prex, remark, create_time, update_time from work_flow_def
+2024-01-24 09:37:01,619 DEBUG [http-nio-8080-exec-8] cn.gzsendi.flowable.mapper.WorkOrderMapper.listMyDeal.debug:137 - ==>  Preparing: select t1.* from work_order t1 where t1.`handler` = ? order by t1.application_time desc
+2024-01-24 09:37:01,619 DEBUG [http-nio-8080-exec-2] cn.gzsendi.flowable.mapper.WorkFlowDefMapper.list.debug:137 - ==> Parameters: 
+2024-01-24 09:37:01,619 DEBUG [http-nio-8080-exec-8] cn.gzsendi.flowable.mapper.WorkOrderMapper.listMyDeal.debug:137 - ==> Parameters: lix(String)
+2024-01-24 09:37:01,619 DEBUG [http-nio-8080-exec-10] cn.gzsendi.flowable.mapper.WorkOrderMapper.listMyApply.debug:137 - ==>  Preparing: select t1.* from work_order t1 where t1.`applicant` = ? order by t1.application_time desc
+2024-01-24 09:37:01,619 DEBUG [http-nio-8080-exec-6] cn.gzsendi.flowable.mapper.WorkOrderMapper.listMyExamAndApprove.debug:137 - ==>  Preparing: select wo.* from work_order wo LEFT JOIN `act_hi_procinst` p ON p.`BUSINESS_KEY_` = wo.`order_id` LEFT JOIN `act_hi_comment` c ON c.`PROC_INST_ID_` = p.`PROC_INST_ID_` where c.`USER_ID_` = ? and wo.handler != ? GROUP BY wo.order_id, wo.order_type, wo.applicant, wo.application_time, wo.order_status, wo.reason, wo.handler order by wo.application_time desc
+2024-01-24 09:37:01,620 DEBUG [http-nio-8080-exec-10] cn.gzsendi.flowable.mapper.WorkOrderMapper.listMyApply.debug:137 - ==> Parameters: lix(String)
+2024-01-24 09:37:01,620 DEBUG [http-nio-8080-exec-6] cn.gzsendi.flowable.mapper.WorkOrderMapper.listMyExamAndApprove.debug:137 - ==> Parameters: lix(String), lix(String)
+2024-01-24 09:37:01,620 DEBUG [http-nio-8080-exec-8] cn.gzsendi.flowable.mapper.WorkOrderMapper.listMyDeal.debug:137 - <==      Total: 0
+2024-01-24 09:37:01,620 DEBUG [http-nio-8080-exec-2] cn.gzsendi.flowable.mapper.WorkFlowDefMapper.list.debug:137 - <==      Total: 3
+2024-01-24 09:37:01,620 DEBUG [http-nio-8080-exec-10] cn.gzsendi.flowable.mapper.WorkOrderMapper.listMyApply.debug:137 - <==      Total: 4
+2024-01-24 09:37:01,621 DEBUG [http-nio-8080-exec-6] cn.gzsendi.flowable.mapper.WorkOrderMapper.listMyExamAndApprove.debug:137 - <==      Total: 4
+2024-01-24 09:37:11,151 DEBUG [http-nio-8080-exec-9] cn.gzsendi.flowable.mapper.WorkFlowFormFieldMapper.list.debug:137 - ==>  Preparing: select id, `order_type`, `field_name`, `field_cname`, `field_type`, `default_value`, `other_info`, `field_order` from work_flow_form_field WHERE `order_type` = ? order by field_order asc
+2024-01-24 09:37:11,151 DEBUG [http-nio-8080-exec-4] cn.gzsendi.flowable.mapper.WorkOrderAssigneeMapper.selectSelective.debug:137 - ==>  Preparing: select id,order_id, assignee_version, assignee, assignee_order, task_name, order_status, can_cancel_order, create_user, create_time, update_user, update_time, remark from wo_assignee WHERE order_id = ? order by order_id, assignee_version, assignee_order
+2024-01-24 09:37:11,151 DEBUG [http-nio-8080-exec-9] cn.gzsendi.flowable.mapper.WorkFlowFormFieldMapper.list.debug:137 - ==> Parameters: 0(String)
+2024-01-24 09:37:11,151 DEBUG [http-nio-8080-exec-4] cn.gzsendi.flowable.mapper.WorkOrderAssigneeMapper.selectSelective.debug:137 - ==> Parameters: 0(String)
+2024-01-24 09:37:11,153 DEBUG [http-nio-8080-exec-4] cn.gzsendi.flowable.mapper.WorkOrderAssigneeMapper.selectSelective.debug:137 - <==      Total: 2
+2024-01-24 09:37:11,153 DEBUG [http-nio-8080-exec-9] cn.gzsendi.flowable.mapper.WorkFlowFormFieldMapper.list.debug:137 - <==      Total: 2
+2024-01-24 09:37:19,955 DEBUG [http-nio-8080-exec-3] cn.gzsendi.flowable.mapper.WorkFlowFormFieldMapper.list.debug:137 - ==>  Preparing: select id, `order_type`, `field_name`, `field_cname`, `field_type`, `default_value`, `other_info`, `field_order` from work_flow_form_field WHERE `order_type` = ? order by field_order asc
+2024-01-24 09:37:19,955 DEBUG [http-nio-8080-exec-3] cn.gzsendi.flowable.mapper.WorkFlowFormFieldMapper.list.debug:137 - ==> Parameters: 0(String)
+2024-01-24 09:37:19,956 DEBUG [http-nio-8080-exec-3] cn.gzsendi.flowable.mapper.WorkFlowFormFieldMapper.list.debug:137 - <==      Total: 2
+2024-01-24 09:37:21,033 DEBUG [http-nio-8080-exec-10] cn.gzsendi.flowable.mapper.WorkFlowDefMapper.getByOrderType.debug:137 - ==>  Preparing: select * from work_flow_def where order_type = ?
+2024-01-24 09:37:21,034 DEBUG [http-nio-8080-exec-10] cn.gzsendi.flowable.mapper.WorkFlowDefMapper.getByOrderType.debug:137 - ==> Parameters: 0(String)
+2024-01-24 09:37:21,035 DEBUG [http-nio-8080-exec-10] cn.gzsendi.flowable.mapper.WorkFlowDefMapper.getByOrderType.debug:137 - <==      Total: 1
+2024-01-24 09:37:21,037 DEBUG [http-nio-8080-exec-10] cn.gzsendi.flowable.mapper.WorkFlowDefMapper.getByOrderType.debug:137 - ==>  Preparing: select * from work_flow_def where order_type = ?
+2024-01-24 09:37:21,037 DEBUG [http-nio-8080-exec-10] cn.gzsendi.flowable.mapper.WorkFlowDefMapper.getByOrderType.debug:137 - ==> Parameters: 0(String)
+2024-01-24 09:37:21,038 DEBUG [http-nio-8080-exec-10] cn.gzsendi.flowable.mapper.WorkFlowDefMapper.getByOrderType.debug:137 - <==      Total: 1
+2024-01-24 09:37:21,038 DEBUG [http-nio-8080-exec-10] cn.gzsendi.flowable.mapper.WorkOrderMapper.insert.debug:137 - ==>  Preparing: insert into work_order(`order_id`,`order_type`,`subject_id`,`subject_type`,`applicant`,`application_time`,`order_summary`,`order_status`,`reason`,`form_data`,`handler`,`remark`,`create_user`,`create_time`,`update_user`,`update_time`) values(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)
+2024-01-24 09:37:21,039 DEBUG [http-nio-8080-exec-10] cn.gzsendi.flowable.mapper.WorkOrderMapper.insert.debug:137 - ==> Parameters: QJ_1706060241036(String), 0(String), 1(Integer), 1(String), lix(String), 2024-01-24 09:37:21.038(Timestamp), {"title":"请假","createTime":"Wed Jan 24 09:37:21 CST 2024","userId":"lix"}(String), 1(String), (String), {"dayStr":"1","dayType":"tiaoxu"}(String), (String), (String), lix(String), 2024-01-24 09:37:21.038(Timestamp), lix(String), 2024-01-24 09:37:21.038(Timestamp)
+2024-01-24 09:37:21,039 DEBUG [http-nio-8080-exec-10] cn.gzsendi.flowable.mapper.WorkOrderMapper.insert.debug:137 - <==    Updates: 1
+2024-01-24 09:37:21,040 DEBUG [http-nio-8080-exec-10] cn.gzsendi.flowable.mapper.WorkOrderAssigneeMapper.getFirstAssigneeByOrderId.debug:137 - ==>  Preparing: SELECT id,order_id, assignee_version, assignee, assignee_order, task_name, order_status, can_cancel_order, create_user, create_time, update_user, update_time, remark FROM wo_assignee WHERE order_id = ? ORDER BY order_id, assignee_version DESC, assignee_order LIMIT 1
+2024-01-24 09:37:21,040 DEBUG [http-nio-8080-exec-10] cn.gzsendi.flowable.mapper.WorkOrderAssigneeMapper.getFirstAssigneeByOrderId.debug:137 - ==> Parameters: QJ_1706060241036(String)
+2024-01-24 09:37:21,041 DEBUG [http-nio-8080-exec-10] cn.gzsendi.flowable.mapper.WorkOrderAssigneeMapper.getFirstAssigneeByOrderId.debug:137 - <==      Total: 0
+2024-01-24 09:37:21,041 DEBUG [http-nio-8080-exec-10] cn.gzsendi.flowable.mapper.WorkFlowDefMapper.getByOrderIdPrex.debug:137 - ==>  Preparing: select * from work_flow_def where order_id_prex = ?
+2024-01-24 09:37:21,042 DEBUG [http-nio-8080-exec-10] cn.gzsendi.flowable.mapper.WorkFlowDefMapper.getByOrderIdPrex.debug:137 - ==> Parameters: QJ(String)
+2024-01-24 09:37:21,042 DEBUG [http-nio-8080-exec-10] cn.gzsendi.flowable.mapper.WorkFlowDefMapper.getByOrderIdPrex.debug:137 - <==      Total: 1
+2024-01-24 09:37:21,042 DEBUG [http-nio-8080-exec-10] cn.gzsendi.flowable.mapper.WorkOrderAssigneeMapper.getFirstAssigneeByOrderId.debug:137 - ==>  Preparing: SELECT id,order_id, assignee_version, assignee, assignee_order, task_name, order_status, can_cancel_order, create_user, create_time, update_user, update_time, remark FROM wo_assignee WHERE order_id = ? ORDER BY order_id, assignee_version DESC, assignee_order LIMIT 1
+2024-01-24 09:37:21,043 DEBUG [http-nio-8080-exec-10] cn.gzsendi.flowable.mapper.WorkOrderAssigneeMapper.getFirstAssigneeByOrderId.debug:137 - ==> Parameters: 0(String)
+2024-01-24 09:37:21,043 DEBUG [http-nio-8080-exec-10] cn.gzsendi.flowable.mapper.WorkOrderAssigneeMapper.getFirstAssigneeByOrderId.debug:137 - <==      Total: 1
+2024-01-24 09:37:21,094  INFO [http-nio-8080-exec-10] cn.gzsendi.flowable.listener.CommonFlowExecListener.notify:47 - ======================CommonFlowExecListener===CommonFlowExecListener==========================
+2024-01-24 09:37:21,095  INFO [http-nio-8080-exec-10] cn.gzsendi.flowable.listener.CommonFlowExecListener.notify:49 - 流程定义ID: 91988e12-ba09-11ee-a2fb-f43bd854fbfb
+2024-01-24 09:37:21,095  INFO [http-nio-8080-exec-10] cn.gzsendi.flowable.listener.CommonFlowExecListener.notify:50 - 流程实例ID: 1ddc0c0c-ba59-11ee-832b-00e04c680209
+2024-01-24 09:37:21,095  INFO [http-nio-8080-exec-10] cn.gzsendi.flowable.listener.CommonFlowExecListener.notify:51 - 业务key/工单ID: QJ_1706060241036
+2024-01-24 09:37:21,095  INFO [http-nio-8080-exec-10] cn.gzsendi.flowable.listener.CommonFlowExecListener.notify:52 - 事件名称: start
+2024-01-24 09:37:21,095  INFO [http-nio-8080-exec-10] cn.gzsendi.flowable.listener.CommonFlowExecListener.notify:53 - 当前活动ID: startCEAAF
+2024-01-24 09:37:21,095  INFO [http-nio-8080-exec-10] cn.gzsendi.flowable.listener.CommonFlowExecListener.notify:54 - 流程实例变量: {initiator=lix, businessKey=QJ_1706060241036, orderStatus=1, assigneeOrder=1, assignee=zhaoyl, assigneesOrderId=, assigneeVersion=1, applicant=lix}
+2024-01-24 09:37:21,095  INFO [http-nio-8080-exec-10] cn.gzsendi.flowable.listener.CommonFlowExecListener.notify:56 - =========================CommonFlowExecListener==========================
+2024-01-24 09:37:21,118  INFO [http-nio-8080-exec-10] cn.gzsendi.flowable.listener.CommonFlowTaskListener.notify:52 - =========================CommonFlowTaskListener==========================
+2024-01-24 09:37:21,119  INFO [http-nio-8080-exec-10] cn.gzsendi.flowable.listener.CommonFlowTaskListener.notify:56 - 流程定义ID: 91988e12-ba09-11ee-a2fb-f43bd854fbfb
+2024-01-24 09:37:21,119  INFO [http-nio-8080-exec-10] cn.gzsendi.flowable.listener.CommonFlowTaskListener.notify:57 - 流程实例ID: 1ddc0c0c-ba59-11ee-832b-00e04c680209
+2024-01-24 09:37:21,119  INFO [http-nio-8080-exec-10] cn.gzsendi.flowable.listener.CommonFlowTaskListener.notify:58 - 流程任务ID: 1ddf195a-ba59-11ee-832b-00e04c680209
+2024-01-24 09:37:21,119  INFO [http-nio-8080-exec-10] cn.gzsendi.flowable.listener.CommonFlowTaskListener.notify:59 - 流程任务名称: 审批
+2024-01-24 09:37:21,119  INFO [http-nio-8080-exec-10] cn.gzsendi.flowable.listener.CommonFlowTaskListener.notify:60 - 流程任务定义key: examAndApprove
+2024-01-24 09:37:21,119  INFO [http-nio-8080-exec-10] cn.gzsendi.flowable.listener.CommonFlowTaskListener.notify:61 - 流程任务委派人userId: zhaoyl
+2024-01-24 09:37:21,119  INFO [http-nio-8080-exec-10] cn.gzsendi.flowable.listener.CommonFlowTaskListener.notify:62 - 流程任务委派人姓名: zhaoyl
+2024-01-24 09:37:21,120  INFO [http-nio-8080-exec-10] cn.gzsendi.flowable.listener.CommonFlowTaskListener.notify:63 - 流程任务事件名: create
+2024-01-24 09:37:21,120  INFO [http-nio-8080-exec-10] cn.gzsendi.flowable.listener.CommonFlowTaskListener.notify:64 - 流程执行ID: 1ddc8146-ba59-11ee-832b-00e04c680209
+2024-01-24 09:37:21,120  INFO [http-nio-8080-exec-10] cn.gzsendi.flowable.listener.CommonFlowTaskListener.notify:65 - 业务key/工单ID: QJ_1706060241036
+2024-01-24 09:37:21,120  INFO [http-nio-8080-exec-10] cn.gzsendi.flowable.listener.CommonFlowTaskListener.notify:66 - 流程实例变量: {initiator=lix, businessKey=QJ_1706060241036, orderStatus=1, assigneeOrder=1, assignee=zhaoyl, assigneesOrderId=, assigneeVersion=1, applicant=lix}
+2024-01-24 09:37:21,120  INFO [http-nio-8080-exec-10] cn.gzsendi.flowable.listener.CommonFlowTaskListener.notify:68 - =========================CommonFlowTaskListener==========================
+2024-01-24 09:37:21,121 DEBUG [http-nio-8080-exec-10] cn.gzsendi.flowable.mapper.WorkOrderMapper.updateWorkOrder.debug:137 - ==>  Preparing: update work_order SET order_status = ?, handler = ?, update_user = ?, update_time = ? where order_id = ?
+2024-01-24 09:37:21,123 DEBUG [http-nio-8080-exec-10] cn.gzsendi.flowable.mapper.WorkOrderMapper.updateWorkOrder.debug:137 - ==> Parameters: 1(String), zhaoyl(String), admin(String), 2024-01-24 09:37:21.12(Timestamp), QJ_1706060241036(String)
+2024-01-24 09:37:21,124 DEBUG [http-nio-8080-exec-10] cn.gzsendi.flowable.mapper.WorkOrderMapper.updateWorkOrder.debug:137 - <==    Updates: 1
+2024-01-24 09:37:47,327 DEBUG [http-nio-8080-exec-1] cn.gzsendi.flowable.mapper.WorkOrderMapper.listMyDeal.debug:137 - ==>  Preparing: select t1.* from work_order t1 where t1.`handler` = ? order by t1.application_time desc
+2024-01-24 09:37:47,327 DEBUG [http-nio-8080-exec-5] cn.gzsendi.flowable.mapper.WorkOrderMapper.listMyApply.debug:137 - ==>  Preparing: select t1.* from work_order t1 where t1.`applicant` = ? order by t1.application_time desc
+2024-01-24 09:37:47,327 DEBUG [http-nio-8080-exec-7] cn.gzsendi.flowable.mapper.WorkFlowDefMapper.list.debug:137 - ==>  Preparing: select id, order_type, order_name, order_id_prex, remark, create_time, update_time from work_flow_def
+2024-01-24 09:37:47,327 DEBUG [http-nio-8080-exec-9] cn.gzsendi.flowable.mapper.WorkOrderMapper.listMyExamAndApprove.debug:137 - ==>  Preparing: select wo.* from work_order wo LEFT JOIN `act_hi_procinst` p ON p.`BUSINESS_KEY_` = wo.`order_id` LEFT JOIN `act_hi_comment` c ON c.`PROC_INST_ID_` = p.`PROC_INST_ID_` where c.`USER_ID_` = ? and wo.handler != ? GROUP BY wo.order_id, wo.order_type, wo.applicant, wo.application_time, wo.order_status, wo.reason, wo.handler order by wo.application_time desc
+2024-01-24 09:37:47,327 DEBUG [http-nio-8080-exec-5] cn.gzsendi.flowable.mapper.WorkOrderMapper.listMyApply.debug:137 - ==> Parameters: lix(String)
+2024-01-24 09:37:47,327 DEBUG [http-nio-8080-exec-9] cn.gzsendi.flowable.mapper.WorkOrderMapper.listMyExamAndApprove.debug:137 - ==> Parameters: lix(String), lix(String)
+2024-01-24 09:37:47,327 DEBUG [http-nio-8080-exec-1] cn.gzsendi.flowable.mapper.WorkOrderMapper.listMyDeal.debug:137 - ==> Parameters: lix(String)
+2024-01-24 09:37:47,327 DEBUG [http-nio-8080-exec-7] cn.gzsendi.flowable.mapper.WorkFlowDefMapper.list.debug:137 - ==> Parameters: 
+2024-01-24 09:37:47,328 DEBUG [http-nio-8080-exec-1] cn.gzsendi.flowable.mapper.WorkOrderMapper.listMyDeal.debug:137 - <==      Total: 0
+2024-01-24 09:37:47,328 DEBUG [http-nio-8080-exec-7] cn.gzsendi.flowable.mapper.WorkFlowDefMapper.list.debug:137 - <==      Total: 3
+2024-01-24 09:37:47,329 DEBUG [http-nio-8080-exec-5] cn.gzsendi.flowable.mapper.WorkOrderMapper.listMyApply.debug:137 - <==      Total: 5
+2024-01-24 09:37:47,330 DEBUG [http-nio-8080-exec-9] cn.gzsendi.flowable.mapper.WorkOrderMapper.listMyExamAndApprove.debug:137 - <==      Total: 5
+2024-01-24 09:38:36,385 DEBUG [http-nio-8080-exec-2] cn.gzsendi.flowable.mapper.WorkFlowFormFieldMapper.list.debug:137 - ==>  Preparing: select id, `order_type`, `field_name`, `field_cname`, `field_type`, `default_value`, `other_info`, `field_order` from work_flow_form_field WHERE `order_type` = ? order by field_order asc
+2024-01-24 09:38:36,385 DEBUG [http-nio-8080-exec-2] cn.gzsendi.flowable.mapper.WorkFlowFormFieldMapper.list.debug:137 - ==> Parameters: 3(String)
+2024-01-24 09:38:36,386 DEBUG [http-nio-8080-exec-2] cn.gzsendi.flowable.mapper.WorkFlowFormFieldMapper.list.debug:137 - <==      Total: 0
+2024-01-24 09:38:39,594 DEBUG [http-nio-8080-exec-7] cn.gzsendi.flowable.mapper.WorkOrderMapper.listMyDeal.debug:137 - ==>  Preparing: select t1.* from work_order t1 where t1.`handler` = ? order by t1.application_time desc
+2024-01-24 09:38:39,594 DEBUG [http-nio-8080-exec-1] cn.gzsendi.flowable.mapper.WorkFlowDefMapper.list.debug:137 - ==>  Preparing: select id, order_type, order_name, order_id_prex, remark, create_time, update_time from work_flow_def
+2024-01-24 09:38:39,594 DEBUG [http-nio-8080-exec-4] cn.gzsendi.flowable.mapper.WorkOrderMapper.listMyExamAndApprove.debug:137 - ==>  Preparing: select wo.* from work_order wo LEFT JOIN `act_hi_procinst` p ON p.`BUSINESS_KEY_` = wo.`order_id` LEFT JOIN `act_hi_comment` c ON c.`PROC_INST_ID_` = p.`PROC_INST_ID_` where c.`USER_ID_` = ? and wo.handler != ? GROUP BY wo.order_id, wo.order_type, wo.applicant, wo.application_time, wo.order_status, wo.reason, wo.handler order by wo.application_time desc
+2024-01-24 09:38:39,594 DEBUG [http-nio-8080-exec-9] cn.gzsendi.flowable.mapper.WorkOrderMapper.listMyApply.debug:137 - ==>  Preparing: select t1.* from work_order t1 where t1.`applicant` = ? order by t1.application_time desc
+2024-01-24 09:38:39,594 DEBUG [http-nio-8080-exec-1] cn.gzsendi.flowable.mapper.WorkFlowDefMapper.list.debug:137 - ==> Parameters: 
+2024-01-24 09:38:39,594 DEBUG [http-nio-8080-exec-4] cn.gzsendi.flowable.mapper.WorkOrderMapper.listMyExamAndApprove.debug:137 - ==> Parameters: lix(String), lix(String)
+2024-01-24 09:38:39,594 DEBUG [http-nio-8080-exec-9] cn.gzsendi.flowable.mapper.WorkOrderMapper.listMyApply.debug:137 - ==> Parameters: lix(String)
+2024-01-24 09:38:39,594 DEBUG [http-nio-8080-exec-7] cn.gzsendi.flowable.mapper.WorkOrderMapper.listMyDeal.debug:137 - ==> Parameters: lix(String)
+2024-01-24 09:38:39,595 DEBUG [http-nio-8080-exec-7] cn.gzsendi.flowable.mapper.WorkOrderMapper.listMyDeal.debug:137 - <==      Total: 0
+2024-01-24 09:38:39,595 DEBUG [http-nio-8080-exec-1] cn.gzsendi.flowable.mapper.WorkFlowDefMapper.list.debug:137 - <==      Total: 3
+2024-01-24 09:38:39,595 DEBUG [http-nio-8080-exec-9] cn.gzsendi.flowable.mapper.WorkOrderMapper.listMyApply.debug:137 - <==      Total: 5
+2024-01-24 09:38:39,595 DEBUG [http-nio-8080-exec-4] cn.gzsendi.flowable.mapper.WorkOrderMapper.listMyExamAndApprove.debug:137 - <==      Total: 5
+2024-01-24 09:38:41,237 DEBUG [http-nio-8080-exec-8] cn.gzsendi.flowable.mapper.WorkOrderAssigneeMapper.selectSelective.debug:137 - ==>  Preparing: select id,order_id, assignee_version, assignee, assignee_order, task_name, order_status, can_cancel_order, create_user, create_time, update_user, update_time, remark from wo_assignee WHERE order_id = ? order by order_id, assignee_version, assignee_order
+2024-01-24 09:38:41,238 DEBUG [http-nio-8080-exec-8] cn.gzsendi.flowable.mapper.WorkOrderAssigneeMapper.selectSelective.debug:137 - ==> Parameters: 3(String)
+2024-01-24 09:38:41,238 DEBUG [http-nio-8080-exec-8] cn.gzsendi.flowable.mapper.WorkOrderAssigneeMapper.selectSelective.debug:137 - <==      Total: 0
+2024-01-24 09:38:42,761 DEBUG [http-nio-8080-exec-9] cn.gzsendi.flowable.mapper.WorkFlowDefMapper.list.debug:137 - ==>  Preparing: select id, order_type, order_name, order_id_prex, remark, create_time, update_time from work_flow_def
+2024-01-24 09:38:42,761 DEBUG [http-nio-8080-exec-1] cn.gzsendi.flowable.mapper.WorkOrderMapper.listMyDeal.debug:137 - ==>  Preparing: select t1.* from work_order t1 where t1.`handler` = ? order by t1.application_time desc
+2024-01-24 09:38:42,761 DEBUG [http-nio-8080-exec-4] cn.gzsendi.flowable.mapper.WorkOrderMapper.listMyApply.debug:137 - ==>  Preparing: select t1.* from work_order t1 where t1.`applicant` = ? order by t1.application_time desc
+2024-01-24 09:38:42,761 DEBUG [http-nio-8080-exec-9] cn.gzsendi.flowable.mapper.WorkFlowDefMapper.list.debug:137 - ==> Parameters: 
+2024-01-24 09:38:42,761 DEBUG [http-nio-8080-exec-1] cn.gzsendi.flowable.mapper.WorkOrderMapper.listMyDeal.debug:137 - ==> Parameters: lix(String)
+2024-01-24 09:38:42,761 DEBUG [http-nio-8080-exec-4] cn.gzsendi.flowable.mapper.WorkOrderMapper.listMyApply.debug:137 - ==> Parameters: lix(String)
+2024-01-24 09:38:42,761 DEBUG [http-nio-8080-exec-10] cn.gzsendi.flowable.mapper.WorkOrderMapper.listMyExamAndApprove.debug:137 - ==>  Preparing: select wo.* from work_order wo LEFT JOIN `act_hi_procinst` p ON p.`BUSINESS_KEY_` = wo.`order_id` LEFT JOIN `act_hi_comment` c ON c.`PROC_INST_ID_` = p.`PROC_INST_ID_` where c.`USER_ID_` = ? and wo.handler != ? GROUP BY wo.order_id, wo.order_type, wo.applicant, wo.application_time, wo.order_status, wo.reason, wo.handler order by wo.application_time desc
+2024-01-24 09:38:42,761 DEBUG [http-nio-8080-exec-1] cn.gzsendi.flowable.mapper.WorkOrderMapper.listMyDeal.debug:137 - <==      Total: 0
+2024-01-24 09:38:42,761 DEBUG [http-nio-8080-exec-10] cn.gzsendi.flowable.mapper.WorkOrderMapper.listMyExamAndApprove.debug:137 - ==> Parameters: lix(String), lix(String)
+2024-01-24 09:38:42,761 DEBUG [http-nio-8080-exec-9] cn.gzsendi.flowable.mapper.WorkFlowDefMapper.list.debug:137 - <==      Total: 3
+2024-01-24 09:38:42,762 DEBUG [http-nio-8080-exec-4] cn.gzsendi.flowable.mapper.WorkOrderMapper.listMyApply.debug:137 - <==      Total: 5
+2024-01-24 09:38:42,764 DEBUG [http-nio-8080-exec-10] cn.gzsendi.flowable.mapper.WorkOrderMapper.listMyExamAndApprove.debug:137 - <==      Total: 5
+2024-01-24 09:38:49,936 DEBUG [http-nio-8080-exec-6] cn.gzsendi.flowable.mapper.WorkOrderMapper.queryByOrderId.debug:137 - ==>  Preparing: select * from work_order where order_id = ?
+2024-01-24 09:38:49,937 DEBUG [http-nio-8080-exec-6] cn.gzsendi.flowable.mapper.WorkOrderMapper.queryByOrderId.debug:137 - ==> Parameters: QJ_1706060241036(String)
+2024-01-24 09:38:49,938 DEBUG [http-nio-8080-exec-6] cn.gzsendi.flowable.mapper.WorkOrderMapper.queryByOrderId.debug:137 - <==      Total: 1
+2024-01-24 09:38:49,940 DEBUG [http-nio-8080-exec-7] cn.gzsendi.flowable.mapper.WorkFlowFormFieldMapper.list.debug:137 - ==>  Preparing: select id, `order_type`, `field_name`, `field_cname`, `field_type`, `default_value`, `other_info`, `field_order` from work_flow_form_field WHERE `order_type` = ? order by field_order asc
+2024-01-24 09:38:49,940 DEBUG [http-nio-8080-exec-7] cn.gzsendi.flowable.mapper.WorkFlowFormFieldMapper.list.debug:137 - ==> Parameters: 0(String)
+2024-01-24 09:38:49,942 DEBUG [http-nio-8080-exec-7] cn.gzsendi.flowable.mapper.WorkFlowFormFieldMapper.list.debug:137 - <==      Total: 2
+2024-01-24 09:38:53,129 DEBUG [http-nio-8080-exec-10] cn.gzsendi.flowable.mapper.WorkFlowDefMapper.list.debug:137 - ==>  Preparing: select id, order_type, order_name, order_id_prex, remark, create_time, update_time from work_flow_def
+2024-01-24 09:38:53,129 DEBUG [http-nio-8080-exec-2] cn.gzsendi.flowable.mapper.WorkOrderMapper.listMyApply.debug:137 - ==>  Preparing: select t1.* from work_order t1 where t1.`applicant` = ? order by t1.application_time desc
+2024-01-24 09:38:53,129 DEBUG [http-nio-8080-exec-8] cn.gzsendi.flowable.mapper.WorkOrderMapper.listMyExamAndApprove.debug:137 - ==>  Preparing: select wo.* from work_order wo LEFT JOIN `act_hi_procinst` p ON p.`BUSINESS_KEY_` = wo.`order_id` LEFT JOIN `act_hi_comment` c ON c.`PROC_INST_ID_` = p.`PROC_INST_ID_` where c.`USER_ID_` = ? and wo.handler != ? GROUP BY wo.order_id, wo.order_type, wo.applicant, wo.application_time, wo.order_status, wo.reason, wo.handler order by wo.application_time desc
+2024-01-24 09:38:53,129 DEBUG [http-nio-8080-exec-3] cn.gzsendi.flowable.mapper.WorkOrderMapper.listMyDeal.debug:137 - ==>  Preparing: select t1.* from work_order t1 where t1.`handler` = ? order by t1.application_time desc
+2024-01-24 09:38:53,129 DEBUG [http-nio-8080-exec-10] cn.gzsendi.flowable.mapper.WorkFlowDefMapper.list.debug:137 - ==> Parameters: 
+2024-01-24 09:38:53,129 DEBUG [http-nio-8080-exec-2] cn.gzsendi.flowable.mapper.WorkOrderMapper.listMyApply.debug:137 - ==> Parameters: lix(String)
+2024-01-24 09:38:53,129 DEBUG [http-nio-8080-exec-3] cn.gzsendi.flowable.mapper.WorkOrderMapper.listMyDeal.debug:137 - ==> Parameters: lix(String)
+2024-01-24 09:38:53,129 DEBUG [http-nio-8080-exec-8] cn.gzsendi.flowable.mapper.WorkOrderMapper.listMyExamAndApprove.debug:137 - ==> Parameters: lix(String), lix(String)
+2024-01-24 09:38:53,130 DEBUG [http-nio-8080-exec-3] cn.gzsendi.flowable.mapper.WorkOrderMapper.listMyDeal.debug:137 - <==      Total: 0
+2024-01-24 09:38:53,130 DEBUG [http-nio-8080-exec-10] cn.gzsendi.flowable.mapper.WorkFlowDefMapper.list.debug:137 - <==      Total: 3
+2024-01-24 09:38:53,130 DEBUG [http-nio-8080-exec-2] cn.gzsendi.flowable.mapper.WorkOrderMapper.listMyApply.debug:137 - <==      Total: 5
+2024-01-24 09:38:53,131 DEBUG [http-nio-8080-exec-8] cn.gzsendi.flowable.mapper.WorkOrderMapper.listMyExamAndApprove.debug:137 - <==      Total: 5
+2024-01-24 09:38:59,943 DEBUG [http-nio-8080-exec-1] cn.gzsendi.flowable.mapper.WorkFlowDefMapper.getById.debug:137 - ==>  Preparing: select id, order_type, order_name, order_id_prex, remark, create_time, update_time from work_flow_def where id = ?
+2024-01-24 09:38:59,943 DEBUG [http-nio-8080-exec-1] cn.gzsendi.flowable.mapper.WorkFlowDefMapper.getById.debug:137 - ==> Parameters: 1(Integer)
+2024-01-24 09:38:59,945 DEBUG [http-nio-8080-exec-1] cn.gzsendi.flowable.mapper.WorkFlowDefMapper.getById.debug:137 - <==      Total: 1
+2024-01-24 09:39:01,639 DEBUG [http-nio-8080-exec-2] cn.gzsendi.flowable.mapper.WorkOrderMapper.listMyDeal.debug:137 - ==>  Preparing: select t1.* from work_order t1 where t1.`handler` = ? order by t1.application_time desc
+2024-01-24 09:39:01,639 DEBUG [http-nio-8080-exec-6] cn.gzsendi.flowable.mapper.WorkOrderMapper.listMyExamAndApprove.debug:137 - ==>  Preparing: select wo.* from work_order wo LEFT JOIN `act_hi_procinst` p ON p.`BUSINESS_KEY_` = wo.`order_id` LEFT JOIN `act_hi_comment` c ON c.`PROC_INST_ID_` = p.`PROC_INST_ID_` where c.`USER_ID_` = ? and wo.handler != ? GROUP BY wo.order_id, wo.order_type, wo.applicant, wo.application_time, wo.order_status, wo.reason, wo.handler order by wo.application_time desc
+2024-01-24 09:39:01,639 DEBUG [http-nio-8080-exec-8] cn.gzsendi.flowable.mapper.WorkOrderMapper.listMyApply.debug:137 - ==>  Preparing: select t1.* from work_order t1 where t1.`applicant` = ? order by t1.application_time desc
+2024-01-24 09:39:01,639 DEBUG [http-nio-8080-exec-10] cn.gzsendi.flowable.mapper.WorkFlowDefMapper.list.debug:137 - ==>  Preparing: select id, order_type, order_name, order_id_prex, remark, create_time, update_time from work_flow_def
+2024-01-24 09:39:01,640 DEBUG [http-nio-8080-exec-2] cn.gzsendi.flowable.mapper.WorkOrderMapper.listMyDeal.debug:137 - ==> Parameters: lix(String)
+2024-01-24 09:39:01,640 DEBUG [http-nio-8080-exec-6] cn.gzsendi.flowable.mapper.WorkOrderMapper.listMyExamAndApprove.debug:137 - ==> Parameters: lix(String), lix(String)
+2024-01-24 09:39:01,640 DEBUG [http-nio-8080-exec-10] cn.gzsendi.flowable.mapper.WorkFlowDefMapper.list.debug:137 - ==> Parameters: 
+2024-01-24 09:39:01,640 DEBUG [http-nio-8080-exec-8] cn.gzsendi.flowable.mapper.WorkOrderMapper.listMyApply.debug:137 - ==> Parameters: lix(String)
+2024-01-24 09:39:01,640 DEBUG [http-nio-8080-exec-2] cn.gzsendi.flowable.mapper.WorkOrderMapper.listMyDeal.debug:137 - <==      Total: 0
+2024-01-24 09:39:01,640 DEBUG [http-nio-8080-exec-10] cn.gzsendi.flowable.mapper.WorkFlowDefMapper.list.debug:137 - <==      Total: 3
+2024-01-24 09:39:01,640 DEBUG [http-nio-8080-exec-8] cn.gzsendi.flowable.mapper.WorkOrderMapper.listMyApply.debug:137 - <==      Total: 5
+2024-01-24 09:39:01,642 DEBUG [http-nio-8080-exec-6] cn.gzsendi.flowable.mapper.WorkOrderMapper.listMyExamAndApprove.debug:137 - <==      Total: 5
+2024-01-24 09:39:03,015 DEBUG [http-nio-8080-exec-9] cn.gzsendi.flowable.mapper.WorkOrderAssigneeMapper.selectSelective.debug:137 - ==>  Preparing: select id,order_id, assignee_version, assignee, assignee_order, task_name, order_status, can_cancel_order, create_user, create_time, update_user, update_time, remark from wo_assignee WHERE order_id = ? order by order_id, assignee_version, assignee_order
+2024-01-24 09:39:03,015 DEBUG [http-nio-8080-exec-9] cn.gzsendi.flowable.mapper.WorkOrderAssigneeMapper.selectSelective.debug:137 - ==> Parameters: 0(String)
+2024-01-24 09:39:03,016 DEBUG [http-nio-8080-exec-9] cn.gzsendi.flowable.mapper.WorkOrderAssigneeMapper.selectSelective.debug:137 - <==      Total: 2
+2024-01-24 09:39:07,744 DEBUG [http-nio-8080-exec-10] cn.gzsendi.flowable.mapper.WorkFlowDefMapper.list.debug:137 - ==>  Preparing: select id, order_type, order_name, order_id_prex, remark, create_time, update_time from work_flow_def
+2024-01-24 09:39:07,745 DEBUG [http-nio-8080-exec-8] cn.gzsendi.flowable.mapper.WorkOrderMapper.listMyDeal.debug:137 - ==>  Preparing: select t1.* from work_order t1 where t1.`handler` = ? order by t1.application_time desc
+2024-01-24 09:39:07,745 DEBUG [http-nio-8080-exec-6] cn.gzsendi.flowable.mapper.WorkOrderMapper.listMyApply.debug:137 - ==>  Preparing: select t1.* from work_order t1 where t1.`applicant` = ? order by t1.application_time desc
+2024-01-24 09:39:07,745 DEBUG [http-nio-8080-exec-7] cn.gzsendi.flowable.mapper.WorkOrderMapper.listMyExamAndApprove.debug:137 - ==>  Preparing: select wo.* from work_order wo LEFT JOIN `act_hi_procinst` p ON p.`BUSINESS_KEY_` = wo.`order_id` LEFT JOIN `act_hi_comment` c ON c.`PROC_INST_ID_` = p.`PROC_INST_ID_` where c.`USER_ID_` = ? and wo.handler != ? GROUP BY wo.order_id, wo.order_type, wo.applicant, wo.application_time, wo.order_status, wo.reason, wo.handler order by wo.application_time desc
+2024-01-24 09:39:07,745 DEBUG [http-nio-8080-exec-10] cn.gzsendi.flowable.mapper.WorkFlowDefMapper.list.debug:137 - ==> Parameters: 
+2024-01-24 09:39:07,745 DEBUG [http-nio-8080-exec-8] cn.gzsendi.flowable.mapper.WorkOrderMapper.listMyDeal.debug:137 - ==> Parameters: lix(String)
+2024-01-24 09:39:07,745 DEBUG [http-nio-8080-exec-7] cn.gzsendi.flowable.mapper.WorkOrderMapper.listMyExamAndApprove.debug:137 - ==> Parameters: lix(String), lix(String)
+2024-01-24 09:39:07,745 DEBUG [http-nio-8080-exec-6] cn.gzsendi.flowable.mapper.WorkOrderMapper.listMyApply.debug:137 - ==> Parameters: lix(String)
+2024-01-24 09:39:07,745 DEBUG [http-nio-8080-exec-8] cn.gzsendi.flowable.mapper.WorkOrderMapper.listMyDeal.debug:137 - <==      Total: 0
+2024-01-24 09:39:07,746 DEBUG [http-nio-8080-exec-10] cn.gzsendi.flowable.mapper.WorkFlowDefMapper.list.debug:137 - <==      Total: 3
+2024-01-24 09:39:07,746 DEBUG [http-nio-8080-exec-6] cn.gzsendi.flowable.mapper.WorkOrderMapper.listMyApply.debug:137 - <==      Total: 5
+2024-01-24 09:39:07,746 DEBUG [http-nio-8080-exec-7] cn.gzsendi.flowable.mapper.WorkOrderMapper.listMyExamAndApprove.debug:137 - <==      Total: 5
+2024-01-24 09:39:25,223 DEBUG [http-nio-8080-exec-4] cn.gzsendi.flowable.mapper.WorkOrderAssigneeMapper.selectSelective.debug:137 - ==>  Preparing: select id,order_id, assignee_version, assignee, assignee_order, task_name, order_status, can_cancel_order, create_user, create_time, update_user, update_time, remark from wo_assignee WHERE order_id = ? order by order_id, assignee_version, assignee_order
+2024-01-24 09:39:25,223 DEBUG [http-nio-8080-exec-4] cn.gzsendi.flowable.mapper.WorkOrderAssigneeMapper.selectSelective.debug:137 - ==> Parameters: 0(String)
+2024-01-24 09:39:25,224 DEBUG [http-nio-8080-exec-4] cn.gzsendi.flowable.mapper.WorkOrderAssigneeMapper.selectSelective.debug:137 - <==      Total: 2
+2024-01-24 09:40:11,497 DEBUG [http-nio-8080-exec-9] cn.gzsendi.flowable.mapper.WorkOrderAssigneeMapper.selectSelective.debug:137 - ==>  Preparing: select id,order_id, assignee_version, assignee, assignee_order, task_name, order_status, can_cancel_order, create_user, create_time, update_user, update_time, remark from wo_assignee WHERE order_id = ? order by order_id, assignee_version, assignee_order
+2024-01-24 09:40:11,497 DEBUG [http-nio-8080-exec-9] cn.gzsendi.flowable.mapper.WorkOrderAssigneeMapper.selectSelective.debug:137 - ==> Parameters: 0(String)
+2024-01-24 09:40:11,498 DEBUG [http-nio-8080-exec-9] cn.gzsendi.flowable.mapper.WorkOrderAssigneeMapper.selectSelective.debug:137 - <==      Total: 2
+2024-01-24 09:41:36,112 DEBUG [http-nio-8080-exec-1] cn.gzsendi.flowable.mapper.WorkOrderAssigneeMapper.selectSelective.debug:137 - ==>  Preparing: select id,order_id, assignee_version, assignee, assignee_order, task_name, order_status, can_cancel_order, create_user, create_time, update_user, update_time, remark from wo_assignee WHERE order_id = ? order by order_id, assignee_version, assignee_order
+2024-01-24 09:41:36,113 DEBUG [http-nio-8080-exec-1] cn.gzsendi.flowable.mapper.WorkOrderAssigneeMapper.selectSelective.debug:137 - ==> Parameters: 0(String)
+2024-01-24 09:41:36,113 DEBUG [http-nio-8080-exec-1] cn.gzsendi.flowable.mapper.WorkOrderAssigneeMapper.selectSelective.debug:137 - <==      Total: 2
+2024-01-24 09:41:38,167 DEBUG [http-nio-8080-exec-2] cn.gzsendi.flowable.mapper.WorkFlowDefMapper.list.debug:137 - ==>  Preparing: select id, order_type, order_name, order_id_prex, remark, create_time, update_time from work_flow_def
+2024-01-24 09:41:38,167 DEBUG [http-nio-8080-exec-8] cn.gzsendi.flowable.mapper.WorkOrderMapper.listMyDeal.debug:137 - ==>  Preparing: select t1.* from work_order t1 where t1.`handler` = ? order by t1.application_time desc
+2024-01-24 09:41:38,167 DEBUG [http-nio-8080-exec-2] cn.gzsendi.flowable.mapper.WorkFlowDefMapper.list.debug:137 - ==> Parameters: 
+2024-01-24 09:41:38,168 DEBUG [http-nio-8080-exec-8] cn.gzsendi.flowable.mapper.WorkOrderMapper.listMyDeal.debug:137 - ==> Parameters: lix(String)
+2024-01-24 09:41:38,168 DEBUG [http-nio-8080-exec-6] cn.gzsendi.flowable.mapper.WorkOrderMapper.listMyApply.debug:137 - ==>  Preparing: select t1.* from work_order t1 where t1.`applicant` = ? order by t1.application_time desc
+2024-01-24 09:41:38,168 DEBUG [http-nio-8080-exec-6] cn.gzsendi.flowable.mapper.WorkOrderMapper.listMyApply.debug:137 - ==> Parameters: lix(String)
+2024-01-24 09:41:38,168 DEBUG [http-nio-8080-exec-10] cn.gzsendi.flowable.mapper.WorkOrderMapper.listMyExamAndApprove.debug:137 - ==>  Preparing: select wo.* from work_order wo LEFT JOIN `act_hi_procinst` p ON p.`BUSINESS_KEY_` = wo.`order_id` LEFT JOIN `act_hi_comment` c ON c.`PROC_INST_ID_` = p.`PROC_INST_ID_` where c.`USER_ID_` = ? and wo.handler != ? GROUP BY wo.order_id, wo.order_type, wo.applicant, wo.application_time, wo.order_status, wo.reason, wo.handler order by wo.application_time desc
+2024-01-24 09:41:38,168 DEBUG [http-nio-8080-exec-2] cn.gzsendi.flowable.mapper.WorkFlowDefMapper.list.debug:137 - <==      Total: 3
+2024-01-24 09:41:38,168 DEBUG [http-nio-8080-exec-10] cn.gzsendi.flowable.mapper.WorkOrderMapper.listMyExamAndApprove.debug:137 - ==> Parameters: lix(String), lix(String)
+2024-01-24 09:41:38,168 DEBUG [http-nio-8080-exec-8] cn.gzsendi.flowable.mapper.WorkOrderMapper.listMyDeal.debug:137 - <==      Total: 0
+2024-01-24 09:41:38,168 DEBUG [http-nio-8080-exec-6] cn.gzsendi.flowable.mapper.WorkOrderMapper.listMyApply.debug:137 - <==      Total: 5
+2024-01-24 09:41:38,169 DEBUG [http-nio-8080-exec-10] cn.gzsendi.flowable.mapper.WorkOrderMapper.listMyExamAndApprove.debug:137 - <==      Total: 5
+2024-01-24 09:41:42,997 DEBUG [http-nio-8080-exec-9] cn.gzsendi.flowable.mapper.WorkFlowFormFieldMapper.list.debug:137 - ==>  Preparing: select id, `order_type`, `field_name`, `field_cname`, `field_type`, `default_value`, `other_info`, `field_order` from work_flow_form_field WHERE `order_type` = ? order by field_order asc
+2024-01-24 09:41:42,997 DEBUG [http-nio-8080-exec-9] cn.gzsendi.flowable.mapper.WorkFlowFormFieldMapper.list.debug:137 - ==> Parameters: 1(String)
+2024-01-24 09:41:42,998 DEBUG [http-nio-8080-exec-9] cn.gzsendi.flowable.mapper.WorkFlowFormFieldMapper.list.debug:137 - <==      Total: 2
+2024-01-24 09:42:30,133 DEBUG [http-nio-8080-exec-7] cn.gzsendi.flowable.mapper.WorkFlowFormFieldMapper.list.debug:137 - ==>  Preparing: select id, `order_type`, `field_name`, `field_cname`, `field_type`, `default_value`, `other_info`, `field_order` from work_flow_form_field WHERE `order_type` = ? order by field_order asc
+2024-01-24 09:42:30,134 DEBUG [http-nio-8080-exec-7] cn.gzsendi.flowable.mapper.WorkFlowFormFieldMapper.list.debug:137 - ==> Parameters: 1(String)
+2024-01-24 09:42:30,135 DEBUG [http-nio-8080-exec-7] cn.gzsendi.flowable.mapper.WorkFlowFormFieldMapper.list.debug:137 - <==      Total: 2
+2024-01-24 09:43:58,818 DEBUG [http-nio-8080-exec-6] cn.gzsendi.flowable.mapper.WorkFlowFormFieldMapper.queryById.debug:137 - ==>  Preparing: select id, `order_type`, `field_name`, `field_cname`, `field_type`, `default_value`, `other_info`, `field_order` from work_flow_form_field where id = ?
+2024-01-24 09:43:58,818 DEBUG [http-nio-8080-exec-6] cn.gzsendi.flowable.mapper.WorkFlowFormFieldMapper.queryById.debug:137 - ==> Parameters: 3(Integer)
+2024-01-24 09:43:58,819 DEBUG [http-nio-8080-exec-6] cn.gzsendi.flowable.mapper.WorkFlowFormFieldMapper.queryById.debug:137 - <==      Total: 1
+2024-01-24 09:44:01,572 DEBUG [http-nio-8080-exec-1] cn.gzsendi.flowable.mapper.WorkFlowFormFieldMapper.list.debug:137 - ==>  Preparing: select id, `order_type`, `field_name`, `field_cname`, `field_type`, `default_value`, `other_info`, `field_order` from work_flow_form_field WHERE `order_type` = ? order by field_order asc
+2024-01-24 09:44:01,572 DEBUG [http-nio-8080-exec-1] cn.gzsendi.flowable.mapper.WorkFlowFormFieldMapper.list.debug:137 - ==> Parameters: 1(String)
+2024-01-24 09:44:01,573 DEBUG [http-nio-8080-exec-1] cn.gzsendi.flowable.mapper.WorkFlowFormFieldMapper.list.debug:137 - <==      Total: 2
+2024-01-24 09:44:29,021 DEBUG [http-nio-8080-exec-10] cn.gzsendi.flowable.mapper.WorkFlowFormFieldMapper.list.debug:137 - ==>  Preparing: select id, `order_type`, `field_name`, `field_cname`, `field_type`, `default_value`, `other_info`, `field_order` from work_flow_form_field WHERE `order_type` = ? order by field_order asc
+2024-01-24 09:44:29,021 DEBUG [http-nio-8080-exec-10] cn.gzsendi.flowable.mapper.WorkFlowFormFieldMapper.list.debug:137 - ==> Parameters: 1(String)
+2024-01-24 09:44:29,022 DEBUG [http-nio-8080-exec-10] cn.gzsendi.flowable.mapper.WorkFlowFormFieldMapper.list.debug:137 - <==      Total: 2
+2024-01-24 09:44:30,640 DEBUG [http-nio-8080-exec-9] cn.gzsendi.flowable.mapper.WorkFlowFormFieldMapper.queryById.debug:137 - ==>  Preparing: select id, `order_type`, `field_name`, `field_cname`, `field_type`, `default_value`, `other_info`, `field_order` from work_flow_form_field where id = ?
+2024-01-24 09:44:30,640 DEBUG [http-nio-8080-exec-9] cn.gzsendi.flowable.mapper.WorkFlowFormFieldMapper.queryById.debug:137 - ==> Parameters: 3(Integer)
+2024-01-24 09:44:30,641 DEBUG [http-nio-8080-exec-9] cn.gzsendi.flowable.mapper.WorkFlowFormFieldMapper.queryById.debug:137 - <==      Total: 1
+2024-01-24 09:44:32,112 DEBUG [http-nio-8080-exec-2] cn.gzsendi.flowable.mapper.WorkFlowFormFieldMapper.list.debug:137 - ==>  Preparing: select id, `order_type`, `field_name`, `field_cname`, `field_type`, `default_value`, `other_info`, `field_order` from work_flow_form_field WHERE `order_type` = ? order by field_order asc
+2024-01-24 09:44:32,112 DEBUG [http-nio-8080-exec-2] cn.gzsendi.flowable.mapper.WorkFlowFormFieldMapper.list.debug:137 - ==> Parameters: 1(String)
+2024-01-24 09:44:32,113 DEBUG [http-nio-8080-exec-2] cn.gzsendi.flowable.mapper.WorkFlowFormFieldMapper.list.debug:137 - <==      Total: 2
+2024-01-24 09:44:34,060 DEBUG [http-nio-8080-exec-5] cn.gzsendi.flowable.mapper.WorkFlowDefMapper.list.debug:137 - ==>  Preparing: select id, order_type, order_name, order_id_prex, remark, create_time, update_time from work_flow_def
+2024-01-24 09:44:34,061 DEBUG [http-nio-8080-exec-5] cn.gzsendi.flowable.mapper.WorkFlowDefMapper.list.debug:137 - ==> Parameters: 
+2024-01-24 09:44:34,062 DEBUG [http-nio-8080-exec-1] cn.gzsendi.flowable.mapper.WorkOrderMapper.listMyDeal.debug:137 - ==>  Preparing: select t1.* from work_order t1 where t1.`handler` = ? order by t1.application_time desc
+2024-01-24 09:44:34,062 DEBUG [http-nio-8080-exec-5] cn.gzsendi.flowable.mapper.WorkFlowDefMapper.list.debug:137 - <==      Total: 3
+2024-01-24 09:44:34,062 DEBUG [http-nio-8080-exec-1] cn.gzsendi.flowable.mapper.WorkOrderMapper.listMyDeal.debug:137 - ==> Parameters: lix(String)
+2024-01-24 09:44:34,062 DEBUG [http-nio-8080-exec-9] cn.gzsendi.flowable.mapper.WorkOrderMapper.listMyApply.debug:137 - ==>  Preparing: select t1.* from work_order t1 where t1.`applicant` = ? order by t1.application_time desc
+2024-01-24 09:44:34,062 DEBUG [http-nio-8080-exec-9] cn.gzsendi.flowable.mapper.WorkOrderMapper.listMyApply.debug:137 - ==> Parameters: lix(String)
+2024-01-24 09:44:34,063 DEBUG [http-nio-8080-exec-4] cn.gzsendi.flowable.mapper.WorkOrderMapper.listMyExamAndApprove.debug:137 - ==>  Preparing: select wo.* from work_order wo LEFT JOIN `act_hi_procinst` p ON p.`BUSINESS_KEY_` = wo.`order_id` LEFT JOIN `act_hi_comment` c ON c.`PROC_INST_ID_` = p.`PROC_INST_ID_` where c.`USER_ID_` = ? and wo.handler != ? GROUP BY wo.order_id, wo.order_type, wo.applicant, wo.application_time, wo.order_status, wo.reason, wo.handler order by wo.application_time desc
+2024-01-24 09:44:34,063 DEBUG [http-nio-8080-exec-4] cn.gzsendi.flowable.mapper.WorkOrderMapper.listMyExamAndApprove.debug:137 - ==> Parameters: lix(String), lix(String)
+2024-01-24 09:44:34,063 DEBUG [http-nio-8080-exec-1] cn.gzsendi.flowable.mapper.WorkOrderMapper.listMyDeal.debug:137 - <==      Total: 0
+2024-01-24 09:44:34,064 DEBUG [http-nio-8080-exec-9] cn.gzsendi.flowable.mapper.WorkOrderMapper.listMyApply.debug:137 - <==      Total: 5
+2024-01-24 09:44:34,064 DEBUG [http-nio-8080-exec-4] cn.gzsendi.flowable.mapper.WorkOrderMapper.listMyExamAndApprove.debug:137 - <==      Total: 5
+2024-01-24 09:45:40,269 DEBUG [http-nio-8080-exec-1] cn.gzsendi.flowable.mapper.WorkOrderMapper.queryByOrderId.debug:137 - ==>  Preparing: select * from work_order where order_id = ?
+2024-01-24 09:45:40,269 DEBUG [http-nio-8080-exec-1] cn.gzsendi.flowable.mapper.WorkOrderMapper.queryByOrderId.debug:137 - ==> Parameters: QJ_1706060241036(String)
+2024-01-24 09:45:40,270 DEBUG [http-nio-8080-exec-1] cn.gzsendi.flowable.mapper.WorkOrderMapper.queryByOrderId.debug:137 - <==      Total: 1
+2024-01-24 09:45:40,275 DEBUG [http-nio-8080-exec-4] cn.gzsendi.flowable.mapper.WorkFlowFormFieldMapper.list.debug:137 - ==>  Preparing: select id, `order_type`, `field_name`, `field_cname`, `field_type`, `default_value`, `other_info`, `field_order` from work_flow_form_field WHERE `order_type` = ? order by field_order asc
+2024-01-24 09:45:40,275 DEBUG [http-nio-8080-exec-4] cn.gzsendi.flowable.mapper.WorkFlowFormFieldMapper.list.debug:137 - ==> Parameters: 0(String)
+2024-01-24 09:45:40,276 DEBUG [http-nio-8080-exec-4] cn.gzsendi.flowable.mapper.WorkFlowFormFieldMapper.list.debug:137 - <==      Total: 2
+2024-01-24 09:46:04,034 DEBUG [http-nio-8080-exec-2] cn.gzsendi.flowable.mapper.WorkFlowDefMapper.list.debug:137 - ==>  Preparing: select id, order_type, order_name, order_id_prex, remark, create_time, update_time from work_flow_def
+2024-01-24 09:46:04,034 DEBUG [http-nio-8080-exec-2] cn.gzsendi.flowable.mapper.WorkFlowDefMapper.list.debug:137 - ==> Parameters: 
+2024-01-24 09:46:04,035 DEBUG [http-nio-8080-exec-10] cn.gzsendi.flowable.mapper.WorkOrderMapper.listMyDeal.debug:137 - ==>  Preparing: select t1.* from work_order t1 where t1.`handler` = ? order by t1.application_time desc
+2024-01-24 09:46:04,035 DEBUG [http-nio-8080-exec-10] cn.gzsendi.flowable.mapper.WorkOrderMapper.listMyDeal.debug:137 - ==> Parameters: lix(String)
+2024-01-24 09:46:04,035 DEBUG [http-nio-8080-exec-7] cn.gzsendi.flowable.mapper.WorkOrderMapper.listMyApply.debug:137 - ==>  Preparing: select t1.* from work_order t1 where t1.`applicant` = ? order by t1.application_time desc
+2024-01-24 09:46:04,035 DEBUG [http-nio-8080-exec-5] cn.gzsendi.flowable.mapper.WorkOrderMapper.listMyExamAndApprove.debug:137 - ==>  Preparing: select wo.* from work_order wo LEFT JOIN `act_hi_procinst` p ON p.`BUSINESS_KEY_` = wo.`order_id` LEFT JOIN `act_hi_comment` c ON c.`PROC_INST_ID_` = p.`PROC_INST_ID_` where c.`USER_ID_` = ? and wo.handler != ? GROUP BY wo.order_id, wo.order_type, wo.applicant, wo.application_time, wo.order_status, wo.reason, wo.handler order by wo.application_time desc
+2024-01-24 09:46:04,035 DEBUG [http-nio-8080-exec-7] cn.gzsendi.flowable.mapper.WorkOrderMapper.listMyApply.debug:137 - ==> Parameters: lix(String)
+2024-01-24 09:46:04,035 DEBUG [http-nio-8080-exec-5] cn.gzsendi.flowable.mapper.WorkOrderMapper.listMyExamAndApprove.debug:137 - ==> Parameters: lix(String), lix(String)
+2024-01-24 09:46:04,035 DEBUG [http-nio-8080-exec-10] cn.gzsendi.flowable.mapper.WorkOrderMapper.listMyDeal.debug:137 - <==      Total: 0
+2024-01-24 09:46:04,035 DEBUG [http-nio-8080-exec-2] cn.gzsendi.flowable.mapper.WorkFlowDefMapper.list.debug:137 - <==      Total: 3
+2024-01-24 09:46:04,035 DEBUG [http-nio-8080-exec-7] cn.gzsendi.flowable.mapper.WorkOrderMapper.listMyApply.debug:137 - <==      Total: 5
+2024-01-24 09:46:04,036 DEBUG [http-nio-8080-exec-5] cn.gzsendi.flowable.mapper.WorkOrderMapper.listMyExamAndApprove.debug:137 - <==      Total: 5
+2024-01-24 09:46:09,368 DEBUG [http-nio-8080-exec-3] cn.gzsendi.flowable.mapper.WorkOrderMapper.queryByOrderId.debug:137 - ==>  Preparing: select * from work_order where order_id = ?
+2024-01-24 09:46:09,368 DEBUG [http-nio-8080-exec-3] cn.gzsendi.flowable.mapper.WorkOrderMapper.queryByOrderId.debug:137 - ==> Parameters: QJ_1706060241036(String)
+2024-01-24 09:46:09,368 DEBUG [http-nio-8080-exec-3] cn.gzsendi.flowable.mapper.WorkOrderMapper.queryByOrderId.debug:137 - <==      Total: 1
+2024-01-24 09:46:09,371 DEBUG [http-nio-8080-exec-8] cn.gzsendi.flowable.mapper.WorkFlowFormFieldMapper.list.debug:137 - ==>  Preparing: select id, `order_type`, `field_name`, `field_cname`, `field_type`, `default_value`, `other_info`, `field_order` from work_flow_form_field WHERE `order_type` = ? order by field_order asc
+2024-01-24 09:46:09,371 DEBUG [http-nio-8080-exec-8] cn.gzsendi.flowable.mapper.WorkFlowFormFieldMapper.list.debug:137 - ==> Parameters: 0(String)
+2024-01-24 09:46:09,372 DEBUG [http-nio-8080-exec-8] cn.gzsendi.flowable.mapper.WorkFlowFormFieldMapper.list.debug:137 - <==      Total: 2
+2024-01-24 10:01:18,409  WARN [SpringApplicationShutdownHook] org.springframework.beans.factory.support.DisposableBeanAdapter.destroy:247 - Invocation of close method failed on bean with name 'modelerLiquibase': liquibase.exception.DatabaseException: java.sql.SQLException: connection holder is null
+2024-01-24 10:01:18,415  INFO [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource.close:1825 - {dataSource-1} closed

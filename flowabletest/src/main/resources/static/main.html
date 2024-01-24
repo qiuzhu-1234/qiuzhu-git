@@ -20,10 +20,10 @@
             <div>&nbsp;</div>
             <div>-----快速切换人员-----</div>
             <div>
-                * 普通人员：<a href="./main.html?userId=lix">http://localhost:8080/flowtest/main.html?userId=lix</a><br>
-                * 项目经理：<a href="./main.html?userId=zhaoyl">http://localhost:8080/flowtest/main.html?userId=zhaoyl</a><br>
-                * 部门经理：<a href="./main.html?userId=linjh">http://localhost:8080/flowtest/main.html?userId=linjh</a><br>
-                * 总经理：<a href="./main.html?userId=xuw">http://localhost:8080/flowtest/main.html?userId=xuw</a><br>
+                * 普通人员：<a href="./main.html?userId=lix">http://localhost:8080/bpm/main.html?userId=lix</a><br>
+                * 项目经理：<a href="./main.html?userId=zhaoyl">http://localhost:8080/bpm/main.html?userId=zhaoyl</a><br>
+                * 部门经理：<a href="./main.html?userId=linjh">http://localhost:8080/bpm/main.html?userId=linjh</a><br>
+                * 总经理：<a href="./main.html?userId=xuw">http://localhost:8080/bpm/main.html?userId=xuw</a><br>
             </div>
 
             <div>&nbsp;</div>
@@ -105,7 +105,7 @@
                         if(userId != "lix"){
                             var htmlStr = "<tr>";
                             htmlStr += "<th>说明</th>";
-                            htmlStr += "<td><span style='color:red;'>当前账号不是lix，要进行流程维护和发起流程测试请使用http://localhost:8080/flowtest/main.html?userId=lix</span>&nbsp;<a style='color:green;font-weight:bold;' href='./main.html?userId=lix'>点击快速切换</a></td>";
+                            htmlStr += "<td><span style='color:red;'>当前账号不是lix，要进行流程维护和发起流程测试请使用http://localhost:8080/bpm/main.html?userId=lix</span>&nbsp;<a style='color:green;font-weight:bold;' href='./main.html?userId=lix'>点击快速切换</a></td>";
                             htmlStr += "</tr>";
                             document.getElementById("flowlst").innerHTML = htmlStr;
                             document.getElementById("flowListInfo").innerHTML = "流程定义列表";
